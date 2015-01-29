@@ -1,0 +1,9 @@
+<map id="driver/net.c" name="driver/net.c">
+<area shape="rect" id="node2" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="247,155,336,181"/>
+<area shape="rect" id="node8" href="$enc28j60_8h.html" title="registers of ENC28J60 device " alt="" coords="439,80,562,107"/>
+<area shape="rect" id="node14" href="$net_8h.html" title="header file for network communication " alt="" coords="586,80,669,107"/>
+<area shape="rect" id="node15" href="$leds_8h.html" title="specific header file for leds driver " alt="" coords="327,80,415,107"/>
+<area shape="rect" id="node3" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="188,229,317,256"/>
+<area shape="rect" id="node9" href="$common_8h.html" title="some useful definitions " alt="" coords="380,155,501,181"/>
+<area shape="rect" id="node10" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="423,229,496,256"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$net_8c.html#ad8c59c931bff8fe806ce7598efb6047c" title="make an answer if request " alt="" coords="109,259,199,285"/>
+<area shape="rect" id="node13" href="$buffer_8c.html#ae4a17adb1fbf755574c338b7d17a68e6" title="initialize the ring buffer " alt="" coords="117,56,191,83"/>
+<area shape="rect" id="node14" href="$buffer_8c.html#ab4c57bf12ec39024ce3d6d56ad70abe9" title="calculate the medium of ring buffer " alt="" coords="103,107,205,133"/>
+<area shape="rect" id="node15" href="$net_8c.html#a4f72e5a5ef17368554a9b5368d05b5bd" title="make an echo answer (ping &#45; pong) if request " alt="" coords="113,157,195,184"/>
+<area shape="rect" id="node18" href="$enc28j60_8h.html#a9c0a8d055c8531d4ca1aa8e691acf70a" title="enc_init" alt="" coords="123,208,185,235"/>
+<area shape="rect" id="node19" href="$enc28j60_8h.html#aa75a4325284e67324bcee6b18f882b54" title="initialize the physical interface of ENC28J60 " alt="" coords="108,309,200,336"/>
+<area shape="rect" id="node24" href="$enc28j60_8h.html#a955683da076de3f92da57d7d06951ae7" title="receive a packet from ethernet " alt="" coords="256,385,373,412"/>
+<area shape="rect" id="node27" href="$net_8c.html#a2e5cb2f2e4db612d3ac1262da515f20f" title="make the network wirh arp " alt="" coords="121,360,187,387"/>
+<area shape="rect" id="node28" href="$net_8c.html#af0b4a02ade3a716c6b10ce1fc821770b" title="make the network communication with ip address " alt="" coords="126,411,182,437"/>
+<area shape="rect" id="node29" href="$icp_8c.html#a9aea3198ad5628ffd740d6dc46d0f640" title="initialize the input capture pin on timer 1 " alt="" coords="125,461,183,488"/>
+<area shape="rect" id="node30" href="$leds_8c.html#a67cfc3137a465e560792490e81365254" title="initialize all LEDs " alt="" coords="121,512,187,539"/>
+<area shape="rect" id="node31" href="$net_8c.html#a044265f0081346e76e9686ec54badf5b" title="initialize the network " alt="" coords="124,563,184,589"/>
+<area shape="rect" id="node32" href="$main_8c.html#aedb0558a93e7ad957d3186ba04578ca0" title="return&#45;function from input capture interrupt routine " alt="" coords="127,664,181,691"/>
+<area shape="rect" id="node35" href="$net_8c.html#a26c789f4ef67752529324ebba5ac51a1" title="make the UDP protocol " alt="" coords="115,5,193,32"/>
+<area shape="rect" id="node3" href="$enc28j60_8h.html#abcc7d56a9babb64610bd346cdaef81a6" title="send a packet to ethernet " alt="" coords="253,157,376,184"/>
+<area shape="rect" id="node12" href="$net_8c.html#a0b1ae978a785d4da05a5c17be80f6314" title="make the ethernet header " alt="" coords="276,208,353,235"/>
+<area shape="rect" id="node4" href="$enc28j60_8c.html#a7520f33b52393de8d0e3caa796e0baa2" title="write on ENC28J60 " alt="" coords="426,247,501,273"/>
+<area shape="rect" id="node6" href="$enc28j60_8c.html#ab64d8270b5a710a2ff635d4449c91a08" title="write the operation " alt="" coords="703,272,800,299"/>
+<area shape="rect" id="node11" href="$enc28j60_8c.html#a8ae17d4efc162d054952cc4cb80d422c" title="write the buffer " alt="" coords="701,221,801,248"/>
+<area shape="rect" id="node5" href="$enc28j60_8c.html#ac175ce9462129e5d35f06935aa42c9f6" title="set the bank on address " alt="" coords="551,297,653,324"/>
+<area shape="rect" id="node7" href="$enc28j60_8c.html#a6ae6915ab4363819a3492bd8509263e5" title="start ENC28J60 pin to write or to read " alt="" coords="864,272,937,299"/>
+<area shape="rect" id="node8" href="$enc28j60_8c.html#a63e6002e7cdb7ac2433fcb6fb4fc0b16" title="stop the ENC28J60 pin " alt="" coords="863,171,938,197"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a656cafaeae25fbe893fb580a06360dba" title="write the data to SPI " alt="" coords="865,221,937,248"/>
+<area shape="rect" id="node10" href="$spi_8c.html#afd67d0a4eba1be3a38b0234274f477d8" title="write an operation to address " alt="" coords="853,323,948,349"/>
+<area shape="rect" id="node16" href="$net_8c.html#a03c6b5196ad75d2eeca9ff69537a3214" title="make the ip header " alt="" coords="279,56,350,83"/>
+<area shape="rect" id="node17" href="$net_8c.html#acda4291ff558e4c9c4ca87e87679e4a7" title="checksum " alt="" coords="424,31,503,57"/>
+<area shape="rect" id="node20" href="$enc28j60_8c.html#ab6908af0f98d4b54d35cbcd699119346" title="write the data on ENC28J60 physical address " alt="" coords="263,309,367,336"/>
+<area shape="rect" id="node21" href="$enc28j60_8c.html#a0619a7608315f0484d493da171ee37ae" title="read from from address of ENC28J60 " alt="" coords="426,348,501,375"/>
+<area shape="rect" id="node22" href="$enc28j60_8c.html#a28f10fce3f5c8c1e29efcce27932d149" title="read the operation from address of ENC28J60 " alt="" coords="703,323,799,349"/>
+<area shape="rect" id="node23" href="$spi_8c.html#a14e73be3886cad229afafebc98c4c66d" title="read from address " alt="" coords="849,373,952,400"/>
+<area shape="rect" id="node25" href="$enc28j60_8c.html#ae07e529513d99c8612e7878b7524109d" title="read from the buffer " alt="" coords="702,171,801,197"/>
+<area shape="rect" id="node26" href="$spi_8c.html#a82a4ec3bb6d4bdaf7453f2ccc19b2243" title="read from SPI data register " alt="" coords="865,120,936,147"/>
+<area shape="rect" id="node33" href="$buffer_8c.html#a7760b3d8ac8ebcf70f3ec2b91efb6dc5" title="write the new data in ring buffer " alt="" coords="271,639,358,665"/>
+<area shape="rect" id="node34" href="$leds_8c.html#a15aeb6fd48b8cbb5fb0c0380f88fa676" title="toggle a led " alt="" coords="275,689,354,716"/>
+</map>

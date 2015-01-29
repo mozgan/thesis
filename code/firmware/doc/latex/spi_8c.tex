@@ -1,0 +1,194 @@
+\hypertarget{spi_8c}{\section{driver/spi.c File Reference}
+\label{spi_8c}\index{driver/spi.\+c@{driver/spi.\+c}}
+}
+
+
+driver for spi interface  
+
+
+{\ttfamily \#include $<$driver/spi.\+h$>$}\\*
+Include dependency graph for spi.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spi_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{spi_8c_ae909944aa85ae98323073c628be541aa}{spi\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em initialize S\+P\+I communication \end{DoxyCompactList}\item 
+void \hyperlink{spi_8c_afd67d0a4eba1be3a38b0234274f477d8}{spi\+\_\+write\+\_\+op} (uint8\+\_\+t op, uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em write an operation to address \end{DoxyCompactList}\item 
+void \hyperlink{spi_8c_a656cafaeae25fbe893fb580a06360dba}{spi\+\_\+write} (uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em write the data to S\+P\+I \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{spi_8c_a14e73be3886cad229afafebc98c4c66d}{spi\+\_\+read\+\_\+addr} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em read from address \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{spi_8c_a82a4ec3bb6d4bdaf7453f2ccc19b2243}{spi\+\_\+read} (void)
+\begin{DoxyCompactList}\small\item\em read from S\+P\+I data register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+driver for spi interface 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20.\+08.\+2013 14\+:52\+:49 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000011}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{spi_8c_source}{spi.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{spi_8c_ae909944aa85ae98323073c628be541aa}{\index{spi.\+c@{spi.\+c}!spi\+\_\+init@{spi\+\_\+init}}
+\index{spi\+\_\+init@{spi\+\_\+init}!spi.\+c@{spi.\+c}}
+\subsubsection[{spi\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void spi\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{spi_8c_ae909944aa85ae98323073c628be541aa}
+
+
+initialize S\+P\+I communication 
+
+
+
+Definition at line 33 of file spi.\+c.
+
+
+
+References S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G, S\+P\+I\+\_\+\+D\+D\+R, S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D, S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E, S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R, S\+P\+I\+\_\+\+M\+I\+S\+O, S\+P\+I\+\_\+\+M\+O\+S\+I, S\+P\+I\+\_\+\+P\+O\+R\+T, S\+P\+I\+\_\+\+S\+C\+K, S\+P\+I\+\_\+\+S\+S, and S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{spi_8c_a82a4ec3bb6d4bdaf7453f2ccc19b2243}{\index{spi.\+c@{spi.\+c}!spi\+\_\+read@{spi\+\_\+read}}
+\index{spi\+\_\+read@{spi\+\_\+read}!spi.\+c@{spi.\+c}}
+\subsubsection[{spi\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t spi\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{spi_8c_a82a4ec3bb6d4bdaf7453f2ccc19b2243}
+
+
+read from S\+P\+I data register 
+
+\begin{DoxyReturn}{Returns}
+value of S\+P\+I data register 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file spi.\+c.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf().
+
+\hypertarget{spi_8c_a14e73be3886cad229afafebc98c4c66d}{\index{spi.\+c@{spi.\+c}!spi\+\_\+read\+\_\+addr@{spi\+\_\+read\+\_\+addr}}
+\index{spi\+\_\+read\+\_\+addr@{spi\+\_\+read\+\_\+addr}!spi.\+c@{spi.\+c}}
+\subsubsection[{spi\+\_\+read\+\_\+addr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t spi\+\_\+read\+\_\+addr (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{spi_8c_a14e73be3886cad229afafebc98c4c66d}
+
+
+read from address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 84 of file spi.\+c.
+
+
+
+Referenced by enc\+\_\+read\+\_\+op().
+
+\hypertarget{spi_8c_a656cafaeae25fbe893fb580a06360dba}{\index{spi.\+c@{spi.\+c}!spi\+\_\+write@{spi\+\_\+write}}
+\index{spi\+\_\+write@{spi\+\_\+write}!spi.\+c@{spi.\+c}}
+\subsubsection[{spi\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}void spi\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{spi_8c_a656cafaeae25fbe893fb580a06360dba}
+
+
+write the data to S\+P\+I 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file spi.\+c.
+
+
+
+References S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G, and S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write\+\_\+buf(), and enc\+\_\+write\+\_\+op().
+
+\hypertarget{spi_8c_afd67d0a4eba1be3a38b0234274f477d8}{\index{spi.\+c@{spi.\+c}!spi\+\_\+write\+\_\+op@{spi\+\_\+write\+\_\+op}}
+\index{spi\+\_\+write\+\_\+op@{spi\+\_\+write\+\_\+op}!spi.\+c@{spi.\+c}}
+\subsubsection[{spi\+\_\+write\+\_\+op}]{\setlength{\rightskip}{0pt plus 5cm}void spi\+\_\+write\+\_\+op (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{op, }
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{spi_8c_afd67d0a4eba1be3a38b0234274f477d8}
+
+
+write an operation to address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & operation \\
+\hline
+{\em addr} & address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file spi.\+c.
+
+
+
+References A\+D\+D\+R\+\_\+\+M\+A\+S\+K, S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G, S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G, and S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+read\+\_\+op(), and enc\+\_\+write\+\_\+op().
+

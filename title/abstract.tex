@@ -1,0 +1,15 @@
+\newpage
+\pagestyle{plain}
+\null\vfil
+
+\begin{center}\bf Kurzfassung\end{center}
+\addcontentsline{toc}{chapter}{Kurzfassung}
+Diese Arbeit beschreibt eine Messmethode, die mit Hilfe elektronischer Bauteile die Netzfrequenz messen soll. Dazu wird ein Board entworfen und mit zusätzlichen Modulen wie Optokoppler, Atmel AVR-Mikrocontroller, Netzwerk und Netzadapter ausgestattet. Der Mikrocontroller soll über den Optokoppler die Netzfrequenz messen und diese Frequenzgrößen nach der Abfrage über das Netzwerk-Modul an einen Server weiterleiten. \\ \\
+Um die Netzfrequenz genau zu messen, wird das kontinuierlich-sinusförmige Eingangssignal mit dem Optokoppler digitalisiert und zu dem Eingangspin des ATmega16-Mikrocontrol- lers geleitet. Nachfolgend wird das digitalisierte Signal mittels dem Timer-Treiber aufgezählt, welcher in der Programmierungssprache C geschrieben wird. Anschließend werden diese Frequenzgrößen nach der Abfrage über das eigens konzipierte Netzwerk-Modul in Form von UDP-Paketen an einen Server weitergeleitet. Um die Frequenzgrößen abzufragen, wird ein Dämon für die UNIX basierten Systeme programmiert, welcher mit dem Netzwerk-Modul ein Kommunikationsprotokoll erstellt.
+
+\par\vfil
+
+\begin{center}\bf Abstract\end{center}
+This paper describes a measurement method to measure the mains frequency with the help of electronic components. For this purpose, a board is designed and equipped with additional modules such as optocouplers, Atmel AVR microcontrollers, network, and power adapter. The microcontroller is designed to measure the grid frequency via the optocoupler and forward this frequency magnitude according to the query over the network module to a server. \\ \\To measure the grid frequency exactly, the sinusoidal input signal is continuously digitized with the help of the optocoupler and passed to the input pin of the ATmega16 microcontroller. Subsequently, the digitized signal is counted by the timer driver which is written in the programming language C. Then this frequency sizes will be redirected  to a server with the query via the specially designed network module in the form of UDP packets. To query the frequency magnitudes, a daemon for UNIX-based systems is programmed, which with the network module a communication protocol creates.
+
+\par\vfil\null

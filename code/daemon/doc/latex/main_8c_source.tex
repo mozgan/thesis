@@ -1,0 +1,90 @@
+\hypertarget{main_8c_source}{\section{main.\+c}
+\label{main_8c_source}\index{src/main.\+c@{src/main.\+c}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*-}
+00002 \textcolor{comment}{ * Copyright (c) 2013, mozgan.}
+00003 \textcolor{comment}{ * All Rights Reserved with BSD License.}
+00004 \textcolor{comment}{ * Read LICENSE file.}
+00005 \textcolor{comment}{ */}
+00006 
+00022 \textcolor{comment}{/*}
+00023 \textcolor{comment}{ *      @(#) src/main.c     TU Wien 23.08.2013}
+00024 \textcolor{comment}{ *  $Id: main.c,v 0.1 23.08.2013 22:00:56 mozgan Exp $}
+00025 \textcolor{comment}{ */}
+00026 
+00027 \textcolor{preprocessor}{#include <stdio.h>}
+00028 \textcolor{preprocessor}{#include <stdlib.h>}
+00029 \textcolor{preprocessor}{#include <unistd.h>}
+00030 
+00031 \textcolor{preprocessor}{#include "\hyperlink{udp_8h}{udp.h}"}
+00032 \textcolor{preprocessor}{#include "\hyperlink{error_8h}{error.h}"}
+00033 
+\hypertarget{main_8c_source_l00034}{}\hyperlink{main_8c_adc0221a311d122f5c20b9ce7982f95ee}{00034} \textcolor{keyword}{const} \textcolor{keywordtype}{char}  *\hyperlink{main_8c_adc0221a311d122f5c20b9ce7982f95ee}{optstr} = \textcolor{stringliteral}{"h:p:"};                 
+\hypertarget{main_8c_source_l00035}{}\hyperlink{main_8c_a8a8a6db7728221fbc910782969be77c2}{00035} \textcolor{keywordtype}{char}        *\hyperlink{main_8c_a8a8a6db7728221fbc910782969be77c2}{prg\_name} = \textcolor{stringliteral}{"<not yet set>"};    
+00040 \textcolor{keywordtype}{void}
+\hypertarget{main_8c_source_l00041}{}\hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{00041} \hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{usage}(\textcolor{keywordtype}{void})
+00042 \{
+00043         (void)fprintf(stdout, \textcolor{stringliteral}{"Usage: \(\backslash\)n"});
+00044         (void)fprintf(stdout, \textcolor{stringliteral}{"\(\backslash\)t%s -h <hostname> -p <port>\(\backslash\)n"}, \hyperlink{main_8c_a8a8a6db7728221fbc910782969be77c2}{prg\_name});
+00045         (void)fprintf(stdout, \textcolor{stringliteral}{"\(\backslash\)tExample: %s -h FreeBSD.local -p 32000\(\backslash\)n"}, 
+      \hyperlink{main_8c_a8a8a6db7728221fbc910782969be77c2}{prg\_name});
+00046 
+00047         exit(EXIT\_FAILURE);
+00048 \}
+00049 
+00050 
+00059 \textcolor{keywordtype}{int}
+\hypertarget{main_8c_source_l00060}{}\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{00060} \hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])
+00061 \{
+00062         \textcolor{keywordtype}{int}             ch;
+00063         \textcolor{keywordtype}{int}             opt\_h, opt\_p;
+00064         \textcolor{keywordtype}{char}            *end\_ptr;
+00065         \textcolor{keywordtype}{char}            *hostname;      
+00067         \hyperlink{main_8c_a8a8a6db7728221fbc910782969be77c2}{prg\_name} = argv[0];
+00068         opt\_h = opt\_p = 0;
+00069 
+00070         \textcolor{comment}{/* it should be exactly 5 arguments */}
+00071         \textcolor{keywordflow}{if} (argc != 5)
+00072                 \hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{usage}();
+00073 
+00074         \textcolor{comment}{/* parse arguments */}
+00075         \textcolor{keywordflow}{while}((ch = getopt(argc, argv, \hyperlink{main_8c_adc0221a311d122f5c20b9ce7982f95ee}{optstr})) != -1) \{
+00076                 \textcolor{keywordflow}{switch}(ch) \{
+00077                         \textcolor{keywordflow}{case} \textcolor{charliteral}{'h'}:
+00078                                 hostname = optarg;
+00079                                 printf (\textcolor{stringliteral}{"hostname: %s \(\backslash\)n"}, hostname);
+00080                                 opt\_h = 1;
+00081                                 \textcolor{keywordflow}{break};
+00082                         \textcolor{keywordflow}{case} \textcolor{charliteral}{'p'}:
+00083                                 \hyperlink{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{port\_nr} = (\textcolor{keywordtype}{unsigned} int)strtol(optarg, &end\_ptr, 10);
+00084                                 printf (\textcolor{stringliteral}{"port number: %d\(\backslash\)n"}, \hyperlink{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{port\_nr});
+00085                                 opt\_p = 1;
+00086                                 \textcolor{keywordflow}{break};
+00087                         \textcolor{keywordflow}{case} \textcolor{charliteral}{'?'}:
+00088                                 \hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{usage}();
+00089                                 exit(EXIT\_FAILURE);
+00090                         \textcolor{keywordflow}{default}:
+00091                                 abort();
+00092                                 exit(EXIT\_FAILURE);
+00093                 \}
+00094         \}
+00095         
+00096         \textcolor{comment}{/* check the options correct gived */}
+00097         \textcolor{keywordflow}{if} (!opt\_h || !opt\_p)
+00098                 \hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{usage}();
+00099 
+00100         \textcolor{comment}{/* no more arguments accept */}
+00101         \textcolor{keywordflow}{if} (optind != argc)
+00102                 \hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{usage}();
+00103         
+00104         \hyperlink{udp_8c_af78c25c84b170f47fc907e752c1409b4}{make\_socket}(hostname, \hyperlink{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{port\_nr});           \textcolor{comment}{/* make the socket */}
+00105         \hyperlink{udp_8c_a165726b24e152a113fdde7732b667b5f}{binding}();                           \textcolor{comment}{/* bind to host */}
+00106         \hyperlink{udp_8c_a0b55dfe2fd6924e01624911af758ae03}{communication}();               \textcolor{comment}{/* send to host, recv from host */}
+00107         \hyperlink{udp_8c_a1926d0bf833c9a35c53d2a2f601faa60}{close\_socket}();                         \textcolor{comment}{/* close the socket */}
+00108         
+00109         exit(EXIT\_SUCCESS);
+00110 \}
+00111 
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="driver/spi.h" name="driver/spi.h">
+<area shape="rect" id="node2" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="288,155,377,181"/>
+<area shape="rect" id="node3" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="187,229,316,256"/>
+<area shape="rect" id="node8" href="$enc28j60_8h.html" title="registers of ENC28J60 device " alt="" coords="385,80,507,107"/>
+<area shape="rect" id="node9" href="$common_8h.html" title="some useful definitions " alt="" coords="401,155,523,181"/>
+<area shape="rect" id="node10" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="425,229,499,256"/>
+</map>

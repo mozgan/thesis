@@ -1,0 +1,12 @@
+<map id="arp_answer" name="arp_answer">
+<area shape="rect" id="node2" href="$enc28j60_8h.html#abcc7d56a9babb64610bd346cdaef81a6" title="send a packet to ethernet " alt="" coords="144,93,267,120"/>
+<area shape="rect" id="node11" href="$net_8c.html#a0b1ae978a785d4da05a5c17be80f6314" title="make the ethernet header " alt="" coords="167,144,244,171"/>
+<area shape="rect" id="node3" href="$enc28j60_8c.html#a7520f33b52393de8d0e3caa796e0baa2" title="write on ENC28J60 " alt="" coords="315,43,389,69"/>
+<area shape="rect" id="node5" href="$enc28j60_8c.html#ab64d8270b5a710a2ff635d4449c91a08" title="write the operation " alt="" coords="589,56,687,83"/>
+<area shape="rect" id="node10" href="$enc28j60_8c.html#a8ae17d4efc162d054952cc4cb80d422c" title="write the buffer " alt="" coords="588,132,688,159"/>
+<area shape="rect" id="node4" href="$enc28j60_8c.html#ac175ce9462129e5d35f06935aa42c9f6" title="set the bank on address " alt="" coords="437,43,540,69"/>
+<area shape="rect" id="node6" href="$enc28j60_8c.html#a6ae6915ab4363819a3492bd8509263e5" title="start ENC28J60 pin to write or to read " alt="" coords="747,56,820,83"/>
+<area shape="rect" id="node7" href="$enc28j60_8c.html#a63e6002e7cdb7ac2433fcb6fb4fc0b16" title="stop the ENC28J60 pin " alt="" coords="746,107,821,133"/>
+<area shape="rect" id="node8" href="$spi_8c.html#a656cafaeae25fbe893fb580a06360dba" title="write the data to SPI " alt="" coords="747,157,819,184"/>
+<area shape="rect" id="node9" href="$spi_8c.html#afd67d0a4eba1be3a38b0234274f477d8" title="write an operation to address " alt="" coords="736,5,831,32"/>
+</map>

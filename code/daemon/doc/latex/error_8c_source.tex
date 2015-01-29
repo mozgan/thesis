@@ -1,0 +1,30 @@
+\hypertarget{error_8c_source}{\section{error.\+c}
+\label{error_8c_source}\index{src/error.\+c@{src/error.\+c}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*-}
+00002 \textcolor{comment}{ * Copyright (c) 2013, mozgan.}
+00003 \textcolor{comment}{ * All Rights Reserved with BSD License.}
+00004 \textcolor{comment}{ * Read LICENSE file.}
+00005 \textcolor{comment}{ */}
+00006 
+00022 \textcolor{comment}{/*}
+00023 \textcolor{comment}{ *      @(#) src/error.c            TU Wien 23.08.2013}
+00024 \textcolor{comment}{ *  $Id: error.c,v 0.1 23.08.2013 22:21:22 mozgan Exp $}
+00025 \textcolor{comment}{ */}
+00026 
+00027 \textcolor{preprocessor}{#include "\hyperlink{error_8h}{error.h}"}
+00028 
+00034 \textcolor{keywordtype}{void}
+\hypertarget{error_8c_source_l00035}{}\hyperlink{error_8h_a7c50c1dd9ff2f0d7d88bef6a99b4315c}{00035} \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *msg)
+00036 \{
+00037         \textcolor{keywordflow}{if} (errno != 0)
+00038                 (void)fprintf(stderr, \textcolor{stringliteral}{"Error: %s - %s\(\backslash\)n"}, msg, strerror(errno));
+00039         \textcolor{keywordflow}{else}
+00040                 (\textcolor{keywordtype}{void})fprintf(stderr, \textcolor{stringliteral}{"Error: %s\(\backslash\)n"}, msg);
+00041 
+00042         exit(EXIT\_FAILURE);
+00043 \}
+00044 
+\end{DoxyCode}

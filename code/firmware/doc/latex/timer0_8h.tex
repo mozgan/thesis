@@ -1,0 +1,144 @@
+\hypertarget{timer0_8h}{\section{driver/timer0.h File Reference}
+\label{timer0_8h}\index{driver/timer0.\+h@{driver/timer0.\+h}}
+}
+
+
+specific header file for timer/counter 0  
+
+
+{\ttfamily \#include $<$board/freq.\+h$>$}\\*
+{\ttfamily \#include $<$include/common.\+h$>$}\\*
+Include dependency graph for timer0.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer0_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{timer0_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{timer0_8h_a9a3f7b6014a4ecdca7559692b40bf775}{timer0\+\_\+init\+\_\+f} (uint16\+\_\+t, void($\ast$)(void))
+\begin{DoxyCompactList}\small\item\em initialize timer/counter 0 with frequency \end{DoxyCompactList}\item 
+void \hyperlink{timer0_8h_a813c0dbc5c9118e5c6ef1203b73aced3}{timer0\+\_\+stop} (void)
+\begin{DoxyCompactList}\small\item\em stop the timer 0 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{timer0_8h_ab2b9d07ca040864058eb11c1c317489f}{int\+\_\+cnt0}
+\item 
+void($\ast$ \hyperlink{timer0_8h_ae6cf6e76e3ec6d8493d00da37ec2db6e}{timer0\+\_\+handler} )(void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+specific header file for timer/counter 0 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 15\+:54\+:58 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000014}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000014}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{timer0_8h_source}{timer0.\+h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{timer0_8h_a9a3f7b6014a4ecdca7559692b40bf775}{\index{timer0.\+h@{timer0.\+h}!timer0\+\_\+init\+\_\+f@{timer0\+\_\+init\+\_\+f}}
+\index{timer0\+\_\+init\+\_\+f@{timer0\+\_\+init\+\_\+f}!timer0.\+h@{timer0.\+h}}
+\subsubsection[{timer0\+\_\+init\+\_\+f}]{\setlength{\rightskip}{0pt plus 5cm}void timer0\+\_\+init\+\_\+f (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{freq, }
+\item[{void($\ast$)(void)}]{call\+\_\+back}
+\end{DoxyParamCaption}
+)}}\label{timer0_8h_a9a3f7b6014a4ecdca7559692b40bf775}
+
+
+initialize timer/counter 0 with frequency 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & timer frequency \\
+\hline
+{\em call\+\_\+back} & if timer interrupt request, returns to call\+\_\+back function \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file timer0.\+c.
+
+
+
+References F\+\_\+\+C\+P\+U, int\+\_\+cnt0, T\+I\+M\+E\+R0\+\_\+\+C\+N\+T, T\+I\+M\+E\+R0\+\_\+\+C\+T\+C, timer0\+\_\+handler, T\+I\+M\+E\+R0\+\_\+\+O\+C\+R, T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256, T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R, T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G, and T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K.
+
+\hypertarget{timer0_8h_a813c0dbc5c9118e5c6ef1203b73aced3}{\index{timer0.\+h@{timer0.\+h}!timer0\+\_\+stop@{timer0\+\_\+stop}}
+\index{timer0\+\_\+stop@{timer0\+\_\+stop}!timer0.\+h@{timer0.\+h}}
+\subsubsection[{timer0\+\_\+stop}]{\setlength{\rightskip}{0pt plus 5cm}void timer0\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{timer0_8h_a813c0dbc5c9118e5c6ef1203b73aced3}
+
+
+stop the timer 0 
+
+
+
+Definition at line 68 of file timer0.\+c.
+
+
+
+References T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K, and T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{timer0_8h_ab2b9d07ca040864058eb11c1c317489f}{\index{timer0.\+h@{timer0.\+h}!int\+\_\+cnt0@{int\+\_\+cnt0}}
+\index{int\+\_\+cnt0@{int\+\_\+cnt0}!timer0.\+h@{timer0.\+h}}
+\subsubsection[{int\+\_\+cnt0}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t int\+\_\+cnt0}}\label{timer0_8h_ab2b9d07ca040864058eb11c1c317489f}
+timer 0 interrupt counter 
+
+Definition at line 33 of file timer0.\+h.
+
+
+
+Referenced by I\+S\+R(), and timer0\+\_\+init\+\_\+f().
+
+\hypertarget{timer0_8h_ae6cf6e76e3ec6d8493d00da37ec2db6e}{\index{timer0.\+h@{timer0.\+h}!timer0\+\_\+handler@{timer0\+\_\+handler}}
+\index{timer0\+\_\+handler@{timer0\+\_\+handler}!timer0.\+h@{timer0.\+h}}
+\subsubsection[{timer0\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ timer0\+\_\+handler)(void)}}\label{timer0_8h_ae6cf6e76e3ec6d8493d00da37ec2db6e}
+call back function from interrupt 
+
+Definition at line 37 of file timer0.\+h.
+
+
+
+Referenced by I\+S\+R(), and timer0\+\_\+init\+\_\+f().
+

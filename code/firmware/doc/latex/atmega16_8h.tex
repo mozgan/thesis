@@ -1,0 +1,389 @@
+\hypertarget{atmega16_8h}{\section{device/atmega16.h File Reference}
+\label{atmega16_8h}\index{device/atmega16.\+h@{device/atmega16.\+h}}
+}
+
+
+specific definitions for A\+T\+Mega16 device  
+
+
+{\ttfamily \#include $<$avr/io.\+h$>$}\\*
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\\*
+{\ttfamily \#include $<$util/delay.\+h$>$}\\*
+{\ttfamily \#include $<$avr/iom16.\+h$>$}\\*
+Include dependency graph for atmega16.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{atmega16_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{atmega16_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{atmega16_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+C\+P\+U}~16000000		    /$\ast$ C\+P\+U F\+R\+E\+Q\+: 16 M\+Hz $\ast$/
+\item 
+\#define \hyperlink{atmega16_8h_ab60bfb56cfc56f5d2b84c76246810443}{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K}~T\+I\+M\+S\+K
+\item 
+\#define \hyperlink{atmega16_8h_a859c1254da67c8184cc38f4b39093655}{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G}~T\+I\+F\+R
+\item 
+\#define \hyperlink{atmega16_8h_a45cd53c845ce671ce22fd16f6b4bdf5b}{T\+I\+M\+E\+R0\+\_\+\+C\+N\+T}~T\+C\+N\+T0
+\item 
+\#define \hyperlink{atmega16_8h_abc62547834bebc4d512d941b8ba557f0}{T\+I\+M\+E\+R0\+\_\+\+O\+C\+R}~O\+C\+R0
+\item 
+\#define \hyperlink{atmega16_8h_a6d3d80ea887016bf029c90dd78dff20b}{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R}~T\+C\+C\+R0
+\item 
+\#define \hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K}~(\hyperlink{atmega16_8h_a6d3d80ea887016bf029c90dd78dff20b}{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R} \& 0x\+F8)    /$\ast$($\sim$((1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S01) $\vert$ (1 $<$$<$ C\+S02)))$\ast$/
+\item 
+\#define \hyperlink{atmega16_8h_a1cf4168f3568e5e67474d93fb37ea3ec}{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00))
+\item 
+\#define \hyperlink{atmega16_8h_a2c470d396b337ee7d58233d268446bf6}{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S01))
+\item 
+\#define \hyperlink{atmega16_8h_a0e7cc469944f4733dc7dfe2656f9c7c0}{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S01))
+\item 
+\#define \hyperlink{atmega16_8h_a9e32cd2e3d4bf9c7eb33d841b84dcad4}{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S02))
+\item 
+\#define \hyperlink{atmega16_8h_a2e0fe2de7c3e9309053f89b4894b3e3c}{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S02))
+\item 
+\#define \hyperlink{atmega16_8h_a59a27e48408600976c04050e9218155c}{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S01) $\vert$ (1 $<$$<$ C\+S02))
+\item 
+\#define \hyperlink{atmega16_8h_a6ccb4eff35040bdfd4191d83921af744}{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S}~(\hyperlink{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S01) $\vert$ (1 $<$$<$ C\+S02))
+\item 
+\#define \hyperlink{atmega16_8h_a567836f32f69a0f4d9288f51fd2b99c8}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P}~(\hyperlink{atmega16_8h_a6d3d80ea887016bf029c90dd78dff20b}{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R} \& 0x3\+F)
+\item 
+\#define \hyperlink{atmega16_8h_afc68168ef4ae73b061158c82ea95c4f6}{T\+I\+M\+E\+R0\+\_\+\+C\+T\+C}~(\hyperlink{atmega16_8h_a567836f32f69a0f4d9288f51fd2b99c8}{T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P} $\vert$ (1 $<$$<$ W\+G\+M01))
+\item 
+\#define \hyperlink{atmega16_8h_a7baedf22cc87698d6a73c7c81c82d468}{T\+I\+M\+E\+R1\+\_\+\+C\+N\+T}~T\+C\+N\+T1
+\item 
+\#define \hyperlink{atmega16_8h_a017b9946a22770cfe9f686e0348d44e9}{T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A}~O\+C\+R1\+A
+\item 
+\#define \hyperlink{atmega16_8h_a78aaab027e1b02b896861dd14b74171d}{T\+I\+M\+E\+R1\+\_\+\+I\+C\+R}~I\+C\+R1
+\item 
+\#define \hyperlink{atmega16_8h_a3fa2d3bf1901157f734a584d47b25d8b}{M\+A\+S\+T\+E\+R}~0x01
+\item 
+\#define \hyperlink{atmega16_8h_ae342da5a4630c191c1c983958808edd8}{S\+L\+A\+V\+E}~0x02
+\item 
+\#define \hyperlink{atmega16_8h_a4a229380a0f183a9b2aeceb62d06fc91}{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G}~S\+P\+D\+R
+\item 
+\#define \hyperlink{atmega16_8h_ac20c34e07484971a18a665a03b9ce760}{S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G}~S\+P\+C\+R
+\item 
+\#define \hyperlink{atmega16_8h_a27537db92d0837cc77baa0d99b8cac48}{S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E}~S\+P\+E
+\item 
+\#define \hyperlink{atmega16_8h_afa9464d1e027eef964a5857fe8b90dca}{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E}~S\+P\+I\+E
+\item 
+\#define \hyperlink{atmega16_8h_ae09a2779c2d141aa6a8f8be6d78fe210}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R}~M\+S\+T\+R
+\item 
+\#define \hyperlink{atmega16_8h_a8d64ca7f86499e5f998ddd2f561901df}{S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G}~S\+P\+S\+R
+\item 
+\#define \hyperlink{atmega16_8h_a55d502b0a8f65ab71fb58216a1095e4a}{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G}~S\+P\+I\+F
+\item 
+\#define \hyperlink{atmega16_8h_aa27a35f6b074cbabb8a799183b6429d4}{S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D}~S\+P\+I2\+X
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+specific definitions for A\+T\+Mega16 device 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 15\+:18\+:15 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{atmega16_8h_source}{atmega16.\+h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{atmega16_8h_a43bafb28b29491ec7f871319b5a3b2f8}{\index{atmega16.\+h@{atmega16.\+h}!F\+\_\+\+C\+P\+U@{F\+\_\+\+C\+P\+U}}
+\index{F\+\_\+\+C\+P\+U@{F\+\_\+\+C\+P\+U}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{F\+\_\+\+C\+P\+U}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+\_\+\+C\+P\+U~16000000		    /$\ast$ C\+P\+U F\+R\+E\+Q\+: 16 M\+Hz $\ast$/}}\label{atmega16_8h_a43bafb28b29491ec7f871319b5a3b2f8}
+
+
+Definition at line 42 of file atmega16.\+h.
+
+
+
+Referenced by icp\+\_\+init(), main(), and timer0\+\_\+init\+\_\+f().
+
+\hypertarget{atmega16_8h_a3fa2d3bf1901157f734a584d47b25d8b}{\index{atmega16.\+h@{atmega16.\+h}!M\+A\+S\+T\+E\+R@{M\+A\+S\+T\+E\+R}}
+\index{M\+A\+S\+T\+E\+R@{M\+A\+S\+T\+E\+R}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{M\+A\+S\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+S\+T\+E\+R~0x01}}\label{atmega16_8h_a3fa2d3bf1901157f734a584d47b25d8b}
+
+
+Definition at line 109 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_ae342da5a4630c191c1c983958808edd8}{\index{atmega16.\+h@{atmega16.\+h}!S\+L\+A\+V\+E@{S\+L\+A\+V\+E}}
+\index{S\+L\+A\+V\+E@{S\+L\+A\+V\+E}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+L\+A\+V\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+L\+A\+V\+E~0x02}}\label{atmega16_8h_ae342da5a4630c191c1c983958808edd8}
+
+
+Definition at line 110 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_ac20c34e07484971a18a665a03b9ce760}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G@{S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G}}
+\index{S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G@{S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+E\+G~S\+P\+C\+R}}\label{atmega16_8h_ac20c34e07484971a18a665a03b9ce760}
+
+
+Definition at line 120 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+init().
+
+\hypertarget{atmega16_8h_a4a229380a0f183a9b2aeceb62d06fc91}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G@{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G}}
+\index{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G@{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G~S\+P\+D\+R}}\label{atmega16_8h_a4a229380a0f183a9b2aeceb62d06fc91}
+
+
+Definition at line 112 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+write\+\_\+op().
+
+\hypertarget{atmega16_8h_aa27a35f6b074cbabb8a799183b6429d4}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D@{S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D}}
+\index{S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D@{S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+S\+P\+E\+E\+D~S\+P\+I2\+X}}\label{atmega16_8h_aa27a35f6b074cbabb8a799183b6429d4}
+
+
+Definition at line 135 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+init().
+
+\hypertarget{atmega16_8h_a27537db92d0837cc77baa0d99b8cac48}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E@{S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E}}
+\index{S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E@{S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+E\+N\+A\+B\+L\+E~S\+P\+E}}\label{atmega16_8h_a27537db92d0837cc77baa0d99b8cac48}
+
+
+Definition at line 122 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+init().
+
+\hypertarget{atmega16_8h_afa9464d1e027eef964a5857fe8b90dca}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E@{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E}}
+\index{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E@{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+E\+N\+A\+B\+L\+E~S\+P\+I\+E}}\label{atmega16_8h_afa9464d1e027eef964a5857fe8b90dca}
+
+
+Definition at line 123 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a55d502b0a8f65ab71fb58216a1095e4a}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G@{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G}}
+\index{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G@{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+I\+N\+T\+\_\+\+F\+L\+A\+G~S\+P\+I\+F}}\label{atmega16_8h_a55d502b0a8f65ab71fb58216a1095e4a}
+
+
+Definition at line 134 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+write(), and spi\+\_\+write\+\_\+op().
+
+\hypertarget{atmega16_8h_ae09a2779c2d141aa6a8f8be6d78fe210}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R}}
+\index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R~M\+S\+T\+R}}\label{atmega16_8h_ae09a2779c2d141aa6a8f8be6d78fe210}
+
+
+Definition at line 124 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+init().
+
+\hypertarget{atmega16_8h_a8d64ca7f86499e5f998ddd2f561901df}{\index{atmega16.\+h@{atmega16.\+h}!S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G@{S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G}}
+\index{S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G@{S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G~S\+P\+S\+R}}\label{atmega16_8h_a8d64ca7f86499e5f998ddd2f561901df}
+
+
+Definition at line 132 of file atmega16.\+h.
+
+
+
+Referenced by spi\+\_\+init(), spi\+\_\+write(), and spi\+\_\+write\+\_\+op().
+
+\hypertarget{atmega16_8h_a45cd53c845ce671ce22fd16f6b4bdf5b}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+C\+N\+T@{T\+I\+M\+E\+R0\+\_\+\+C\+N\+T}}
+\index{T\+I\+M\+E\+R0\+\_\+\+C\+N\+T@{T\+I\+M\+E\+R0\+\_\+\+C\+N\+T}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+C\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+C\+N\+T~T\+C\+N\+T0}}\label{atmega16_8h_a45cd53c845ce671ce22fd16f6b4bdf5b}
+
+
+Definition at line 69 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f().
+
+\hypertarget{atmega16_8h_afc68168ef4ae73b061158c82ea95c4f6}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+C\+T\+C@{T\+I\+M\+E\+R0\+\_\+\+C\+T\+C}}
+\index{T\+I\+M\+E\+R0\+\_\+\+C\+T\+C@{T\+I\+M\+E\+R0\+\_\+\+C\+T\+C}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+C\+T\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+C\+T\+C~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P} $\vert$ (1 $<$$<$ W\+G\+M01))}}\label{atmega16_8h_afc68168ef4ae73b061158c82ea95c4f6}
+
+
+Definition at line 96 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f().
+
+\hypertarget{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K@{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K}}
+\index{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K@{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K~({\bf T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R} \& 0x\+F8)    /$\ast$($\sim$((1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S01) $\vert$ (1 $<$$<$ C\+S02)))$\ast$/}}\label{atmega16_8h_a038000b20049a0ae5751c8d01e0bab54}
+
+
+Definition at line 83 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+stop().
+
+\hypertarget{atmega16_8h_a567836f32f69a0f4d9288f51fd2b99c8}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P@{T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P}}
+\index{T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P@{T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P~({\bf T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R} \& 0x3\+F)}}\label{atmega16_8h_a567836f32f69a0f4d9288f51fd2b99c8}
+
+
+Definition at line 95 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_abc62547834bebc4d512d941b8ba557f0}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+O\+C\+R@{T\+I\+M\+E\+R0\+\_\+\+O\+C\+R}}
+\index{T\+I\+M\+E\+R0\+\_\+\+O\+C\+R@{T\+I\+M\+E\+R0\+\_\+\+O\+C\+R}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+O\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+O\+C\+R~O\+C\+R0}}\label{atmega16_8h_abc62547834bebc4d512d941b8ba557f0}
+
+
+Definition at line 70 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f().
+
+\hypertarget{atmega16_8h_a1cf4168f3568e5e67474d93fb37ea3ec}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1}}
+\index{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00))}}\label{atmega16_8h_a1cf4168f3568e5e67474d93fb37ea3ec}
+
+
+Definition at line 84 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a2e0fe2de7c3e9309053f89b4894b3e3c}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024}}
+\index{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+1024~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S02))}}\label{atmega16_8h_a2e0fe2de7c3e9309053f89b4894b3e3c}
+
+
+Definition at line 88 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a9e32cd2e3d4bf9c7eb33d841b84dcad4}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256}}
+\index{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+256~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S02))}}\label{atmega16_8h_a9e32cd2e3d4bf9c7eb33d841b84dcad4}
+
+
+Definition at line 87 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f().
+
+\hypertarget{atmega16_8h_a0e7cc469944f4733dc7dfe2656f9c7c0}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64}}
+\index{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+64~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S01))}}\label{atmega16_8h_a0e7cc469944f4733dc7dfe2656f9c7c0}
+
+
+Definition at line 86 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a2c470d396b337ee7d58233d268446bf6}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8}}
+\index{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8@{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+P\+R\+E\+S\+\_\+8~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S01))}}\label{atmega16_8h_a2c470d396b337ee7d58233d268446bf6}
+
+
+Definition at line 85 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a59a27e48408600976c04050e9218155c}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L@{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L}}
+\index{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L@{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+F\+A\+L\+L~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S01) $\vert$ (1 $<$$<$ C\+S02))}}\label{atmega16_8h_a59a27e48408600976c04050e9218155c}
+
+
+Definition at line 89 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a6ccb4eff35040bdfd4191d83921af744}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S@{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S}}
+\index{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S@{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+T0\+\_\+\+R\+I\+S~({\bf T\+I\+M\+E\+R0\+\_\+\+N\+O\+\_\+\+C\+L\+K} $\vert$ (1 $<$$<$ C\+S00) $\vert$ (1 $<$$<$ C\+S01) $\vert$ (1 $<$$<$ C\+S02))}}\label{atmega16_8h_a6ccb4eff35040bdfd4191d83921af744}
+
+
+Definition at line 90 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a6d3d80ea887016bf029c90dd78dff20b}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R@{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R}}
+\index{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R@{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R0\+\_\+\+T\+C\+C\+R~T\+C\+C\+R0}}\label{atmega16_8h_a6d3d80ea887016bf029c90dd78dff20b}
+
+
+Definition at line 78 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f(), and timer0\+\_\+stop().
+
+\hypertarget{atmega16_8h_a7baedf22cc87698d6a73c7c81c82d468}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R1\+\_\+\+C\+N\+T@{T\+I\+M\+E\+R1\+\_\+\+C\+N\+T}}
+\index{T\+I\+M\+E\+R1\+\_\+\+C\+N\+T@{T\+I\+M\+E\+R1\+\_\+\+C\+N\+T}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R1\+\_\+\+C\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R1\+\_\+\+C\+N\+T~T\+C\+N\+T1}}\label{atmega16_8h_a7baedf22cc87698d6a73c7c81c82d468}
+
+
+Definition at line 101 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a78aaab027e1b02b896861dd14b74171d}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R1\+\_\+\+I\+C\+R@{T\+I\+M\+E\+R1\+\_\+\+I\+C\+R}}
+\index{T\+I\+M\+E\+R1\+\_\+\+I\+C\+R@{T\+I\+M\+E\+R1\+\_\+\+I\+C\+R}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R1\+\_\+\+I\+C\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R1\+\_\+\+I\+C\+R~I\+C\+R1}}\label{atmega16_8h_a78aaab027e1b02b896861dd14b74171d}
+
+
+Definition at line 103 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a017b9946a22770cfe9f686e0348d44e9}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A@{T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A}}
+\index{T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A@{T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R1\+\_\+\+O\+C\+R\+A~O\+C\+R1\+A}}\label{atmega16_8h_a017b9946a22770cfe9f686e0348d44e9}
+
+
+Definition at line 102 of file atmega16.\+h.
+
+\hypertarget{atmega16_8h_a859c1254da67c8184cc38f4b39093655}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G@{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G}}
+\index{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G@{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+F\+L\+G~T\+I\+F\+R}}\label{atmega16_8h_a859c1254da67c8184cc38f4b39093655}
+
+
+Definition at line 63 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f().
+
+\hypertarget{atmega16_8h_ab60bfb56cfc56f5d2b84c76246810443}{\index{atmega16.\+h@{atmega16.\+h}!T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K@{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K}}
+\index{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K@{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K}!atmega16.\+h@{atmega16.\+h}}
+\subsubsection[{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+\_\+\+M\+A\+S\+K~T\+I\+M\+S\+K}}\label{atmega16_8h_ab60bfb56cfc56f5d2b84c76246810443}
+
+
+Definition at line 55 of file atmega16.\+h.
+
+
+
+Referenced by timer0\+\_\+init\+\_\+f().
+

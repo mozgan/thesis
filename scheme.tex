@@ -1,0 +1,270 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1.PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% defines thesis as report (oneside, A4 with 11pt fontsize)
+\documentclass[11pt,twoside,a4paper]{ICTthesis}
+
+\usepackage{geometry}
+
+% formats the text accourding the set language
+%\usepackage[english]{babel}
+% Sprache: Deutsch
+\usepackage[ngerman]{babel}   % deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften
+
+
+% generates indices with the "\index" command
+\usepackage{makeidx}
+
+% enables import of graphics. We use pdflatex here so do the pdf optimisation.
+%\usepackage[dvips]{graphicx}
+\usepackage[pdftex]{graphicx}
+%\usepackage{graphicx} % Bilder
+\usepackage{color} % Farben
+\DeclareGraphicsExtensions{.pdf,.png,.jpg} % bevorzuge pdf-Dateien
+\usepackage{pdfpages}
+%\usepackage[enable-survey]{pdfpages}
+
+% includes floating objects like tables and figures.
+\usepackage{float}
+
+% for generating subfigures with ohne indented captions
+\usepackage[hang]{subfigure}
+\newcommand{\subfigureautorefname}{\figurename} % um \autoref auch für subfigures benutzen
+%\usepackage[all]{hypcap} % Beim Klicken auf Links zum Bild und nicht zu Caption gehen
+
+\usepackage{nameref}
+
+% redefines and smartens captions of figures and tables (indentation, smaller and boldface)
+%\usepackage[hang,small,bf]{caption}
+
+% enables tabstops and the numeration of lines
+\usepackage{moreverb}
+
+% enables user defined header and footer lines (former "fancyheadings")
+\usepackage{fancyhdr}
+
+% Some smart mathematical stuff
+%\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsmath,marvosym} % Mathesachen
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+\usepackage{mathpazo} % Palatino für Mathemodus
+\linespread{1.05}         % Palatino needs more leading (space between lines)
+%\usepackage{mathpazo,tgpagella} % auch sehr schöne Schriften
+\usepackage{setspace} % Zeilenabstand
+\onehalfspacing % 1,5 Zeilen
+
+
+% Package for rotating several objects
+\usepackage{rotating}
+\usepackage[square,sort,comma,numbers]{natbib}
+%\usepackage[numbers,round]{natbib}
+%\bibliographystyle{alphadin}
+%\usepackage[sorting=nty,style=alphabetic]{biblatex}
+\usepackage{bibgerm} % Umlaute in BibTeX
+\usepackage{epsf}
+\usepackage{dsfont}
+%\usepackage[usenames]{color}
+%\usepackage[algochapter, boxruled, vlined]{algorithm2e}
+
+%Activating and setting of character protruding - if you like
+%\usepackage[activate,DVIoutput]{pdfcprot}
+% If you really need special chars...
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}        % Dokument in utf8-Codierung schreiben und speichern
+\usepackage[T1]{fontenc} % Ligaturen, richtige Umlaute im PDF
+\usepackage[utf8]{inputenc}% UTF8-Kodierung für Umlaute usw
+
+% footnote
+\usepackage{footnote}
+\usepackage{tablefootnote}
+
+\makesavenoteenv{minpage}   % If you want to include minipages. 
+\makesavenoteenv{itemize}
+
+% Hyperlinks
+\usepackage[ngerman,colorlinks,hyperindex,plainpages=false,%
+pdftitle={Frequenzmessung mit ATMEL-Mikrocontroller},%
+pdfauthor={Mehmet Ozgan},%
+pdfsubject={Bachelorarbeit},%
+pdfkeywords={Frequenzmessung, Atmel, AVR, ATMega16, Optokoppler},%
+pdfpagelabels,%
+pagebackref,%
+bookmarksopen=false%
+]{hyperref}
+
+% For the two different reference lists ...
+%\usepackage{multibib}
+\usepackage[resetlabels]{multibib}
+\usepackage{multirow} % Tabellen-Zellen über mehrere Zeilen
+\usepackage{multicol} % mehre Spalten auf eine Seite
+\usepackage{tabularx} % Für Tabellen mit vorgegeben Größen
+\usepackage{longtable} % Tabellen über mehrere Seiten
+\usepackage{array}
+
+% TikZ und plot
+\usepackage{ifthen}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{pgffor}
+%\usepgfmodule{shapes}
+\usepgfmodule{plot}
+\usetikzlibrary{decorations}
+\usetikzlibrary{arrows}
+%\usetikzlibrary{snakes}
+\usetikzlibrary{decorations.pathmorphing}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2.Settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% redifine the paragraph command.
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {0.3em} %-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
+                                       {3.25ex \@plus1ex \@minus .2ex}%
+                                       {-1em}%
+                                      {\normalfont\normalsize\bfseries}}
+\makeatother
+
+%Enables numbers at subsubsections without inserting them into the toc.
+\setcounter{secnumdepth}{3}
+
+% generates the index (command for the subprocessor)
+\makeindex
+
+% default path to your pictures
+\graphicspath{{pictures/}}
+
+% Counter for the maximum number of "Floatobjects" at the beginning of the page.
+\setcounter{topnumber}{2}
+% Redefines the maximum area which floats my consume at the beginning of the page.
+\def\topfraction{.8}
+% Counter for the maximum numbers of floats at the end of the page
+\setcounter{bottomnumber}{2}
+% Redefines the maximum area which floats my consume at the end of the page.
+\def\bottomfraction{.5}
+% Maximal number of floats per page
+\setcounter{totalnumber}{8}
+% minimal amount of text per page
+\def\textfraction{.2}
+% Redefinition: minimal amount of floats in percent per floatpage.
+\def\floatpagefraction{.6}
+% no indentation at paragraphs
+\setlength{\parindent}{0pt}
+
+% part of the caption package: extra 20pts left and right of captions.
+%\setlength{\captionmargin}{20pt}
+
+% sets the page layout
+\setlength{\oddsidemargin}{4mm}
+\setlength{\evensidemargin}{-6mm}
+\setlength{\textwidth}{162mm} 
+\setlength{\textheight}{230mm}
+\setlength{\topmargin}{-5mm}
+%\addtolength{\headsep}{12pt}
+
+%part of the "float" Packages:
+\floatstyle{plain}
+% define a new floating object
+\floatname{example}{Example}
+
+%\newfloat{example}{hbtp}{loe}[chapter]
+%\floatplacement{figure}{hbt}
+%\floatplacement{table}{htb}
+
+% enables a "\dollar" command (returns $)
+\newcommand{\dollar}{\char36}
+
+% Script for abbreviations
+% defines a new environment with one arguement
+\newenvironment{bfscript}[1] {
+ % defines as list
+ \begin{list}
+ % No labelmarks!
+ {}
+ {%\settowidth{\labelwidth}{\bf #1}
+ \setlength{\labelwidth}{7em}
+  % sets the left margin to 0 because there is no labelmark
+  \setlength{\leftmargin}{\labelwidth}
+  % add labelsep (0, no labelmark) to the margin
+  \addtolength{\leftmargin}{\labelsep}
+  % Separation of paragraphs in one topic
+  \parsep 0.0ex plus 0.2ex minus 0.2ex
+  % Separation of two topics
+  \itemsep -0.5ex
+  % sets the label to: boldface and fills with whitspace to the text
+  \renewcommand{\makelabel}[1]{\parbox[t]{6em}{##1\hfill}}}}
+ {\end{list}
+}
+
+% PDF-Settings
+\def\pdfBorderAttrs{/Border [0 0 0] } % No border arround Links
+%\pdfcompresslevel=9
+\hypersetup{colorlinks,linkcolor=blue,filecolor=red,urlcolor=black,citecolor=blue}
+% PDF-Kompression
+\pdfminorversion=5
+\pdfobjcompresslevel=1
+\usepackage[final]{microtype} % mikrotypographische Optimierungen
+\usepackage{url}
+\usepackage{pdflscape} % einzelne Seiten drehen können
+%\usepackage{lmodern}   % verwenden der "Latin Modern" ("Computer Modern"++)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3.HYPENATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% enter special rules here!
+\hyphenation{gleich-zeitig para-meter}
+
+% Quellcode
+\usepackage{minted}
+\usepackage{listings} % für Formatierung in Quelltexten
+\usepackage{courier}
+\definecolor{grau}{gray}{0.25}
+%\lstset{
+% language=C,
+% extendedchars=true,
+% basicstyle=\tiny\ttfamily,
+% %basicstyle=\footnotesize\ttfamily,
+% tabsize=8,
+% keywordstyle=\textbf,
+% commentstyle=\color{grau},
+% stringstyle=\textit,
+% numbers=left,
+% numberstyle=\tiny,
+% % für schönen Zeilenumbruch
+% breakautoindent  = true,
+% breakindent      = 2em,
+% breaklines       = true,
+% postbreak        = ,
+% prebreak         = \raisebox{-.8ex}[0ex][0ex]{\Righttorque},
+%}
+\lstset{
+    language=C,
+    basicstyle=\tiny\ttfamily, % \ttfamily\small,
+    breaklines=true,
+    prebreak= \raisebox{-.8ex}[0ex][0ex]{\Righttorque}, %\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=topline,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color{red}\bfseries,
+    stringstyle=\color{green!50!black},
+    commentstyle=\color{gray}\itshape,
+    numbers=left,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+

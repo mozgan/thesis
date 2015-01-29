@@ -1,0 +1,17 @@
+To install:
+        make install
+
+To uninstall:
+        make uninstall
+
+NOTE: Defaults: 
+        prefix: /usr/local
+        bindir: /usr/local/bin
+
+To install in other directory:
+        make prefix=/path/to/install install
+
+
+
+
+

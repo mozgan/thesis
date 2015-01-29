@@ -1,0 +1,80 @@
+Elemente			Hinweis							Anzahl
+------------------------------  ------------------------------------------------------  ------
+C1, C2, C18, C19                22pF, Keramik-Kondensator				4x
+C3, C4, C11, C12, C14, C16      100nF, Vielschicht-Keramikkondensator			6x
+C20                             10nF, Vielschicht-Keramikkondensator			1x
+C5, C6, C7, C8                  1uF							4x
+C9                              220nF, 400V						1x
+
+C10,C13,C15                     220uF, 16V, Elektrolytkondensator			3x
+C17                             10uF, Elektrolytkondensator				1x
+
+--- --- ---
+D1, D2, D4, D5                  1N4004 Diode						4x
+D3                              Zener-Diode, 0,5W 12V					1x
+
+--- --- ---
+F1                              Feinsicherung, Picofuse, flink, 1,0A			1x
+
+--- --- ---
+L1,L2                           Stehende-Induktivität, 11P, Ferrit, 10uH		2x
+
+--- --- ---
+IC1                             ATMega16-P DIL40					1x
+IC1-Sockel                      40Pin, 600mil						1x
+
+IC2                             MAX232 DIL16						1x
+IC2-Sockel                      16Pin, 300mm						1x
+
+IC3                             Standard Spannungsregler 2A positiv, TO-220 (µA 78S05)	1x
+IC4                             Standard Spannungsregler,sTO-220 (LM 317-220)		1x
+
+U1                              ENC28J60-DIL, 300mm					1x
+IC-Sockel                       28Pin, 300mm						1x
+
+--- --- ---
+LED1, LED2, LED12               LED, 3mm, Low Cast, Green				3x
+LED3, LED13                     LED, 3mm, Low Cast, Yellow				2x
+LED4, LED5, LED6, LED7, LED8, LED9, LED10, LED11    	LED, 3mm, Low Cast, Red		8x
+
+--- --- ---
+OK1                             4N36M, DIL6, Optocoupler				1x
+IC-Sockel                       6Pin							1x
+
+--- --- ---
+Q1                              16Mhz Quarz (HC49U)					1x
+Q2                              25Mhz Quarz (HC49U)					1x
+
+--- --- ---
+R1, R6                          10k Resistor						2x
+R2, R4, R5, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26       1k Resistor	14x
+R7                              1,5k Resistor						1x
+R8                              470 Ohm Resistor					1x
+R9                              270 Ohm Resistor					1x
+R10                             33k Resistor						1x
+R11                             2k Resistor						1x
+R12, R13                        51 Ohm Resistor						2x
+R14, R15                        220 Ohm Resistor					2x
+
+--- --- ---
+RST                             Tactile Switch-Omron, (B3F-10XX)			1x
+
+T1                              BC547 NPN-Transistor					1x
+
+X1                              9-polig, SUB-D Female (90deg gewinkelt)			1x
+X2                              2-polig Anreihklemme					1x
+X3                              Hohlstecker-Einbaubuchse, gewinkelt, Lötfahnen		1x
+
+ST1, ST2                        Einzel männlicher Stecker				2x
+
+ETH				RJ45-Buchse mit Übertrager und LEDs			1x
+
+Kabel				SUB-D männliche Verlängerungskabel, 9Pin		1x
+
+ADAPTER				Bis zu 12V Adapter					1x
+oder
+BATTERIE                        9V Batterie						1x
+
+
+
+

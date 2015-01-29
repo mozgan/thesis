@@ -1,0 +1,9 @@
+<map id="enc_set_mac" name="enc_set_mac">
+<area shape="rect" id="node2" href="$enc28j60_8c.html#a7520f33b52393de8d0e3caa796e0baa2" title="write on ENC28J60 " alt="" coords="151,81,225,108"/>
+<area shape="rect" id="node3" href="$enc28j60_8c.html#ac175ce9462129e5d35f06935aa42c9f6" title="set the bank on address " alt="" coords="273,56,376,83"/>
+<area shape="rect" id="node4" href="$enc28j60_8c.html#ab64d8270b5a710a2ff635d4449c91a08" title="write the operation " alt="" coords="424,81,521,108"/>
+<area shape="rect" id="node5" href="$enc28j60_8c.html#a6ae6915ab4363819a3492bd8509263e5" title="start ENC28J60 pin to write or to read " alt="" coords="580,5,653,32"/>
+<area shape="rect" id="node6" href="$spi_8c.html#afd67d0a4eba1be3a38b0234274f477d8" title="write an operation to address " alt="" coords="569,56,664,83"/>
+<area shape="rect" id="node7" href="$spi_8c.html#a656cafaeae25fbe893fb580a06360dba" title="write the data to SPI " alt="" coords="581,107,653,133"/>
+<area shape="rect" id="node8" href="$enc28j60_8c.html#a63e6002e7cdb7ac2433fcb6fb4fc0b16" title="stop the ENC28J60 pin " alt="" coords="579,157,654,184"/>
+</map>

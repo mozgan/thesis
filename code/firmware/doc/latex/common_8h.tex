@@ -1,0 +1,174 @@
+\hypertarget{common_8h}{\section{include/common.h File Reference}
+\label{common_8h}\index{include/common.\+h@{include/common.\+h}}
+}
+
+
+some useful definitions  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+Include dependency graph for common.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{common_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{common_8h_a74e75242132eaabbc1c512488a135926}{M\+I\+N}(x, y)~(((x) $<$ (y)) ? (x) \+: (y))
+\begin{DoxyCompactList}\small\item\em find minimum \end{DoxyCompactList}\item 
+\#define \hyperlink{common_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{M\+A\+X}(x, y)~(((x) $>$ (y)) ? (x) \+: (y))
+\begin{DoxyCompactList}\small\item\em find maximum \end{DoxyCompactList}\item 
+\#define \hyperlink{common_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+U\+E}~(\hyperlink{stdbool_8h_abb452686968e48b67397da5f97445f5b}{bool})(1)
+\item 
+\#define \hyperlink{common_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+S\+E}~(\hyperlink{stdbool_8h_abb452686968e48b67397da5f97445f5b}{bool})(0)
+\item 
+\#define \hyperlink{common_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}~(\hyperlink{stdbool_8h_abb452686968e48b67397da5f97445f5b}{bool})(1)
+\item 
+\#define \hyperlink{common_8h_a65e9886d74aaee76545e83dd09011727}{false}~(\hyperlink{stdbool_8h_abb452686968e48b67397da5f97445f5b}{bool})(0)
+\item 
+\#define \hyperlink{common_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+L\+L}~(void $\ast$)(0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+some useful definitions 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 15\+:06\+:36 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000015}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000015}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{common_8h_source}{common.\+h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{common_8h_aa93f0eb578d23995850d61f7d61c55c1}{\index{common.\+h@{common.\+h}!F\+A\+L\+S\+E@{F\+A\+L\+S\+E}}
+\index{F\+A\+L\+S\+E@{F\+A\+L\+S\+E}!common.\+h@{common.\+h}}
+\subsubsection[{F\+A\+L\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+A\+L\+S\+E~({\bf bool})(0)}}\label{common_8h_aa93f0eb578d23995850d61f7d61c55c1}
+if true not defined, define it 
+
+Definition at line 59 of file common.\+h.
+
+\hypertarget{common_8h_a65e9886d74aaee76545e83dd09011727}{\index{common.\+h@{common.\+h}!false@{false}}
+\index{false@{false}!common.\+h@{common.\+h}}
+\subsubsection[{false}]{\setlength{\rightskip}{0pt plus 5cm}\#define false~({\bf bool})(0)}}\label{common_8h_a65e9886d74aaee76545e83dd09011727}
+if N\+U\+L\+L not defined, define it 
+
+Definition at line 67 of file common.\+h.
+
+\hypertarget{common_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{\index{common.\+h@{common.\+h}!M\+A\+X@{M\+A\+X}}
+\index{M\+A\+X@{M\+A\+X}!common.\+h@{common.\+h}}
+\subsubsection[{M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~(((x) $>$ (y)) ? (x) \+: (y))}}\label{common_8h_aacc3ee1a7f283f8ef65cea31f4436a95}
+
+
+find maximum 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & first parameter \\
+\hline
+{\em y} & second parameter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the maximumif T\+R\+U\+E not defined, define it 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file common.\+h.
+
+\hypertarget{common_8h_a74e75242132eaabbc1c512488a135926}{\index{common.\+h@{common.\+h}!M\+I\+N@{M\+I\+N}}
+\index{M\+I\+N@{M\+I\+N}!common.\+h@{common.\+h}}
+\subsubsection[{M\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+N(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~(((x) $<$ (y)) ? (x) \+: (y))}}\label{common_8h_a74e75242132eaabbc1c512488a135926}
+
+
+find minimum 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & first parameter \\
+\hline
+{\em y} & second parameter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the minimum 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file common.\+h.
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{common_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\index{common.\+h@{common.\+h}!N\+U\+L\+L@{N\+U\+L\+L}}
+\index{N\+U\+L\+L@{N\+U\+L\+L}!common.\+h@{common.\+h}}
+\subsubsection[{N\+U\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+U\+L\+L~(void $\ast$)(0)}}\label{common_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}
+
+
+Definition at line 71 of file common.\+h.
+
+
+
+Referenced by icp\+\_\+init(), and I\+S\+R().
+
+\hypertarget{common_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\index{common.\+h@{common.\+h}!T\+R\+U\+E@{T\+R\+U\+E}}
+\index{T\+R\+U\+E@{T\+R\+U\+E}!common.\+h@{common.\+h}}
+\subsubsection[{T\+R\+U\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+U\+E~({\bf bool})(1)}}\label{common_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+if F\+A\+L\+S\+E not defined, define it 
+
+Definition at line 55 of file common.\+h.
+
+
+
+Referenced by main().
+
+\hypertarget{common_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{\index{common.\+h@{common.\+h}!true@{true}}
+\index{true@{true}!common.\+h@{common.\+h}}
+\subsubsection[{true}]{\setlength{\rightskip}{0pt plus 5cm}\#define true~({\bf bool})(1)}}\label{common_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}
+if false not defined, define it 
+
+Definition at line 63 of file common.\+h.
+

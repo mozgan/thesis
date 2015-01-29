@@ -1,0 +1,92 @@
+\hypertarget{udp_8c_source}{\section{udp.\+c}
+\label{udp_8c_source}\index{src/udp.\+c@{src/udp.\+c}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*-}
+00002 \textcolor{comment}{ * Copyright (c) 2013, mozgan.}
+00003 \textcolor{comment}{ * All Rights Reserved with BSD License.}
+00004 \textcolor{comment}{ * Read LICENSE file.}
+00005 \textcolor{comment}{ */}
+00006 
+00022 \textcolor{comment}{/*}
+00023 \textcolor{comment}{ *      @(#) src/udp.c      TU Wien 23.08.2013}
+00024 \textcolor{comment}{ *  $Id: udp.c,v 0.1 23.08.2013 22:01:48 mozgan Exp $}
+00025 \textcolor{comment}{ */}
+00026 
+00027 \textcolor{preprocessor}{#include "\hyperlink{udp_8h}{udp.h}"}
+00028 \textcolor{preprocessor}{#include "\hyperlink{error_8h}{error.h}"}
+00029 
+00036 \textcolor{keywordtype}{void}
+\hypertarget{udp_8c_source_l00037}{}\hyperlink{udp_8h_af62eaae41c3f2e3caa57d3735a0ec053}{00037} \hyperlink{udp_8c_af78c25c84b170f47fc907e752c1409b4}{make\_socket}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *hostname, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} port)
+00038 \{
+00039         memset(&\hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}, 0, \textcolor{keyword}{sizeof}(\hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}));
+00040 
+00041         \hyperlink{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}{h\_name} = gethostbyname(hostname);
+00042 
+00043         \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}.sin\_family = AF\_INET;
+00044         \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}.sin\_addr.s\_addr = *(\hyperlink{udp_8h_aaf12d2783d89167480b76853da8ba5e1}{u\_long} *)\hyperlink{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}{h\_name}->h\_addr\_list[0];
+00045         \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}.sin\_port = htons(port);
+00046 
+00047         \hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr}.sin\_family = AF\_INET;
+00048         \hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr}.sin\_addr.s\_addr = htonl(INADDR\_ANY);
+00049         \hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr}.sin\_port = htons(port);
+00050         memset(&\hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr}.sin\_zero, 0, \textcolor{keyword}{sizeof}(\hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr}.sin\_zero));
+00051         
+00052         \textcolor{keywordflow}{if} ((\hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\_fd} = socket(AF\_INET, SOCK\_DGRAM, IPPROTO\_UDP)) == -1)
+00053                 \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{stringliteral}{"creating socket failed"});
+00054 \}
+00055 
+00059 \textcolor{keywordtype}{void}
+\hypertarget{udp_8c_source_l00060}{}\hyperlink{udp_8h_a165726b24e152a113fdde7732b667b5f}{00060} \hyperlink{udp_8c_a165726b24e152a113fdde7732b667b5f}{binding}(\textcolor{keywordtype}{void})
+00061 \{
+00062         \textcolor{keywordflow}{if} (bind(\hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\_fd}, (\textcolor{keyword}{struct} sockaddr *)&\hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr}, \textcolor{keyword}{sizeof}(
+      \hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr})))
+00063                 \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{stringliteral}{"bind socket failed"});
+00064 \}
+00065 
+00069 \textcolor{keywordtype}{void}
+\hypertarget{udp_8c_source_l00070}{}\hyperlink{udp_8h_a0b55dfe2fd6924e01624911af758ae03}{00070} \hyperlink{udp_8c_a0b55dfe2fd6924e01624911af758ae03}{communication}(\textcolor{keywordtype}{void})
+00071 \{
+00072         \textcolor{keywordtype}{int}             len;
+00073         \textcolor{keywordtype}{char}            buf[BUFSIZ];
+00074         socklen\_t       sin\_size;
+00075         
+00076 
+00077         \textcolor{comment}{/*** send to client ***/}
+00078 
+00079         \textcolor{keywordflow}{if} (strcpy(buf, \textcolor{stringliteral}{"start"}) == NULL)
+00080                 \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{stringliteral}{"copy the string to buffer failed"});
+00081         
+00082         (void)fprintf(stdout, \textcolor{stringliteral}{"sending: %s\(\backslash\)n"}, buf);
+00083 
+00084         \textcolor{keywordflow}{if} (sendto(\hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\_fd}, buf, strlen(buf), 0, (\textcolor{keyword}{struct} sockaddr *)&
+      \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}, \textcolor{keyword}{sizeof}(\textcolor{keyword}{struct} sockaddr)) == -1)
+00085                 \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{stringliteral}{"sendto failed"});
+00086 
+00087 
+00088 
+00089         \textcolor{comment}{/*** receive from client ***/}
+00090 
+00091         sin\_size = (socklen\_t)\textcolor{keyword}{sizeof}(\textcolor{keyword}{struct} sockaddr\_in);
+00092         (void)fprintf(stdout, \textcolor{stringliteral}{"waiting for packet ...\(\backslash\)n"});
+00093 
+00094         \textcolor{keywordflow}{if}((len = recvfrom(\hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\_fd}, buf, BUFSIZ, 0, (\textcolor{keyword}{struct} sockaddr *)&
+      \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}, &sin\_size)) == -1) 
+00095                 \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{stringliteral}{"recvfrom failed"});
+00096         
+00097         (void)fprintf(stdout, \textcolor{stringliteral}{"received packet from %s: "}, inet\_ntoa(\hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr}.sin\_addr));
+00098 
+00099         buf[len] = \textcolor{charliteral}{'\(\backslash\)0'};
+00100         (void)fprintf(stdout, \textcolor{stringliteral}{"%s Hz\(\backslash\)n"}, buf);
+00101 
+00102 \}
+00103 
+00107 \textcolor{keywordtype}{void}
+\hypertarget{udp_8c_source_l00108}{}\hyperlink{udp_8h_a1926d0bf833c9a35c53d2a2f601faa60}{00108} \hyperlink{udp_8c_a1926d0bf833c9a35c53d2a2f601faa60}{close\_socket}(\textcolor{keywordtype}{void})
+00109 \{
+00110         \textcolor{keywordflow}{if} (close(\hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\_fd}) == -1)
+00111                 \hyperlink{error_8c_acf9a2facd46adb3083d36dbb8ea97521}{sys\_err}(\textcolor{stringliteral}{"close socket failed"});
+00112 \}
+00113 
+\end{DoxyCode}

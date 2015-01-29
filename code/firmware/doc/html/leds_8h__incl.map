@@ -1,0 +1,6 @@
+<map id="driver/leds.h" name="driver/leds.h">
+<area shape="rect" id="node2" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="229,80,319,107"/>
+<area shape="rect" id="node8" href="$common_8h.html" title="some useful definitions " alt="" coords="380,80,501,107"/>
+<area shape="rect" id="node3" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="189,155,319,181"/>
+<area shape="rect" id="node9" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="423,155,496,181"/>
+</map>

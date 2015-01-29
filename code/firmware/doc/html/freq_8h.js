@@ -1,0 +1,25 @@
+var freq_8h =
+[
+    [ "ENC_CTRL_CS", "freq_8h.html#a6510399fc27f848237a75e87e3ce7a8e", null ],
+    [ "ENC_CTRL_DDR", "freq_8h.html#a44ac214864a1f7ade32daf7ab95750ec", null ],
+    [ "ENC_CTRL_PORT", "freq_8h.html#aa0e073dfe978a7f7110e19d9e6c8ab81", null ],
+    [ "LED0", "freq_8h.html#ae8d5b4e7e2d9d21caaa4744d385d7cc7", null ],
+    [ "LED1", "freq_8h.html#a8aa85ae9867fabf70ec72cd3bf6fb6b9", null ],
+    [ "LED2", "freq_8h.html#ad09fe5bf321b9a2de26bd5e5b9af6424", null ],
+    [ "LED3", "freq_8h.html#a4b7ff8e253a7412f83deba3a447028a8", null ],
+    [ "LED4", "freq_8h.html#ae048837f20072bed467332b1bd1da9fa", null ],
+    [ "LED5", "freq_8h.html#aefae505e2588183f1921a9e840b16044", null ],
+    [ "LED6", "freq_8h.html#ab922b15d42b90025c9e13c087d86ce81", null ],
+    [ "LED7", "freq_8h.html#a35bf8e7b8f9e9257ca184bbe0c95e929", null ],
+    [ "LED_ALL", "freq_8h.html#ab7100c807e8c6a90956cf37e07d1ffc8", null ],
+    [ "LED_DDR", "freq_8h.html#a2eb4252b35effe1188cb61b6124fa617", null ],
+    [ "LED_OFF", "freq_8h.html#a80700bb63bd56ebabbb4728aa433fd29", null ],
+    [ "LED_PIN", "freq_8h.html#ab4553be4db9860d940f81d7447173b2f", null ],
+    [ "LED_PORT", "freq_8h.html#a663daa01e565aee93c6f20c5845b90b4", null ],
+    [ "SPI_DDR", "freq_8h.html#a8b07abe3c166558485851f24f2141dc9", null ],
+    [ "SPI_MISO", "freq_8h.html#ab142cc77dfa97010c9d2b616d0992b64", null ],
+    [ "SPI_MOSI", "freq_8h.html#a7dbebab5f7dd57885adccf6711b13592", null ],
+    [ "SPI_PORT", "freq_8h.html#a8112c985f7444e82198d7571ce0a9160", null ],
+    [ "SPI_SCK", "freq_8h.html#a750ca7c9b92cfc9e57272ff3a49db48b", null ],
+    [ "SPI_SS", "freq_8h.html#a81f0aae3c3a2adba06ac3b802b38915a", null ]
+];

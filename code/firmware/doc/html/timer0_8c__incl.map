@@ -1,0 +1,8 @@
+<map id="driver/timer0.c" name="driver/timer0.c">
+<area shape="rect" id="node2" href="$timer0_8h.html" title="specific header file for timer/counter 0 " alt="" coords="248,80,345,107"/>
+<area shape="rect" id="node13" href="$leds_8h.html" title="specific header file for leds driver " alt="" coords="370,80,458,107"/>
+<area shape="rect" id="node3" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="247,155,336,181"/>
+<area shape="rect" id="node9" href="$common_8h.html" title="some useful definitions " alt="" coords="360,155,481,181"/>
+<area shape="rect" id="node4" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="188,229,317,256"/>
+<area shape="rect" id="node10" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="423,229,496,256"/>
+</map>

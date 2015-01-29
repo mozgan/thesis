@@ -1,0 +1,7 @@
+<map id="enc_read_op" name="enc_read_op">
+<area shape="rect" id="node2" href="$enc28j60_8c.html#a6ae6915ab4363819a3492bd8509263e5" title="start ENC28J60 pin to write or to read " alt="" coords="164,5,237,32"/>
+<area shape="rect" id="node3" href="$enc28j60_8c.html#a63e6002e7cdb7ac2433fcb6fb4fc0b16" title="stop the ENC28J60 pin " alt="" coords="163,56,238,83"/>
+<area shape="rect" id="node4" href="$spi_8c.html#a14e73be3886cad229afafebc98c4c66d" title="read from address " alt="" coords="149,107,252,133"/>
+<area shape="rect" id="node5" href="$spi_8c.html#a656cafaeae25fbe893fb580a06360dba" title="write the data to SPI " alt="" coords="165,157,237,184"/>
+<area shape="rect" id="node6" href="$spi_8c.html#afd67d0a4eba1be3a38b0234274f477d8" title="write an operation to address " alt="" coords="153,208,248,235"/>
+</map>

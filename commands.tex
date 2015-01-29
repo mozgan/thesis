@@ -1,0 +1,82 @@
+
+
+\newcommand{\mat}[1]{\ensuremath{\mathbf #1}}
+\newcommand{\set}[1]{\ensuremath{\mathbf #1}}
+\newcommand{\cset}[1]{\ensuremath{\mathbf{\mathcal #1}}}
+\renewcommand{\vec}[1]{\ensuremath{\mathbf #1}}
+
+\newcommand{\nth}[1]{\ensuremath{#1^\mathrm{th}}}
+\newcommand{\fst}[1]{\ensuremath{#1^\mathrm{st}}}
+\newcommand{\snd}[1]{\ensuremath{#1^\mathrm{nd}}}
+
+\newcommand{\argmax}[1]{\ensuremath{\arg\hspace{-0.4ex}\max_{\hspace*{-3.0ex}#1}}}
+\newcommand{\argmin}[1]{\ensuremath{\arg\min_{\hspace*{-4.0ex}#1}}}
+
+\newcommand{\argmaxi}[1]{\ensuremath{\arg\hspace{-0.4ex}\max_{#1}}}
+\newcommand{\argmini}[1]{\ensuremath{\arg\hspace{-0.4ex}\min_{#1}}}
+
+% \newcommand{\argmin}[1]{\ensuremath{\begin{array}[t]{c} \arg \min \\
+% \vspace*{-0.1ex} #1 \end{array}}}
+
+\newcommand{\NP}{\ensuremath{\mathcal{NP}}}
+\newcommand{\PP}{\ensuremath{\mathcal{P}}}
+\newcommand{\e}[2]{\ensuremath{\{#1,#2\}}}
+\newcommand{\tup}[1]{\ensuremath{\langle#1\rangle}}
+\newcommand{\bigO}[1]{\ensuremath{\mathcal{O}\left(#1\right)}}
+
+\newcommand{\trans}[1]{\ensuremath{{#1}^\top}}
+\newcommand{\diag}[1]{\ensuremath{\mathrm{diag}\left(#1\right)}}
+
+\newcommand{\eq}[1]{equation \ref{#1}}
+\newcommand{\Eq}[1]{equation \ref{#1}}
+\newcommand{\fig}[1]{figure \ref{#1}}
+\newcommand{\Fig}[1]{figure \ref{#1}}
+\newcommand{\chap}[1]{chapter \ref{#1}}
+\newcommand{\Chap}[1]{chapter \ref{#1}}
+\newcommand{\sect}[1]{section \ref{#1}}
+\newcommand{\Sect}[1]{section \ref{#1}}
+
+\newcommand{\bydefn}{\ensuremath{\stackrel{\bigtriangleup}{=}}}
+\newcommand{\elmat}[2]{\ensuremath{#1 \odot #2}}
+
+\newcommand{\prune}[1]{\ensuremath{\mathrm{prune}\left(#1\right)}}
+
+\newcommand{\labelfig}[2]{\parbox[b]{0.2in}{\Large#1\normalsize\vspace{#2}}}
+% \newcommand{\labelfig}[1]{\parbox[b]{0.2in}{#1\vspace{1.8in}}}
+
+% \newcommand{\emptyset}{\ensuremath{\O}}
+
+\renewcommand{\Re}{\mathbb{R}}
+
+\newcommand{\incfig}[3]{\ifx\pdfoutput\undefined
+                          \epsfig{#1.eps,#2,#3}
+                        \else
+                          \epsfig{#1.eps,#2,#3}
+                        \fi}
+          
+% Eigene Befehle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\todo}[1]{
+      {\colorbox{red}{ TODO: #1 }}
+}
+
+\newcommand{\todotext}[1]{
+      {\color{red} TODO: #1} \normalfont
+}
+
+\newcommand{\info}[1]{
+      {\colorbox{blue}{ (INFO: #1)}}
+}
+
+\newcommand{\infotext}[1]{
+      {\color{blue}{ (INFO: #1)}}
+}
+
+% Hinweis auf Programme in Datei
+\newcommand{\datei}[1]{
+      {\ttfamily{#1}}
+}
+
+\newcommand{\code}[1]{
+      {\small \ttfamily {#1}}
+}
+

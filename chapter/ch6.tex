@@ -1,0 +1,14 @@
+\chapter{Fazit}
+
+Es werden sowohl elektrotechnische als auch hardwarenahe Kentnisse für diese Arbeit vorausgesetzt. Außerdem werden spezifische Kentnisse über Funktionalität von Computer-Netzwerken benötigt. \smallskip \smallskip
+
+Das Thema war sehr interessant. Nachdem jedoch die unterste Ebene angesprochen wird, wie beispielsweise die TCP/IP-Stacks für die Kommunikationsprotokolle, war die Umsetzung umso komplizierter. Eine große Hilfe bieten die RFC-Dokumente für die Kommunikationsprotokolle. \smallskip \smallskip
+
+Die erste Hürde dieser Arbeit war der Entwurf des Boards, das auf einem Optokoppler, dem ATmega16-Mikrocontroller und auf dem ENC28J60-Mikrochip basiert. Danach wurde das kontinu-ierlich-sinusförmige Signal mit Hilfe des Optokopplers digitalisiert. Um die Frequenzen vom digitalisierten Signal zu messen, wurde der Timer-Treiber im CTC-Modus mit Input-Capture-Betrieb für den Mikrocontroller geschrieben. Der ENC28J60-Mikrochip wurde über die SPI-Schnittstelle angesteuert. Anschließend wurden ARP-, MAC- bzw. TCP/IP-Stacks realisiert. Die Eingangs- bzw. Ausgangssignale wurden schrittweise nach jeder Operation mit dem Osziloskop gemessen. Zur Fehlerbehebung bzw. zum Debuggen wurden Leds verwendet, um zu sehen, ob das Programm bzw. die Firmware auf dem richrigen Pfad läuft. Nach der Abfrage, wie groß der Frequenzwert ist, wurde der mittlere Frequenzwert von letzten zehn Frequentwerte ausgerechnet und als Antwort an den Server übermittelt. \smallskip \smallskip
+
+\chapter{Zukünftige Entwicklung}
+
+Das Projekt ist so umfangreich, dass es mit Zusatzfunktionen ausgestattet werden kann. Beispielsweise könnte ein DHCP-Dienst realisiert werden, sodass der ENC28J60-Mikrochip eine automatische Beziehung der IP-Adresse vom DHCP-Server annimmt, um eine manuelle Eingabe der IP-Adresse zu automatisieren. \smallskip \smallskip
+
+Eine weitere Entwicklung wäre ein NTP-Client. Dieser ermöglicht die Sammlung der Datenpakete von verschiedenen Standorten. Jedes Datenpaket wird mit einem lokalen Zeitstempel versehen. Anhand des Zeitstempels kann der Standort des Datenpakets eruiert werden. Sollten jedoch Datenpakete aus mehreren Standorte in der gleichen Zeitzone ankommen, müssen die Datenpakete mit einer weiteren Kennung gestempelt werden, damit der Server eindeutig identifizieren kann, aus welchem Standort das Datenpaket stammt. Um dieses zu realisieren, müsste jedes Board an verschiedenen Standorten mit einem RTC-Chip ausgestattet sein. \smallskip \smallskip
+

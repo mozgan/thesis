@@ -1,0 +1,296 @@
+\hypertarget{main_8c}{\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+}
+
+
+main program  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$avr/io.\+h$>$}\\*
+{\ttfamily \#include $<$util/delay.\+h$>$}\\*
+{\ttfamily \#include $<$include/common.\+h$>$}\\*
+{\ttfamily \#include $<$board/freq.\+h$>$}\\*
+{\ttfamily \#include $<$lib/buffer.\+h$>$}\\*
+{\ttfamily \#include $<$driver/leds.\+h$>$}\\*
+{\ttfamily \#include $<$device/enc28j60.\+h$>$}\\*
+{\ttfamily \#include $<$driver/net.\+h$>$}\\*
+{\ttfamily \#include $<$driver/icp.\+h$>$}\\*
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a6821bafc3c88dfb2e433a095df9940c6}{B\+U\+F\+\_\+\+S\+I\+Z\+E}~150
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_aedb0558a93e7ad957d3186ba04578ca0}{trigger} (uint16\+\_\+t icr)
+\begin{DoxyCompactList}\small\item\em return-\/function from input capture interrupt routine \end{DoxyCompactList}\item 
+int \hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em main function (program start) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf} \mbox{[}\hyperlink{main_8c_a6821bafc3c88dfb2e433a095df9940c6}{B\+U\+F\+\_\+\+S\+I\+Z\+E}\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{main_8c_ae0177d7710b28f95720d54e2b1d37d65}{mymac} \mbox{[}6\mbox{]} = \{0xab,0xbc,0x6f,0x55,0x1c,0xc2\}
+\item 
+uint8\+\_\+t \hyperlink{main_8c_a60983d0ff040975723414a8f21375c77}{myip} \mbox{[}4\mbox{]} = \{192, 168, 0, 3\}
+\item 
+uint16\+\_\+t \hyperlink{main_8c_a2a1db0f1bf946876695219e06137df07}{myport} = 1200
+\item 
+volatile uint16\+\_\+t \hyperlink{main_8c_a1ec087735cb1d1e6da0c0a04fff747ba}{plen}
+\item 
+volatile uint16\+\_\+t \hyperlink{main_8c_a2e83eeb88a19fb6982fa4bce5235b0ad}{new}
+\item 
+volatile uint16\+\_\+t \hyperlink{main_8c_ae4e727681d08ae8c9618bb026716a532}{old}
+\item 
+volatile uint16\+\_\+t \hyperlink{main_8c_ace59d817931830cd94f04ac3f853bb76}{diff}
+\item 
+volatile float \hyperlink{main_8c_a74796ad69e9a5ee4a0448582ba5b1bb7}{freq}
+\item 
+volatile int \hyperlink{main_8c_a602b7b139bc6244cb09fedcdbb06e85e}{snd} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main program 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 15\+:20\+:15 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000019}{Bug}]
+\begin{DoxyEnumerate}
+\item signal has not readed! 
+\end{DoxyEnumerate}\end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000019}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{main_8c_source}{main.\+c}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8c_a6821bafc3c88dfb2e433a095df9940c6}{\index{main.\+c@{main.\+c}!B\+U\+F\+\_\+\+S\+I\+Z\+E@{B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{B\+U\+F\+\_\+\+S\+I\+Z\+E@{B\+U\+F\+\_\+\+S\+I\+Z\+E}!main.\+c@{main.\+c}}
+\subsubsection[{B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+U\+F\+\_\+\+S\+I\+Z\+E~150}}\label{main_8c_a6821bafc3c88dfb2e433a095df9940c6}
+
+
+Definition at line 43 of file main.\+c.
+
+
+
+Referenced by main().
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+
+main function (program start) 
+
+\begin{DoxyReturn}{Returns}
+returns zero if S\+U\+C\+C\+E\+S\+S, otherwise non-\/zero 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file main.\+c.
+
+
+
+References arp\+\_\+answer(), buf, B\+U\+F\+\_\+\+S\+I\+Z\+E, buffer\+\_\+init(), buffer\+\_\+medium(), diff, echo\+\_\+reply(), enc\+\_\+init(), enc\+\_\+init\+\_\+phy(), enc\+\_\+recv\+\_\+packet(), eth\+\_\+arp(), eth\+\_\+ip(), F\+\_\+\+C\+P\+U, freq, I\+C\+M\+P\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+V, I\+C\+M\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+P, icp\+\_\+init(), I\+P\+\_\+\+P\+R\+O\+T\+O\+\_\+\+I\+C\+M\+P\+\_\+\+V, I\+P\+\_\+\+P\+R\+O\+T\+O\+\_\+\+P, I\+P\+\_\+\+P\+R\+O\+T\+O\+\_\+\+U\+D\+P\+\_\+\+V, leds\+\_\+init(), L\+E\+N, myip, mymac, myport, net\+\_\+init(), plen, snd, trigger(), T\+R\+U\+E, and udp\+\_\+reply().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8c_aedb0558a93e7ad957d3186ba04578ca0}{\index{main.\+c@{main.\+c}!trigger@{trigger}}
+\index{trigger@{trigger}!main.\+c@{main.\+c}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void trigger (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{icr}
+\end{DoxyParamCaption}
+)}}\label{main_8c_aedb0558a93e7ad957d3186ba04578ca0}
+
+
+return-\/function from input capture interrupt routine 
+
+
+\begin{DoxyParams}{Parameters}
+{\em icr} & input capture timer state \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file main.\+c.
+
+
+
+References buffer\+\_\+write(), led\+\_\+toggle(), L\+E\+N, old, and snd.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{main_8c_aedb0558a93e7ad957d3186ba04578ca0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8c_aef549d19c508d258c21e95059b300d13}{\index{main.\+c@{main.\+c}!buf@{buf}}
+\index{buf@{buf}!main.\+c@{main.\+c}}
+\subsubsection[{buf}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t buf\mbox{[}{\bf B\+U\+F\+\_\+\+S\+I\+Z\+E}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{main_8c_aef549d19c508d258c21e95059b300d13}
+
+
+Definition at line 45 of file main.\+c.
+
+
+
+Referenced by checksum(), and main().
+
+\hypertarget{main_8c_ace59d817931830cd94f04ac3f853bb76}{\index{main.\+c@{main.\+c}!diff@{diff}}
+\index{diff@{diff}!main.\+c@{main.\+c}}
+\subsubsection[{diff}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\+\_\+t diff}}\label{main_8c_ace59d817931830cd94f04ac3f853bb76}
+
+
+Definition at line 54 of file main.\+c.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8c_a74796ad69e9a5ee4a0448582ba5b1bb7}{\index{main.\+c@{main.\+c}!freq@{freq}}
+\index{freq@{freq}!main.\+c@{main.\+c}}
+\subsubsection[{freq}]{\setlength{\rightskip}{0pt plus 5cm}volatile float freq}}\label{main_8c_a74796ad69e9a5ee4a0448582ba5b1bb7}
+
+
+Definition at line 55 of file main.\+c.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8c_a60983d0ff040975723414a8f21375c77}{\index{main.\+c@{main.\+c}!myip@{myip}}
+\index{myip@{myip}!main.\+c@{main.\+c}}
+\subsubsection[{myip}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t myip\mbox{[}4\mbox{]} = \{192, 168, 0, 3\}}}\label{main_8c_a60983d0ff040975723414a8f21375c77}
+
+
+Definition at line 48 of file main.\+c.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8c_ae0177d7710b28f95720d54e2b1d37d65}{\index{main.\+c@{main.\+c}!mymac@{mymac}}
+\index{mymac@{mymac}!main.\+c@{main.\+c}}
+\subsubsection[{mymac}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t mymac\mbox{[}6\mbox{]} = \{0xab,0xbc,0x6f,0x55,0x1c,0xc2\}}}\label{main_8c_ae0177d7710b28f95720d54e2b1d37d65}
+
+
+Definition at line 47 of file main.\+c.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8c_a2a1db0f1bf946876695219e06137df07}{\index{main.\+c@{main.\+c}!myport@{myport}}
+\index{myport@{myport}!main.\+c@{main.\+c}}
+\subsubsection[{myport}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t myport = 1200}}\label{main_8c_a2a1db0f1bf946876695219e06137df07}
+
+
+Definition at line 49 of file main.\+c.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8c_a2e83eeb88a19fb6982fa4bce5235b0ad}{\index{main.\+c@{main.\+c}!new@{new}}
+\index{new@{new}!main.\+c@{main.\+c}}
+\subsubsection[{new}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\+\_\+t new}}\label{main_8c_a2e83eeb88a19fb6982fa4bce5235b0ad}
+
+
+Definition at line 53 of file main.\+c.
+
+\hypertarget{main_8c_ae4e727681d08ae8c9618bb026716a532}{\index{main.\+c@{main.\+c}!old@{old}}
+\index{old@{old}!main.\+c@{main.\+c}}
+\subsubsection[{old}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\+\_\+t old}}\label{main_8c_ae4e727681d08ae8c9618bb026716a532}
+
+
+Definition at line 53 of file main.\+c.
+
+
+
+Referenced by trigger().
+
+\hypertarget{main_8c_a1ec087735cb1d1e6da0c0a04fff747ba}{\index{main.\+c@{main.\+c}!plen@{plen}}
+\index{plen@{plen}!main.\+c@{main.\+c}}
+\subsubsection[{plen}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\+\_\+t plen}}\label{main_8c_a1ec087735cb1d1e6da0c0a04fff747ba}
+
+
+Definition at line 51 of file main.\+c.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8c_a602b7b139bc6244cb09fedcdbb06e85e}{\index{main.\+c@{main.\+c}!snd@{snd}}
+\index{snd@{snd}!main.\+c@{main.\+c}}
+\subsubsection[{snd}]{\setlength{\rightskip}{0pt plus 5cm}volatile int snd = 0}}\label{main_8c_a602b7b139bc6244cb09fedcdbb06e85e}
+
+
+Definition at line 57 of file main.\+c.
+
+
+
+Referenced by main(), and trigger().
+

@@ -1,0 +1,205 @@
+\hypertarget{udp_8c}{\section{src/udp.c File Reference}
+\label{udp_8c}\index{src/udp.\+c@{src/udp.\+c}}
+}
+
+
+udp communication  
+
+
+{\ttfamily \#include \char`\"{}udp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\\*
+Include dependency graph for udp.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udp_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{udp_8c_af78c25c84b170f47fc907e752c1409b4}{make\+\_\+socket} (const char $\ast$hostname, unsigned int port)
+\begin{DoxyCompactList}\small\item\em make the socket \end{DoxyCompactList}\item 
+void \hyperlink{udp_8c_a165726b24e152a113fdde7732b667b5f}{binding} (void)
+\begin{DoxyCompactList}\small\item\em bind to host \end{DoxyCompactList}\item 
+void \hyperlink{udp_8c_a0b55dfe2fd6924e01624911af758ae03}{communication} (void)
+\begin{DoxyCompactList}\small\item\em make the communication with host (recv or send the datagrams) \end{DoxyCompactList}\item 
+void \hyperlink{udp_8c_a1926d0bf833c9a35c53d2a2f601faa60}{close\+\_\+socket} (void)
+\begin{DoxyCompactList}\small\item\em close the socket if not to use in future \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+udp communication 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+23.\+08.\+2013 22\+:01\+:48 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{udp_8c_a165726b24e152a113fdde7732b667b5f}{\index{udp.\+c@{udp.\+c}!binding@{binding}}
+\index{binding@{binding}!udp.\+c@{udp.\+c}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void binding (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{udp_8c_a165726b24e152a113fdde7732b667b5f}
+
+
+bind to host 
+
+bind to the socket 
+
+Definition at line \hyperlink{udp_8c_source_l00060}{60} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00058}{serv\+\_\+addr}, \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, and \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{udp_8c_a165726b24e152a113fdde7732b667b5f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udp_8c_a1926d0bf833c9a35c53d2a2f601faa60}{\index{udp.\+c@{udp.\+c}!close\+\_\+socket@{close\+\_\+socket}}
+\index{close\+\_\+socket@{close\+\_\+socket}!udp.\+c@{udp.\+c}}
+\subsubsection[{close\+\_\+socket}]{\setlength{\rightskip}{0pt plus 5cm}void close\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{udp_8c_a1926d0bf833c9a35c53d2a2f601faa60}
+
+
+close the socket if not to use in future 
+
+close the open socket 
+
+Definition at line \hyperlink{udp_8c_source_l00108}{108} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, and \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{udp_8c_a1926d0bf833c9a35c53d2a2f601faa60_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udp_8c_a0b55dfe2fd6924e01624911af758ae03}{\index{udp.\+c@{udp.\+c}!communication@{communication}}
+\index{communication@{communication}!udp.\+c@{udp.\+c}}
+\subsubsection[{communication}]{\setlength{\rightskip}{0pt plus 5cm}void communication (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{udp_8c_a0b55dfe2fd6924e01624911af758ae03}
+
+
+make the communication with host (recv or send the datagrams) 
+
+communication 
+
+Definition at line \hyperlink{udp_8c_source_l00070}{70} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00057}{dest\+\_\+addr}, \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, and \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{udp_8c_a0b55dfe2fd6924e01624911af758ae03_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udp_8c_af78c25c84b170f47fc907e752c1409b4}{\index{udp.\+c@{udp.\+c}!make\+\_\+socket@{make\+\_\+socket}}
+\index{make\+\_\+socket@{make\+\_\+socket}!udp.\+c@{udp.\+c}}
+\subsubsection[{make\+\_\+socket}]{\setlength{\rightskip}{0pt plus 5cm}void make\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{hostname, }
+\item[{unsigned int}]{port}
+\end{DoxyParamCaption}
+)}}\label{udp_8c_af78c25c84b170f47fc907e752c1409b4}
+
+
+make the socket 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hostname} & get the hostname \\
+\hline
+{\em port} & port number to connection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{udp_8c_source_l00037}{37} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00057}{dest\+\_\+addr}, \hyperlink{udp_8h_source_l00055}{h\+\_\+name}, \hyperlink{udp_8h_source_l00058}{serv\+\_\+addr}, \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}, and \hyperlink{udp_8h_source_l00045}{u\+\_\+long}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{udp_8c_af78c25c84b170f47fc907e752c1409b4_cgraph}
+\end{center}
+\end{figure}
+
+

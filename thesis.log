@@ -1,0 +1,4557 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.23)  27 JUN 2014 15:27
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**thesis
+(./thesis.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./scheme.tex (./ICTthesis.cls
+Document Class: ICTthesis 
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count91
+\U@D=\dimen111
+)
+\l@naustrian = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 92.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count93
+\calc@Bcount=\count94
+\calc@Adimen=\dimen114
+\calc@Bdimen=\dimen115
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count95
+\calc@Cskip=\skip45
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks16
+\c@AM@survey=\count96
+\AM@templatesizebox=\box27
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count97
+\float@exts=\toks17
+\float@box=\box28
+\@float@everytoks=\toks18
+\@floatcapt=\box29
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip46
+\subfigcapskip=\skip47
+\subfigcaptopadj=\dimen116
+\subfigbottomskip=\skip48
+\subfigcapmargin=\dimen117
+\subfiglabelskip=\skip49
+\c@subfigure=\count98
+\c@lofdepth=\count99
+\c@subtable=\count100
+\c@lotdepth=\count101
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip50
+\subfig@bottom=\skip51
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/refcount.sty
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))))
+\c@section@level=\count102
+LaTeX Info: Redefining \ref on input line 353.
+LaTeX Info: Redefining \pageref on input line 353.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks19
+\verbatim@line=\toks20
+\verbatim@in@stream=\read1
+)
+\tab@position=\count103
+\tab@size=\count104
+\listing@line=\count105
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip52
+\f@ncyO@elh=\skip53
+\f@ncyO@erh=\skip54
+\f@ncyO@olh=\skip55
+\f@ncyO@orh=\skip56
+\f@ncyO@elf=\skip57
+\f@ncyO@erf=\skip58
+\f@ncyO@olf=\skip59
+\f@ncyO@orf=\skip60
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip61
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen118
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count106
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count107
+\leftroot@=\count108
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count109
+\DOTSCASE@=\count110
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
+\dotsspace@=\muskip10
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks22
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks23
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks24
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count118
+\l_MT_multwidth_dim=\dimen127
+\origjot=\skip64
+\l_MT_shortvdotswithinadjustabove_dim=\dimen128
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen129
+\l_MT_above_intertext_sep=\dimen130
+\l_MT_below_intertext_sep=\dimen131
+\l_MT_above_shortintertext_sep=\dimen132
+\l_MT_below_shortintertext_sep=\dimen133
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count119
+\rotFPtop=\skip65
+\rotFPbot=\skip66
+\rot@float@box=\box32
+\rot@mess@toks=\toks26
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip67
+\bibsep=\skip68
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count120
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/germbib/bibgerm.sty
+Package: bibgerm 2000/08/18 v0.1 Support for mixed language bibliographies
+
+** Macros for german `BibTeX'ing added to Style Option `german' 20 Apr 1993 **
+** idea and languages `german' and `USenglish' implemented by M. Wallmeier **
+** Modified for LaTeX 2e and german.sty 2.5b by A. Scherer 1 Nov 1995 **
+** Modified for ngerman.sty and babel.sty by H. Harders 21 August 2000 **)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read2
+\epsfframemargin=\dimen134
+\epsfframethickness=\dimen135
+\epsfrsize=\dimen136
+\epsftmp=\dimen137
+\epsftsize=\dimen138
+\epsfxsize=\dimen139
+\epsfysize=\dimen140
+\pspoints=\dimen141
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count121
+\uc@combtoks=\toks27
+\uc@combtoksb=\toks28
+\uc@temptokena=\toks29
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box33
+\fn@width=\dimen142
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
+Package: tablefootnote 2012/07/29 v1.0h Table foot notes (HMM)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count122
+)
+\etb@tempcnta=\count123
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package hobsub Info: Skipping package `letltxmacro' (already loaded).
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package hobsub Info: Skipping package `refcount' (already loaded).
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen143
+\Hy@linkcounter=\count124
+\Hy@pagecounter=\count125
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count126
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4319.
+Package hyperref Info: Option `plainpages' set `false' on input line 4319.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing ON on input line 4461.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2012/07/25 v1.38 Bibliographical back referencing
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+\c@Hy@tempcnt=\count127
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen144
+\Fld@menulength=\count128
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing ON on input line 6308.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count129
+\c@Item=\count130
+\c@Hfootnote=\count131
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count132
+\c@bookmark@seq@number=\count133
+\Hy@SectionHShift=\skip69
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multibib/multibib.sty
+Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
+\mb@biblabelwidth=\count134
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen147
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count135
+\mult@box=\box34
+\multicol@leftmargin=\dimen148
+\c@unbalance=\count136
+\c@collectmore=\count137
+\doublecol@number=\count138
+\multicoltolerance=\count139
+\multicolpretolerance=\count140
+\full@width=\dimen149
+\page@free=\dimen150
+\premulticols=\dimen151
+\postmulticols=\dimen152
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box35
+\last@line=\box36
+\mult@rightbox=\box37
+\mult@grightbox=\box38
+\mult@gfirstbox=\box39
+\mult@firstbox=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\c@columnbadness=\count141
+\c@finalcolumnbadness=\count142
+\last@try=\dimen153
+\multicolovershoot=\dimen154
+\multicolundershoot=\dimen155
+\mult@nat@firstbox=\box58
+\colbreak@box=\box59
+\multicol@sort@counter=\count143
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen156
+\extrarowheight=\dimen157
+\NC@list=\toks32
+\extratabsurround=\skip72
+\backup@length=\skip73
+)
+\TX@col@width=\dimen158
+\TX@old@table=\dimen159
+\TX@old@col=\dimen160
+\TX@target=\dimen161
+\TX@delta=\dimen162
+\TX@cols=\count144
+\TX@ftn=\toks33
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip74
+\LTright=\skip75
+\LTpre=\skip76
+\LTpost=\skip77
+\LTchunksize=\count145
+\LTcapwidth=\dimen163
+\LT@head=\box60
+\LT@firsthead=\box61
+\LT@foot=\box62
+\LT@lastfoot=\box63
+\LT@cols=\count146
+\LT@rows=\count147
+\c@LT@tables=\count148
+\c@LT@chunks=\count149
+\LT@p@ftn=\toks34
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks35
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box64
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen164
+\pgf@y=\dimen165
+\pgf@xa=\dimen166
+\pgf@ya=\dimen167
+\pgf@xb=\dimen168
+\pgf@yb=\dimen169
+\pgf@xc=\dimen170
+\pgf@yc=\dimen171
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count150
+\c@pgf@countb=\count151
+\c@pgf@countc=\count152
+\c@pgf@countd=\count153
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count154
+\pgfsyssoftpath@bigbuffer@items=\count155
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count156
+\pgfmath@box=\box65
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count157
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
+\pgf@picture@serial@count=\count158
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen191
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen195
+\pgf@sys@shading@range@num=\count159
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box69
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box70
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count160
+\pgfplotmarksize=\dimen200
+)
+\tikz@lastx=\dimen201
+\tikz@lasty=\dimen202
+\tikz@lastxsaved=\dimen203
+\tikz@lastysaved=\dimen204
+\tikzleveldistance=\dimen205
+\tikzsiblingdistance=\dimen206
+\tikz@figbox=\box71
+\tikz@tempbox=\box72
+\tikztreelevel=\count161
+\tikznumberofchildren=\count162
+\tikznumberofcurrentchild=\count163
+\tikz@fig@count=\count164
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count165
+\pgfmatrixcurrentcolumn=\count166
+\pgf@matrix@numberofcolumns=\count167
+)
+\tikz@expandcount=\count168
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen207
+\pgfdecoratedremainingdistance=\dimen208
+\pgfdecoratedinputsegmentcompleteddistance=\dimen209
+\pgfdecoratedinputsegmentremainingdistance=\dimen210
+\pgf@decorate@distancetomove=\dimen211
+\pgf@decorate@repeatstate=\count169
+\pgfdecorationsegmentamplitude=\dimen212
+\pgfdecorationsegmentlength=\dimen213
+)
+\tikz@lib@dec@box=\box73
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen214
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+\@indexfile=\write4
+\openout4 = `thesis.idx'.
+
+
+Writing index file thesis.idx
+Package hyperref Info: Option `colorlinks' set `true' on input line 212.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks44
+\MT@count=\count170
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen215
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count171
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip78
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2011/09/17 v1.7 Yet another Pygments shim for LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count172
+\FV@InFile=\read4
+\FV@TabBox=\box74
+\c@FancyVerbLine=\count173
+\FV@StepNumber=\count174
+\FV@OutFile=\write5
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "thesis.w18")...executed.
+
+
+(./thesis.w18)
+runsystem(rm -- "thesis.w18")...executed.
+
+)
+\minted@bgbox=\box75
+\minted@code=\write6
+\@float@every@listing=\toks45
+\c@listing=\count175
+)
+runsystem(which pygmentize && touch thesis.aex)...executed.
+
+runsystem(rm thesis.aex)...executed.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count176
+\lst@gtempboxa=\box76
+\lst@token=\toks46
+\lst@length=\count177
+\lst@currlwidth=\dimen216
+\lst@column=\count178
+\lst@pos=\count179
+\lst@lostspace=\dimen217
+\lst@width=\dimen218
+\lst@newlines=\count180
+\lst@lineno=\count181
+\lst@maxwidth=\dimen219
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count182
+\lst@skipnumbers=\count183
+\lst@framebox=\box77
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+))
+(./commands.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count184
+\c@Blindtext=\count185
+\c@blind@countparstart=\count186
+\blind@countxx=\count187
+\blindtext@numBlindtext=\count188
+\blind@countyy=\count189
+\c@blindlist=\count190
+\c@blindlistlevel=\count191
+\c@blindlist@level=\count192
+\blind@listitem=\count193
+\c@blind@listcount=\count194
+\c@blind@levelcount=\count195
+\blind@mathformula=\count196
+\blind@Mathformula=\count197
+\c@blind@randomcount=\count198
+\c@blind@randommax=\count199
+\c@blind@pangramcount=\count200
+\c@blind@pangrammax=\count201
+)
+\@auxoutliteratur=\write7
+
+(./literatur.aux)
+\openout7 = `literatur.aux'.
+
+\@auxoutweblink=\write8
+ (./weblink.aux)
+\openout8 = `weblink.aux'.
+
+ (./thesis.aux (./title/titlepage.aux)
+(./title/abstract.aux) (./title/index.aux) (./chapter/ch1.aux)
+(./chapter/ch2.aux) (./chapter/ch3.aux) (./chapter/ch4.aux) (./chapter/ch5.aux)
+(./chapter/ch6.aux) (./chapter/appendix.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 18.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=460.93463pt
+* \textheight=654.41338pt
+* \oddsidemargin=11.38109pt
+* \evensidemargin=-17.07164pt
+* \topmargin=-14.22636pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=103.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count202
+\scratchdimen=\dimen220
+\scratchbox=\box78
+\nofMPsegments=\count203
+\nofMParguments=\count204
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count205
+\MPscratchDim=\dimen221
+\MPnumerator=\count206
+\makeMPintoPDFobject=\count207
+\everyMPtoPDFconversion=\toks48
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box79
+
+
+bibgerm.sty: babel.sty detected
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+
+Package ucs Warning: ***************************
+(ucs)                You seem to have loaded inputencoding utf8
+(ucs)                (LaTeX kernel UTF-8) instead of utf8x (ucs.sty UTF-8).
+(ucs)                Probably you are compiling a document written for a
+(ucs)                pre-august-2004 ucs.sty.
+(ucs)                ***************************
+(ucs)                Please use \usepackage[utf8x]{inputenc} instead of
+(ucs)                \usepackage[utf8]{inputenc}.
+(ucs)                ***************************
+(ucs)                If you should really want to use ucs.sty and kernel's
+(ucs)                utf8.def together, use \usepackage[utf8x,utf8]{inputenc}
+(ucs)                to disable compatibility mode
+(ucs)                ***************************
+(ucs)                Activating compatibility mode.
+(ucs)                ***************************
+(ucs)                 on input line 18.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)
+Package backref Info: ** backref set up for natbib ** on input line 18.
+Package hyperref Info: Link coloring ON on input line 18.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write9
+\openout9 = `thesis.out'.
+
+ ABD: EveryShipout initializing macros
+LaTeX Info: Redefining \microtypecontext on input line 18.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+runsystem(pygmentize -S default -f latex > thesis.pyg)...executed.
+
+
+(./thesis.pyg)
+\c@lstlisting=\count208
+\openout2 = `title/titlepage.aux'.
+
+ (./title/titlepage.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [1
+
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+\openout2 = `title/abstract.aux'.
+
+
+(./title/abstract.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+ [2
+
+
+]
+\openout2 = `title/index.aux'.
+
+ (./title/index.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 2.
+ (./thesis.toc
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+ [3
+
+
+
+])
+\tf@toc=\write10
+\openout10 = `thesis.toc'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+ [4]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+
+Underfull \hbox (badness 10000) detected at line 19
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 27
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 49
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 51
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 55
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 60
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][][]
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 62.
+[5
+
+]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 66
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 69
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 85
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 87
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 89
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 90
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 93
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 95
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 97
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 99
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 101
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 102
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 106
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 107
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 108
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 109
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 110
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 114
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 116
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 117
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 121
+[][][]
+ []
+
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+ [6]
+\openout2 = `chapter/ch1.aux'.
+
+ (./chapter/ch1.tex
+Kapitel 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 24.
+[1
+
+
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 37.
+[2]
+\openout2 = `chapter/ch2.aux'.
+
+ (./chapter/ch2.tex
+Kapitel 2.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
+[3
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 56.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 115.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 115.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 115.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 115.
+[4]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+
+Overfull \hbox (0.86302pt too wide) in paragraph at lines 119--120
+\T1/ppl/m/n/10.95 (-20) Heutzutage kom-mu-ni-ziert ein Groÿ-teil der Men-schen 
+über Ether-net oder über Wireless-Communi-
+ []
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 138.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 138.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 146.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 146.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 146.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 146.
+[5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 148.
+ <pictures/osi.png, id=288, 1241.63875pt x 1380.15625pt>
+File: pictures/osi.png Graphic file (type png)
+
+<use pictures/osi.png>
+Package pdftex.def Info: pictures/osi.png used on input line 169.
+(pdftex.def)             Requested size: 401.50061pt x 446.67117pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 171.
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 177.
+[7 <./pictures/osi.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 207.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 207.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 207.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 207.
+[8]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+ <pictures/tcp_ip.png, id=310, 1199.48125pt x 986.68625pt>
+File: pictures/tcp_ip.png Graphic file (type png)
+
+<use pictures/tcp_ip.png>
+Package pdftex.def Info: pictures/tcp_ip.png used on input line 234.
+(pdftex.def)             Requested size: 331.2402pt x 271.01585pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 237.
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 246.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 246.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 246.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 246.
+[10 <./pictures/tcp_ip.png>]
+<pictures/musterprotokolle.png, id=332, 898.35625pt x 735.74875pt>
+File: pictures/musterprotokolle.png Graphic file (type png)
+
+<use pictures/musterprotokolle.png>
+Package pdftex.def Info: pictures/musterprotokolle.png used on input line 252.
+(pdftex.def)             Requested size: 245.91783pt x 200.74297pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 261.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 261.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 265.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 266.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 266.
+[11 <./pictures/musterprotokolle.png>]
+<pictures/internet-protokolle.png, id=345, 1477.52pt x 682.55pt>
+File: pictures/internet-protokolle.png Graphic file (type png)
+
+<use pictures/internet-protokolle.png>
+Package pdftex.def Info: pictures/internet-protokolle.png used on input line 27
+1.
+(pdftex.def)             Requested size: 451.6913pt x 250.93565pt.
+
+<pictures/ethernet73.png, id=348, 370.38374pt x 189.70876pt>
+File: pictures/ethernet73.png Graphic file (type png)
+
+<use pictures/ethernet73.png>
+Package pdftex.def Info: pictures/ethernet73.png used on input line 290.
+(pdftex.def)             Requested size: 250.94205pt x 130.49101pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 296.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 296.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 296.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 296.
+[12 <./pictures/internet-protokolle.png>]
+<pictures/ethernet-II.png, id=362, 1044.90375pt x 168.63pt>
+File: pictures/ethernet-II.png Graphic file (type png)
+
+<use pictures/ethernet-II.png>
+Package pdftex.def Info: pictures/ethernet-II.png used on input line 304.
+(pdftex.def)             Requested size: 451.69144pt x 73.27368pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 314.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 314.
+[13 <./pictures/ethernet73.png> <./pictures/ethernet-II.png>]
+<pictures/mac_adress.png, id=379, 459.7175pt x 170.6375pt>
+File: pictures/mac_adress.png Graphic file (type png)
+
+<use pictures/mac_adress.png>
+Package pdftex.def Info: pictures/mac_adress.png used on input line 345.
+(pdftex.def)             Requested size: 190.71606pt x 70.26384pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 352.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 352.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 352.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 352.
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 369.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 369.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 369.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 369.
+[15 <./pictures/mac_adress.png>]
+<pictures/arp-protokoll.png, id=402, 620.3175pt x 557.08125pt>
+File: pictures/arp-protokoll.png Graphic file (type png)
+
+<use pictures/arp-protokoll.png>
+Package pdftex.def Info: pictures/arp-protokoll.png used on input line 405.
+(pdftex.def)             Requested size: 235.87454pt x 210.78354pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 415.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 415.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 415.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 415.
+[16] <pictures/ip-protokoll.png, id=415, 1192.455pt x 629.35126pt>
+File: pictures/ip-protokoll.png Graphic file (type png)
+
+<use pictures/ip-protokoll.png>
+Package pdftex.def Info: pictures/ip-protokoll.png used on input line 419.
+(pdftex.def)             Requested size: 451.68198pt x 215.80118pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 428.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 428.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 428.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 428.
+[17 <./pictures/arp-protokoll.png> <./pictures/ip-protokoll.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 454.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 454.
+[18] <pictures/icmp.png, id=437, 676.5275pt x 385.44pt>
+File: pictures/icmp.png Graphic file (type png)
+
+<use pictures/icmp.png>
+Package pdftex.def Info: pictures/icmp.png used on input line 458.
+(pdftex.def)             Requested size: 260.9852pt x 150.56212pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 498.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 498.
+[19 <./pictures/icmp.png>] <pictures/tcp.png, id=452, 908.39375pt x 638.385pt>
+File: pictures/tcp.png Graphic file (type png)
+
+<use pictures/tcp.png>
+Package pdftex.def Info: pictures/tcp.png used on input line 504.
+(pdftex.def)             Requested size: 357.3354pt x 250.93681pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 518.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 518.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 518.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 518.
+[20 <./pictures/tcp.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 540.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 540.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 540.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 540.
+[21] <pictures/udp.png, id=469, 677.53125pt x 457.71pt>
+File: pictures/udp.png Graphic file (type png)
+ <use pictures/udp.png>
+Package pdftex.def Info: pictures/udp.png used on input line 544.
+(pdftex.def)             Requested size: 301.13344pt x 200.75049pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 562.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 562.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 595.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 595.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 598.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 598.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 598.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 598.
+[22 <./pictures/udp.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 601.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 601.
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 5.
+)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+
+<pictures/tcp_udp_szenarien.png, id=487, 1345.025pt x 1031.855pt>
+File: pictures/tcp_udp_szenarien.png Graphic file (type png)
+
+<use pictures/tcp_udp_szenarien.png>
+Package pdftex.def Info: pictures/tcp_udp_szenarien.png used on input line 619.
+
+(pdftex.def)             Requested size: 451.67903pt x 361.3436pt.
+
+Overfull \hbox (3.01936pt too wide) in paragraph at lines 619--620
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 624.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 624.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 624.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 624.
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 638.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 638.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 638.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 638.
+[24 <./pictures/tcp_udp_szenarien.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 668.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 668.
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+[25])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 683.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 683.
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 694.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 694.
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 716.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 716.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 716.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 716.
+[26]
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 744.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 744.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 751.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 751.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 751.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 751.
+[27]
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+[28])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 826.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 826.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 829.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 829.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 829.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 829.
+[29]
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 863.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 863.
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 8.
+[30])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 909.
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge             -P "verboptions= ,
+frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+[31]
+\openout2 = `chapter/ch3.aux'.
+
+ (./chapter/ch3.tex
+Kapitel 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+<pictures/entwurf.png, id=555, 680.5425pt x 554.07pt>
+File: pictures/entwurf.png Graphic file (type png)
+
+<use pictures/entwurf.png>
+Package pdftex.def Info: pictures/entwurf.png used on input line 9.
+(pdftex.def)             Requested size: 311.16342pt x 250.93553pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+ [32
+
+
+
+ <./pictures/entwurf.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 39.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 39.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 39.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 39.
+[33]
+\openout2 = `chapter/ch4.aux'.
+
+ (./chapter/ch4.tex
+Kapitel 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+<pictures/optokoppler.png, id=580, 351.714pt x 160.6803pt>
+File: pictures/optokoppler.png Graphic file (type png)
+
+<use pictures/optokoppler.png>
+Package pdftex.def Info: pictures/optokoppler.png used on input line 17.
+(pdftex.def)             Requested size: 451.72191pt x 203.76994pt.
+
+Overfull \hbox (3.06224pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 27.
+[34
+
+
+
+] <pictures/netzteil.png, id=589, 657.4161pt x 160.6803pt>
+File: pictures/netzteil.png Graphic file (type png)
+
+<use pictures/netzteil.png>
+Package pdftex.def Info: pictures/netzteil.png used on input line 32.
+(pdftex.def)             Requested size: 451.69159pt x 110.41103pt.
+
+Overfull \hbox (3.03192pt too wide) in paragraph at lines 32--33
+ [][] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 37.
+<pictures/JTAGICEmkII.jpg, id=593, 303.1325pt x 227.85126pt>
+File: pictures/JTAGICEmkII.jpg Graphic file (type jpg)
+
+<use pictures/JTAGICEmkII.jpg>
+Package pdftex.def Info: pictures/JTAGICEmkII.jpg used on input line 45.
+(pdftex.def)             Requested size: 267.00256pt x 200.75656pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+[35 <./pictures/optokoppler.png> <./pictures/netzteil.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 92.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 95.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 95.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 95.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 95.
+[36 <./pictures/JTAGICEmkII.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
+[37]
+Overfull \hbox (13.95447pt too wide) in paragraph at lines 107--118
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 125--125
+[]|\T1/ppl/m/n/10.95 (+20) On-Chip-Debugging. Bie-tet die Mög-li-che-keit ein
+ []
+
+
+Overfull \hbox (17.60077pt too wide) in paragraph at lines 123--134
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 138.
+[38]
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge             -P "verboptions
+= ,frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed
+.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+ <pictures/avr.png, id=641, 300.6432pt x 290.0436pt>
+File: pictures/avr.png Graphic file (type png)
+
+<use pictures/avr.png>
+Package pdftex.def Info: pictures/avr.png used on input line 153.
+(pdftex.def)             Requested size: 361.37097pt x 356.34433pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 158.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 158.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 161.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 161.
+[39 <./pictures/avr.png>]
+<pictures/timer.png, id=654, 401.3394pt x 174.4116pt>
+File: pictures/timer.png Graphic file (type png)
+ <use pictures/timer.png>
+Package pdftex.def Info: pictures/timer.png used on input line 171.
+(pdftex.def)             Requested size: 451.71391pt x 195.73619pt.
+
+Overfull \hbox (3.05424pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 196.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 196.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 196.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 196.
+[40 <./pictures/timer.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 214.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+[41] <pictures/spi.png, id=681, 472.76625pt x 275.0275pt>
+File: pictures/spi.png Graphic file (type png)
+
+<use pictures/spi.png>
+Package pdftex.def Info: pictures/spi.png used on input line 230.
+(pdftex.def)             Requested size: 346.29956pt x 200.75581pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 249.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 249.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 252.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 252.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 252.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 252.
+[42 <./pictures/spi.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 254.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 261.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 261.
+
+<pictures/enc28j60.png, id=693, 371.9496pt x 127.677pt>
+File: pictures/enc28j60.png Graphic file (type png)
+
+<use pictures/enc28j60.png>
+Package pdftex.def Info: pictures/enc28j60.png used on input line 269.
+(pdftex.def)             Requested size: 451.7006pt x 155.58647pt.
+
+Overfull \hbox (3.04094pt too wide) in paragraph at lines 269--270
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 276.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 276.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 276.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 276.
+[43 <./pictures/enc28j60.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 322.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 322.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 322.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 322.
+[44]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 326.
+ <pictures/enc28j60_memory.png, id=720, 457.2282pt x 301.6068pt>
+File: pictures/enc28j60_memory.png Graphic file (type png)
+
+<use pictures/enc28j60_memory.png>
+Package pdftex.def Info: pictures/enc28j60_memory.png used on input line 333.
+(pdftex.def)             Requested size: 426.59923pt x 281.06207pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 338.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 338.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 338.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 338.
+[45 <./pictures/enc28j60_memory.png>]
+<pictures/enc28j60_puffer.png, id=728, 408.0846pt x 468.3096pt>
+File: pictures/enc28j60_puffer.png Graphic file (type png)
+
+<use pictures/enc28j60_puffer.png>
+Package pdftex.def Info: pictures/enc28j60_puffer.png used on input line 343.
+(pdftex.def)             Requested size: 331.25034pt x 381.44386pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 348.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 348.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 348.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 348.
+[46 <./pictures/enc28j60_puffer.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+[47]
+\openout2 = `chapter/ch5.aux'.
+
+ (./chapter/ch5.tex
+Kapitel 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+<pictures/fazit/optocoupler.png, id=745, 993.7125pt x 493.845pt>
+File: pictures/fazit/optocoupler.png Graphic file (type png)
+
+<use pictures/fazit/optocoupler.png>
+Package pdftex.def Info: pictures/fazit/optocoupler.png used on input line 9.
+(pdftex.def)             Requested size: 301.11829pt x 160.59567pt.
+
+<pictures/fazit/sinus.png, id=746, 522.95375pt x 383.4325pt>
+File: pictures/fazit/sinus.png Graphic file (type png)
+
+<use pictures/fazit/sinus.png>
+Package pdftex.def Info: pictures/fazit/sinus.png used on input line 18.
+(pdftex.def)             Requested size: 207.41917pt x 152.08313pt.
+
+<pictures/fazit/input.png, id=747, 524.96124pt x 383.4325pt>
+File: pictures/fazit/input.png Graphic file (type png)
+
+<use pictures/fazit/input.png>
+Package pdftex.def Info: pictures/fazit/input.png used on input line 22.
+(pdftex.def)             Requested size: 207.41917pt x 151.49805pt.
+
+<pictures/fazit/digital.png, id=748, 527.9725pt x 383.4325pt>
+File: pictures/fazit/digital.png Graphic file (type png)
+
+<use pictures/fazit/digital.png>
+Package pdftex.def Info: pictures/fazit/digital.png used on input line 26.
+(pdftex.def)             Requested size: 207.41917pt x 150.63216pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 34.
+ [48
+
+
+
+ <./pictures/fazit/optocoupler.png>]
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l text -f latex -F tokenmerge             -P "verboptions
+= ,frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed
+.
+
+
+(./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+[49 <./pictures/fazit/sinus.png> <./pictures/fazit/input.png> <./pictures/fazit
+/digital.png>])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge             -P "verboptions
+= ,frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed
+.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 102.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 102.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 102.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 102.
+[50]
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge             -P "verboptions
+= ,frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed
+.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge             -P "verboptions
+= ,frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed
+.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+\openout5 = `thesis.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge             -P "verboptions
+= ,frame=single,fontsize=\scriptsize " -o thesis.out.pyg thesis.pyg)...executed
+.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(rm thesis.pyg)...executed.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 41.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 41.
+[51]
+\openout2 = `chapter/ch6.aux'.
+
+ (./chapter/ch6.tex
+Kapitel 6.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+Overfull \hbox (1.6537pt too wide) in paragraph at lines 7--8
+\T1/ppl/m/n/10.95 (-20) ATmega16-Mikrocontroller und auf dem ENC28J60-Mikrochip
+ ba-siert. Da-nach wur-de das kontinu-
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+[52
+
+
+
+]
+Kapitel 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 42.
+ [53
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 45.
+[54
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+ (./literatur.bbl
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 88.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 88.
+ [55
+
+])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 61.
+ (./weblink.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+[56]
+Underfull \hbox (badness 2065) in paragraph at lines 14--14
+[]\T1/ppl/m/n/10.95 (+20) Belegung rj45-stecker für ether-net.  [][]$\T1/pcr/m/
+n/10.95 http : / / www . elektronik-[]kompendium . de /
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 75--75
+[]\T1/ppl/m/n/10.95 (+20) N. De-vel-opers.  Avr-du-de user ma-nu-al.  [][]$\T1/
+pcr/m/n/10.95 http : / / www . nongnu . org / avrdude /
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+[57
+
+]
+Underfull \hbox (badness 1253) in paragraph at lines 81--81
+[]\T1/ppl/m/n/10.95 (+20) Grüninger.  In-duk-ti-on durch dre-hen ei-ner spu-le.
+  [][]$\T1/pcr/m/n/10.95 http : / / www . schule-[]bw . de /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\T1/pcr/m/n/10.95 unterricht / faecher / physik / online _ material / e _ lehre
+ _ 2 / induktion /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]\T1/ppl/m/n/10.95 (+20) S. Knight.  Ether-net num-bers.  [][]$\T1/pcr/m/n/10.
+95 http : / / www . iana . org / assignments /
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 68.
+[58]
+\openout2 = `chapter/appendix.aux'.
+
+ (./chapter/appendix.tex
+Anhang A.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 13.
+[59
+
+
+
+]
+<./pictures/eagle/bachelorarbeit.pdf, id=878, page=1, 1215.36554pt x 867.9054pt
+>
+File: ./pictures/eagle/bachelorarbeit.pdf Graphic file (type pdf)
+ <use ./pictures/eagle/bachelorarbeit.pdf, page 1>
+Package pdftex.def Info: ./pictures/eagle/bachelorarbeit.pdf, page1 used on inp
+ut line 13.
+(pdftex.def)             Requested size: 1215.36258pt x 867.90329pt.
+File: ./pictures/eagle/bachelorarbeit.pdf Graphic file (type pdf)
+
+<use ./pictures/eagle/bachelorarbeit.pdf, page 1>
+Package pdftex.def Info: ./pictures/eagle/bachelorarbeit.pdf, page1 used on inp
+ut line 13.
+(pdftex.def)             Requested size: 837.58316pt x 598.12701pt.
+File: ./pictures/eagle/bachelorarbeit.pdf Graphic file (type pdf)
+
+<use ./pictures/eagle/bachelorarbeit.pdf, page 1>
+Package pdftex.def Info: ./pictures/eagle/bachelorarbeit.pdf, page1 used on inp
+ut line 13.
+(pdftex.def)             Requested size: 837.58316pt x 598.12701pt.
+File: ./pictures/eagle/bachelorarbeit.pdf Graphic file (type pdf)
+
+<use ./pictures/eagle/bachelorarbeit.pdf, page 1>
+Package pdftex.def Info: ./pictures/eagle/bachelorarbeit.pdf, page1 used on inp
+ut line 13.
+(pdftex.def)             Requested size: 837.58316pt x 598.12701pt.
+File: ./pictures/eagle/bachelorarbeit.pdf Graphic file (type pdf)
+
+<use ./pictures/eagle/bachelorarbeit.pdf, page 1>
+Package pdftex.def Info: ./pictures/eagle/bachelorarbeit.pdf, page1 used on inp
+ut line 13.
+(pdftex.def)             Requested size: 837.58316pt x 598.12701pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 13.
+ [60 <./pictures/eagle/bachelorarbeit.pdf>]
+Anhang B.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 20.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+runsystem(pygmentize -l text -f latex -F tokenmerge             -P "verboptions
+= ,fontsize=\scriptsize " -o thesis.out.pyg ./code/firmware/README)...executed.
+
+(./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+ [61
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+runsystem(pygmentize -l text -f latex -F tokenmerge             -P "verboptions
+= " -o thesis.out.pyg ./code/LICENSE)...executed.
+
+(./thesis.out.pyg
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 2.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
+)
+runsystem(rm thesis.out.pyg)...executed.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 36.
+[62
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 42.
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/ma
+in.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+[63
+
+
+])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/bo
+ard/freq.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+[64])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/de
+vice/atmega16.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+[65]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 92.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 92.
+[66])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/de
+vice/enc28j60.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
+[67]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 109.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 109.
+[68]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 189.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 189.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 189.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 189.
+[69]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 269.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 269.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 269.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 269.
+[70]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 349.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 349.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 349.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 349.
+[71]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 429.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 429.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 429.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 429.
+[72]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 509.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 509.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 509.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 509.
+[73])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/enc28j60.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 75.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 75.
+[74]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 155.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 155.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 155.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 155.
+[75]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 235.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 235.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 235.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 235.
+[76]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 315.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 315.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 315.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 315.
+[77]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 395.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 395.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 395.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 395.
+[78])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/icp.h)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/icp.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 31.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 31.
+[79])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/leds.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+[80])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/leds.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 45.
+[81])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/net.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+[82]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+[83]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 171.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 171.
+[84])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/net.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 27.
+[85]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 107.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 107.
+[86]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 187.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 187.
+[87]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+[88])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/spi.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 36.
+[89])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/spi.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+[90])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/timer0.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 35.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 35.
+[91])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/dr
+iver/timer0.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 67.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 67.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 67.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 67.
+[92])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/in
+clude/common.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 51.
+[93])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/in
+clude/stdbool.h)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/li
+b/buffer.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+[94])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/li
+b/buffer.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 33.
+[95])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/BS
+Dmakefile)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/GN
+Umakefile)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/co
+nfig.mk)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 14.
+[96])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/Ma
+kefile.mk)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/firmware/Ma
+kefile)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+[97]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 77.
+[98]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+[99]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 225.
+[100])
+runsystem(rm thesis.out.pyg)...executed.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 128.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 128.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 128.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 128.
+[101]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 131.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 131.
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/daemon/src/
+main.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+[102])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/daemon/src/
+udp.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 43.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 43.
+[103])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/daemon/src/
+udp.c)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+[104])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/daemon/src/
+error.h)...executed.
+
+ (./thesis.out.pyg
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+[105])
+runsystem(rm thesis.out.pyg)...executed.
+
+runsystem(pygmentize -l c -f latex -F tokenmerge            -P linenos -P "verb
+options= ,fontsize=\scriptsize ,tabsize=4" -o thesis.out.pyg ./code/daemon/src/
+error.c)...executed.
+
+ (./thesis.out.pyg)
+runsystem(rm thesis.out.pyg)...executed.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.68861pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+[106])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+ (./thesis.aux (./title/titlepage.aux) (./title/abstract.aux)
+(./title/index.aux) (./chapter/ch1.aux) (./chapter/ch2.aux) (./chapter/ch3.aux)
+(./chapter/ch4.aux) (./chapter/ch5.aux) (./chapter/ch6.aux)
+(./chapter/appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: B59EC884A93DF1584B4009AE2E94B50D;2661.
+ ) 
+Here is how much of TeX's memory you used:
+ 25871 strings out of 493315
+ 438921 string characters out of 6137904
+ 592819 words of memory out of 5000000
+ 27807 multiletter control sequences out of 15000+600000
+ 80705 words of font info for 350 fonts, out of 8000000 for 9000
+ 959 hyphenation exceptions out of 8191
+ 58i,18n,55p,1242b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/urw/courier/ucrro8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
+w/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palat
+ino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/upl
+r8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplri8a.pf
+b>
+Output written on thesis.pdf (112 pages, 1865078 bytes).
+PDF statistics:
+ 1243 PDF objects out of 1440 (max. 8388607)
+ 1042 compressed objects within 11 object streams
+ 344 named destinations out of 1000 (max. 500000)
+ 53755 words of extra memory for PDF output out of 61914 (max. 10000000)
+

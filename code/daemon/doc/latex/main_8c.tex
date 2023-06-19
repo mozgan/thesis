@@ -1,0 +1,156 @@
+\hypertarget{main_8c}{\section{src/main.c File Reference}
+\label{main_8c}\index{src/main.\+c@{src/main.\+c}}
+}
+
+
+udp communication  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}udp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\\*
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{usage} (void)
+\begin{DoxyCompactList}\small\item\em usage of program how to call this \end{DoxyCompactList}\item 
+int \hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em main -\/ start program \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{main_8c_adc0221a311d122f5c20b9ce7982f95ee}{optstr} = \char`\"{}h\+:p\+:\char`\"{}
+\item 
+char $\ast$ \hyperlink{main_8c_a8a8a6db7728221fbc910782969be77c2}{prg\+\_\+name} = \char`\"{}$<$not yet set$>$\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+udp communication 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+23.\+08.\+2013 22\+:00\+:56 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{main_8c_source}{main.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+main -\/ start program 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & count of arguments \\
+\hline
+{\em argv} & vector of arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int (if success returns E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S, otherwise returns E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E) 
+\end{DoxyReturn}
+$<$ hostname to bind 
+
+Definition at line \hyperlink{main_8c_source_l00060}{60} of file \hyperlink{main_8c_source}{main.\+c}.
+
+
+
+References \hyperlink{udp_8c_source_l00060}{binding()}, \hyperlink{udp_8c_source_l00108}{close\+\_\+socket()}, \hyperlink{udp_8c_source_l00070}{communication()}, \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}, \hyperlink{main_8c_source_l00034}{optstr}, \hyperlink{udp_8h_source_l00061}{port\+\_\+nr}, \hyperlink{main_8c_source_l00035}{prg\+\_\+name}, and \hyperlink{main_8c_source_l00041}{usage()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{main_8c_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}{\index{main.\+c@{main.\+c}!usage@{usage}}
+\index{usage@{usage}!main.\+c@{main.\+c}}
+\subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void usage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_ae8605e2b78cd4a81b6c6b5c30cb7366a}
+
+
+usage of program how to call this 
+
+
+
+Definition at line \hyperlink{main_8c_source_l00041}{41} of file \hyperlink{main_8c_source}{main.\+c}.
+
+
+
+References \hyperlink{main_8c_source_l00035}{prg\+\_\+name}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8c_adc0221a311d122f5c20b9ce7982f95ee}{\index{main.\+c@{main.\+c}!optstr@{optstr}}
+\index{optstr@{optstr}!main.\+c@{main.\+c}}
+\subsubsection[{optstr}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ optstr = \char`\"{}h\+:p\+:\char`\"{}}}\label{main_8c_adc0221a311d122f5c20b9ce7982f95ee}
+options 
+
+Definition at line \hyperlink{main_8c_source_l00034}{34} of file \hyperlink{main_8c_source}{main.\+c}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+\hypertarget{main_8c_a8a8a6db7728221fbc910782969be77c2}{\index{main.\+c@{main.\+c}!prg\+\_\+name@{prg\+\_\+name}}
+\index{prg\+\_\+name@{prg\+\_\+name}!main.\+c@{main.\+c}}
+\subsubsection[{prg\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ prg\+\_\+name = \char`\"{}$<$not yet set$>$\char`\"{}}}\label{main_8c_a8a8a6db7728221fbc910782969be77c2}
+program name 
+
+Definition at line \hyperlink{main_8c_source_l00035}{35} of file \hyperlink{main_8c_source}{main.\+c}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}, and \hyperlink{main_8c_source_l00041}{usage()}.
+

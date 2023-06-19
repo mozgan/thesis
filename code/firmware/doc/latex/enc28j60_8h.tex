@@ -1,0 +1,3019 @@
+\hypertarget{enc28j60_8h}{\section{device/enc28j60.h File Reference}
+\label{enc28j60_8h}\index{device/enc28j60.\+h@{device/enc28j60.\+h}}
+}
+
+
+registers of E\+N\+C28\+J60 device  
+
+
+{\ttfamily \#include $<$board/freq.\+h$>$}\\*
+{\ttfamily \#include $<$include/common.\+h$>$}\\*
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+Include dependency graph for enc28j60.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{enc28j60_8h_a15b16c1073c60f0be255caf0a60251be}{A\+D\+D\+R\+\_\+\+M\+A\+S\+K}~0x1\+F
+\item 
+\#define \hyperlink{enc28j60_8h_ac60597badc76e6f2c5ce64d862746c67}{B\+A\+N\+K\+\_\+\+M\+A\+S\+K}~0x60
+\item 
+\#define \hyperlink{enc28j60_8h_af95ee1390b9678f34abf0c4e19bfb051}{S\+P\+R\+D\+\_\+\+M\+A\+S\+K}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a72ac42db94893a565a52821f5ae95856}{E\+I\+E}~0x1\+B
+\item 
+\#define \hyperlink{enc28j60_8h_a43a65160b20f5e730c46db801286999a}{I\+N\+T\+I\+E}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a53aa835c371385eab675a3a582a8ba2d}{P\+K\+T\+I\+E}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a6b8293f220c6dcf823b6d8220562b81e}{D\+M\+A\+I\+E}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_a1904f4ac5f3a38c3f32feea615ab44e2}{L\+I\+N\+K\+I\+E}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_af85ac7f4899bd56c36ed2a0ca53df422}{T\+X\+I\+E}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_a0ac64e1af64188179c8ebe57cb882fff}{E\+I\+E\+\_\+\+W\+O\+L\+I\+E}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_ac2f309bd5f52f64ecbb04e394b834a44}{T\+X\+E\+R\+I\+E}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_ad13655c69641fe3b2c0cc90fd3d42084}{R\+X\+E\+R\+I\+E}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_a303aba585a8da3f8dc80315dc94cb0e5}{E\+I\+R}~0x1\+C
+\item 
+\#define \hyperlink{enc28j60_8h_a567e73e06d0b2569df3aa2c53c4540bb}{P\+K\+T\+I\+F}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a706233f0bf7e747aaf1d08be4f37d233}{D\+M\+A\+I\+F}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_a19701d42e07672f373b42b235e30a6ea}{L\+I\+N\+K\+I\+F}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_ac765fb3c77a3c11ddd4e7ac9ea7b4bed}{T\+X\+I\+F}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_a93413173c7231eb9d949db8f2018608e}{E\+I\+R\+\_\+\+W\+O\+L\+I\+F}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a7a0f9cb1aef73f027e31bd01426f2d7a}{T\+X\+E\+R\+I\+F}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_adb3411c72b313ba961c0cf775cf9db02}{R\+X\+E\+R\+I\+F}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_ad05043a04b51b3953259c24040e2e99f}{E\+S\+T\+A\+T}~0x1\+D
+\item 
+\#define \hyperlink{enc28j60_8h_afeeffe52c8fd59db7c61cf8b02042dbf}{I\+N\+T}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a6e7f68840c27418fc87dd0be1bfb21f3}{B\+U\+F\+E\+R}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a9058dd6a31f3b04d9c4ad81a6280793f}{E\+S\+T\+A\+T\+\_\+\+R}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_afde62340528064ffed7b85d4a044426b}{L\+A\+T\+E\+C\+O\+L}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_adc44bbf15dfbdb380389cef57af88b6d}{R\+X\+B\+U\+S\+Y}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a772c979aff8b1cfc6d64612c7b6d1a73}{T\+X\+A\+B\+R\+T}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_ab8108f29c6eb17edb95d8e3e86269ae2}{C\+L\+K\+R\+D\+Y}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_a86d77e305cc8d23f335fb733870a873c}{E\+C\+O\+N2}~0x1\+E
+\item 
+\#define \hyperlink{enc28j60_8h_aa9c885d30bc1d99229e0cd88766799d0}{A\+U\+T\+O\+I\+N\+C}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a2749c0d85a8e2a2686eb6c05ccae2087}{P\+K\+T\+D\+E\+C}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a1cccb4a1ed06b0b6f0fb15f586a6e907}{P\+W\+R\+S\+V}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_ada0a40b35b71cc4b342ef240dd0fbc59}{E\+C\+O\+N2\+\_\+\+R}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_adcc697ac647d091ace83a79ec0df74c0}{V\+R\+P\+F}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_a461b29cd8a06dc2f331f664eb0f9165a}{E\+C\+O\+N1}~0x1\+F
+\item 
+\#define \hyperlink{enc28j60_8h_a24074ab99aa1bbaa1c6ea4cca511f3ef}{T\+X\+R\+S\+T}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_ad1aa5e4bcaed448c4d161b97b8ac1282}{R\+X\+R\+S\+T}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a0cc14b13f53f941a87199fd98de97df7}{D\+M\+A\+S\+T}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_a09feccd25a7f699bf70204cd868a35e8}{C\+S\+U\+M\+E\+N}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_ac97c83c67cb160908e4f640370155c2a}{T\+X\+R\+T\+S}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_a92d07eb614520d8f8d7a5c9b76803582}{E\+\_\+\+R\+X\+E\+N}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a13585e5eab60890dea97428a87aaedb8}{B\+S\+E\+L1}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_a1320d47d304bce64ebb5494c1538a220}{B\+S\+E\+L0}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_a4a7bf3d4c8a72b0e09ffd6f866ae60f9}{B\+A\+N\+K0}~(0x00)
+\item 
+\#define \hyperlink{enc28j60_8h_a04e5f3a270ebf2b1a1121b38fef2a62e}{E\+R\+D\+P\+T\+L}~(0x00 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a63011487c82b6f6d1fcc749b55e5511e}{E\+R\+D\+P\+T\+H}~(0x01 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a684dfa8cb9097ee131a2c9d2ee65d573}{E\+W\+R\+P\+T\+L}~(0x02 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a7bda37d486623efbe3ac2055198d356a}{E\+W\+R\+P\+T\+H}~(0x03 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a45a38712c4d618bb5cb013e3d781db46}{E\+T\+X\+S\+T\+L}~(0x04 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_adfc695618aa5a32160cc9e2b0234c714}{E\+T\+X\+S\+T\+H}~(0x05 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_ad79a19cc60b7dc19cec9df691e658714}{E\+T\+X\+N\+D\+L}~(0x06 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a24597e8d914818adae20bf39c4ac7d0e}{E\+T\+X\+N\+D\+H}~(0x07 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a387e1ac675539e1c0c7f158f59eafd51}{E\+R\+X\+S\+T\+L}~(0x08 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_ad4c2a40d74ded1e155f7eb18effb76ba}{E\+R\+X\+S\+T\+H}~(0x09 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a9fa6592ccdfa66aa5a1854dd95b6329c}{E\+R\+X\+N\+D\+L}~(0x0\+A $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a19ee05a22525dcd9e4124734a3aec1b0}{E\+R\+X\+N\+D\+H}~(0x0\+B $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a0e4345b59cc531bd8daee2cd8c8e906b}{E\+R\+X\+R\+D\+P\+T\+L}~(0x0\+C $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a1668b845f0bc37dbb515c2358357a690}{E\+R\+X\+R\+D\+P\+T\+H}~(0x0\+D $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a7d78e648da085c6fdf006d75b3c99a7a}{E\+R\+X\+W\+R\+P\+T\+L}~(0x0\+E $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a9c9ff6952a5cb0c0b420bc6a405d726c}{E\+R\+X\+W\+R\+P\+T\+H}~(0x0\+F $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_ae7f7aba80e78f4086dc761608c2da2c4}{E\+D\+M\+A\+S\+T\+L}~(0x10 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a0b279b45e0cfbc32896ec3b68694cf71}{E\+D\+M\+A\+S\+T\+H}~(0x11 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a2138d173a354731c15f3ae6ce5d02b56}{E\+D\+M\+A\+N\+D\+L}~(0x12 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_ac8866e9f637f6349bb28c6d9152ad658}{E\+D\+M\+A\+N\+D\+H}~(0x13 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a6959cbf10d897b0eac13a15928f87cac}{E\+D\+M\+A\+D\+S\+T\+L}~(0x14 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_ab24279deee959774407b010264cb700a}{E\+D\+M\+A\+D\+S\+T\+H}~(0x15 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a9008ca9117933ffaed4f71a0c467ae07}{E\+D\+M\+A\+C\+S\+L}~(0x16 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a8db6aa7fd9a0f04a045c04f67523621d}{E\+D\+M\+A\+C\+S\+H}~(0x17 $\vert$ B\+A\+N\+K0)
+\item 
+\#define \hyperlink{enc28j60_8h_a8d7bd7d547b12ee3c6a267ad57ab46d3}{B\+A\+N\+K1}~(0x20)
+\item 
+\#define \hyperlink{enc28j60_8h_ad1d8a24d50000168964dc660074bf044}{E\+H\+T0}~(0x00 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_acf17605d4551244f07220b4fdf778b38}{E\+H\+T1}~(0x01 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a2e1a60e1a93a4e6f288d89c825ff1f26}{E\+H\+T2}~(0x02 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a1644d7f0cca924f726f81a03423eded6}{E\+H\+T3}~(0x03 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_ad983f328c5a5606195cdf5ace8768335}{E\+H\+T4}~(0x04 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a2788e2e180096007012a6eb7cf6ec951}{E\+H\+T5}~(0x05 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a4eb1b56144bc6cf300486b8e6da871d3}{E\+H\+T6}~(0x06 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a469059ed79caab2c9733f6044a318d3f}{E\+H\+T7}~(0x07 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a7231ae8160a585d71a3e96d93358970c}{E\+P\+M\+M0}~(0x08 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a1a0b4ba274784466f2094833facc6792}{E\+P\+M\+M1}~(0x09 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a045c306adf0b93289ad90721439ff811}{E\+P\+M\+M2}~(0x0\+A $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_af60e219282fed81ae6e08fb65aad48dc}{E\+P\+M\+M3}~(0x0\+B $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_acc1614ff436a3aee2b85320db84d28ba}{E\+P\+M\+M4}~(0x0\+C $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_ad2c168fc15ba3b06d8ebbf0713ed9e6b}{E\+P\+M\+M5}~(0x0\+D $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a8300c5c4aa4c2296ea27686c149006d6}{E\+P\+M\+M6}~(0x0\+E $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_aabe6953f6fb64613948c418b1764dc20}{E\+P\+M\+M7}~(0x0\+F $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a63e21e6d3b5926b59207f79ff66f977d}{E\+P\+M\+C\+S\+L}~(0x10 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_aea835cc109c3eb4cfedc6f3ad4d7c410}{E\+P\+M\+C\+S\+H}~(0x11 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_aef01aecd2f0097fc30bf29fe24ab1d05}{E\+P\+M\+O\+L}~(0x14 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a432a59eb0f0ccd8d231c82b039dc113d}{E\+P\+M\+O\+H}~(0x15 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_ab7da9e76b01d840f66c49ae0cdcb91f9}{E\+W\+O\+L\+I\+E}~(0x16 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a2e40c6ad151e1b77b892b538ff3ea98f}{E\+W\+O\+L\+I\+R}~(0x17 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_ac5ff36d9b43977e5dd6548170ec93ddc}{E\+R\+X\+F\+C\+O\+N}~(0x18 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a029f8b5f05e4e5182aa9a73e31c4a4f0}{E\+P\+K\+T\+C\+N\+T}~(0x19 $\vert$ B\+A\+N\+K1)
+\item 
+\#define \hyperlink{enc28j60_8h_a0bd289e48aaf00c5d668738b94c0ddf4}{B\+A\+N\+K2}~(0x40)
+\item 
+\#define \hyperlink{enc28j60_8h_ab64add14e73a7308bd32343c45caf79d}{M\+A\+C\+O\+N1}~(0x00 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a01501b400de6174cd44cd52cf9da0950}{M\+A\+C\+O\+N2}~(0x01 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a37e80f66673c39e7db383e0b11a159ea}{M\+A\+C\+O\+N3}~(0x02 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a53c0d8f74a3ba17d1337e297ef749a22}{M\+A\+C\+O\+N4}~(0x03 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a0aa3bb65f69bc921f3b4020410f7efc2}{M\+A\+B\+B\+I\+P\+G}~(0x04 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a8daa7f7ef529828ef4cc3d90a48ff730}{M\+A\+I\+P\+G\+L}~(0x06 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a70b21ea01d623429bf3bd1abf583c80f}{M\+A\+I\+P\+G\+H}~(0x07 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_af78bae411a3ae7fe363ad63e93a2e618}{M\+A\+C\+L\+C\+O\+N1}~(0x08 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_acf3356546b7e518a4cf8b368d48a2710}{M\+A\+C\+L\+C\+O\+N2}~(0x09 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a4ed708903a040c0ea4fc071707863ffc}{M\+A\+M\+X\+F\+L\+L}~(0x0\+A $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a294e961d04adc72cbc8b866bb6506e8d}{M\+A\+M\+X\+F\+L\+H}~(0x0\+B $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a816b343221c59f459624c8195e148f7a}{M\+A\+P\+H\+S\+U\+P}~(0x0\+D $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a6106a2077dfc25ff781bdb7af193168a}{M\+I\+C\+O\+N}~(0x11 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a6ca2ed513306c83432028d8ad3d49354}{M\+I\+C\+M\+D}~(0x12 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a01fb4e4ea7a7b71cbf2b341b0ebd77a3}{M\+I\+R\+E\+G\+A\+D\+R}~(0x14 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a18aba35be6189e6150a9b4e2c2c29b69}{M\+I\+W\+R\+L}~(0x16 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_af5d129bad4e0df51b5a2f9f7ee0f2da4}{M\+I\+W\+R\+H}~(0x17 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_adc002e2f058cbc1cf556b4a33d0c401c}{M\+I\+R\+D\+L}~(0x18 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_ab2316c2a713dc20c6d0f892faa5c618b}{M\+I\+R\+D\+H}~(0x19 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_ae37c2e157f9881e72165f4a01d3ec695}{B\+A\+N\+K3}~(0x60)
+\item 
+\#define \hyperlink{enc28j60_8h_ae90f98e596cd117bc03ec08e12303948}{M\+A\+A\+D\+R1}~(0x00 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a120bccb0df5d68a311c7030cfb96cb60}{M\+A\+A\+D\+R0}~(0x01 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_adab05794c311d260abaaec301a942be5}{M\+A\+A\+D\+R3}~(0x02 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a12821080889b4c07b4d6592fbcb67aca}{M\+A\+A\+D\+R2}~(0x03 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_ab09dce1b21cca7564099bf5c2977027d}{M\+A\+A\+D\+R5}~(0x04 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_ab5bd94627c03b8c599997934df7f0091}{M\+A\+A\+D\+R4}~(0x05 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a03d42560946d9312f090c168ed035988}{E\+B\+S\+T\+S\+D}~(0x06 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_a9adab6368f16f6fe28aa65834b2ede72}{E\+B\+S\+T\+C\+O\+N}~(0x07 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_ad49243d78eaf5150289b582582b2f2ff}{E\+B\+S\+T\+C\+S\+L}~(0x08 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_a04c27a74b64291202f84be89dfe48cb3}{E\+B\+S\+T\+C\+S\+H}~(0x09 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_abd6aab564bb58e789243684804aff335}{M\+I\+S\+T\+A\+T}~(0x0\+A $\vert$ B\+A\+N\+K3 $\vert$ 0x80)
+\item 
+\#define \hyperlink{enc28j60_8h_a5eec0cbe196f0a26a9b2f30a74e70c60}{E\+R\+E\+V\+I\+D}~(0x12 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_a023f4ef8ad02a85b4dcfae743368eb87}{E\+C\+O\+C\+O\+N}~(0x15 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_abfa8c1ae2adec73924517bf2b1aad124}{E\+F\+L\+O\+C\+O\+N}~(0x17 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_ac1388dff78c23a31ec55335d727207e9}{E\+P\+A\+U\+S\+L}~(0x18 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_a3fc2cb9d4e34c421421abe509fc25424}{E\+P\+A\+U\+S\+H}~(0x19 $\vert$ B\+A\+N\+K3)
+\item 
+\#define \hyperlink{enc28j60_8h_a03e10f035e4f21f0d422a10037bd484c}{P\+H\+C\+O\+N1}~0x00
+\item 
+\#define \hyperlink{enc28j60_8h_a7c9554b1e26e43719ced636b9c6d3f40}{P\+R\+S\+T}~0x8000
+\item 
+\#define \hyperlink{enc28j60_8h_a8089d7201c8f002964485c86e22dfc12}{P\+L\+O\+O\+P\+B\+K}~0x4000
+\item 
+\#define \hyperlink{enc28j60_8h_a70f502c598dbc4771225b65c3aeea3a8}{P\+P\+W\+R\+S\+V}~0x0800
+\item 
+\#define \hyperlink{enc28j60_8h_ad5ab5d28ca8a473a8c2403b399f286ad}{P\+D\+P\+X\+M\+D}~0x0100
+\item 
+\#define \hyperlink{enc28j60_8h_a050305807ece6fe1683464afecf06e6e}{P\+H\+S\+T\+A\+T1}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_af99a7aaeee980b3dac9e10654462667e}{P\+F\+D\+P\+X}~0x1000
+\item 
+\#define \hyperlink{enc28j60_8h_aef964ef47f20a00e872053803d53adc1}{P\+H\+D\+P\+X}~0x0800
+\item 
+\#define \hyperlink{enc28j60_8h_ab124829dd1a6f328762044be3e43240a}{L\+L\+S\+T\+A\+T}~0x0004
+\item 
+\#define \hyperlink{enc28j60_8h_acb9504c7a2bcf4cc394ea7ab4f91b7f0}{J\+B\+S\+T\+A\+T}~0x0002
+\item 
+\#define \hyperlink{enc28j60_8h_a2bf519ac94423619c5aa5ee1e16e5b19}{P\+H\+H\+I\+D1}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_aff08147128718490f111dbe35a6b9ac3}{P\+H\+H\+I\+D2}~0x03
+\item 
+\#define \hyperlink{enc28j60_8h_a9cf7f25d840eaf2d2101797ee0e2e29e}{P\+H\+C\+O\+N2}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_ac119fb563b9b97951fb10ebff24abdef}{F\+R\+C\+L\+N\+K}~0x4000
+\item 
+\#define \hyperlink{enc28j60_8h_a141ecf954628f1b8dd7cf51e7147f378}{T\+X\+D\+I\+S}~0x2000
+\item 
+\#define \hyperlink{enc28j60_8h_abed093c12ea5ce91774638595bf3beef}{J\+A\+B\+B\+E\+R}~0x0400
+\item 
+\#define \hyperlink{enc28j60_8h_a2ebc9382e95cccc40b7801bcf2b8416d}{H\+D\+L\+D\+I\+S}~0x0100
+\item 
+\#define \hyperlink{enc28j60_8h_aec37b8c76a880a3c2b8205920f8b911d}{P\+H\+S\+T\+A\+T2}~0x11
+\item 
+\#define \hyperlink{enc28j60_8h_a9b55c5012b89b417ee348b39a8d708c3}{T\+X\+S\+T\+A\+T}~0x2000
+\item 
+\#define \hyperlink{enc28j60_8h_a10bfd47c41c0b92e4613786eda43b768}{R\+X\+S\+T\+A\+T}~0x1000
+\item 
+\#define \hyperlink{enc28j60_8h_a73923927804130f98568baa72e87f207}{C\+O\+L\+S\+T\+A\+T}~0x0800
+\item 
+\#define \hyperlink{enc28j60_8h_ab713fa9322902da83e1e80b0dc0392ac}{L\+S\+T\+A\+T}~0x0400
+\item 
+\#define \hyperlink{enc28j60_8h_a342bfd1e96b1bdd6204fc9c8d48dbd69}{D\+P\+X\+S\+T\+A\+T}~0x0200
+\item 
+\#define \hyperlink{enc28j60_8h_a54464499f9c2356a78cc21dd2ab206b5}{P\+L\+R\+I\+T\+Y}~0x0020
+\item 
+\#define \hyperlink{enc28j60_8h_a1f3e93fc5cdb723f0d77d9f7303cbf9a}{P\+H\+I\+E}~0x12
+\item 
+\#define \hyperlink{enc28j60_8h_ad6351bf051134ad3f24a46cb1564acb5}{P\+L\+N\+K\+I\+E}~0x0010
+\item 
+\#define \hyperlink{enc28j60_8h_a62a2c98486c2645e45b1883c3df47d68}{P\+G\+E\+I\+E}~0x0002
+\item 
+\#define \hyperlink{enc28j60_8h_a62760190e719a54dd75a66d8b0a24aa2}{P\+H\+I\+R}~0x13
+\item 
+\#define \hyperlink{enc28j60_8h_aa2fbed01cf78450485ba8a56e919ff52}{P\+L\+N\+K\+I\+F}~0x0010
+\item 
+\#define \hyperlink{enc28j60_8h_ac7c6d23472420a412371d964879c7d6f}{P\+G\+I\+F}~0x0004
+\item 
+\#define \hyperlink{enc28j60_8h_a311d5ecccdeb773484bf84f33f0f0b37}{P\+H\+L\+C\+O\+N}~0x14
+\item 
+\#define \hyperlink{enc28j60_8h_aafdc3d3a38025393434af80cb92a39f9}{L\+A\+C\+F\+G3}~0x0800
+\item 
+\#define \hyperlink{enc28j60_8h_a664d6e229be95c4a45bc300fe7f0218c}{L\+A\+C\+F\+G2}~0x0400
+\item 
+\#define \hyperlink{enc28j60_8h_a98da28783c63354bf9b4c2c16349c532}{L\+A\+C\+F\+G1}~0x0200
+\item 
+\#define \hyperlink{enc28j60_8h_a4161e732ac9bbbb0f7bd028383dbad4c}{L\+A\+C\+F\+G0}~0x0100
+\item 
+\#define \hyperlink{enc28j60_8h_a1e9d066206dc14222896824f420c606c}{L\+B\+C\+F\+G3}~0x0080
+\item 
+\#define \hyperlink{enc28j60_8h_aaa4dce1c2336a3d333272084f245a871}{L\+B\+C\+F\+G2}~0x0040
+\item 
+\#define \hyperlink{enc28j60_8h_adc155a1530b0365646594fd9baaa0fda}{L\+B\+C\+F\+G1}~0x0020
+\item 
+\#define \hyperlink{enc28j60_8h_a5bcfbecea7f9c31b775f424439fad83c}{L\+B\+C\+F\+G0}~0x0010
+\item 
+\#define \hyperlink{enc28j60_8h_a41dfa592003f88c12334ba3b9709bcd6}{L\+F\+R\+Q1}~0x0008
+\item 
+\#define \hyperlink{enc28j60_8h_a74d1f0b9d37e3b73f6ed1c467165159e}{L\+F\+R\+Q0}~0x0004
+\item 
+\#define \hyperlink{enc28j60_8h_af5bf5e7cd73fb57fc3df0547c75cb268}{S\+T\+R\+C\+H}~0x0002
+\item 
+\#define \hyperlink{enc28j60_8h_a410de19a3f17fcce4aea328aba4dcf97}{U\+C\+E\+N}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a6a464c30c6a1f475e1a5002274771902}{A\+N\+D\+O\+R}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_aa6ea2a09c411d46b99af2dd78b4c32c7}{C\+R\+C\+E\+N}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_aab75aacb28b5df133d505df4e54ae701}{P\+M\+E\+N}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_a0864d35006104ecf63cd990c98b70652}{M\+P\+E\+N}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_afff546a93b8ff247c54d39f902f2a42b}{H\+T\+E\+N}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_aec2538f8334172a103b7e827052942cb}{M\+C\+E\+N}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_a6f832aaec4fa919685fcdd5b7ce5022a}{B\+C\+E\+N}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_ae41878562067c4f0a4b19abdae4f7333}{L\+O\+O\+P\+B\+K}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_aa96ab16a2dddfccd77b723367e7d9acd}{T\+X\+P\+A\+U\+S}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_a13e2c5a266fa002bd903394ea9313708}{R\+X\+P\+A\+U\+S}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a855e7fd8e53376cc176f875000c08abb}{P\+A\+S\+S\+A\+L\+L}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_a5bafdeaf62f6f1040d02c76869a7e6ad}{M\+A\+R\+X\+E\+N}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_ac8c4de938f683881693704da4844c807}{M\+A\+R\+S\+T}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a0479a5a53a99ecec5d77edf8f3367406}{R\+N\+D\+R\+S\+T}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_aeedc39563708ade8d12781b17042a3f1}{M\+A\+R\+X\+R\+S\+T}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_abfb18e020b5d6fdf88882a3950f1a404}{R\+F\+U\+N\+R\+S\+T}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a794d36e70816314e560a4cadd46460ab}{M\+A\+T\+X\+R\+S\+T}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_a8922215868c2db2e7399c5534b0176d7}{T\+F\+U\+N\+R\+S\+T}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_a2b8bdee490bf09caea57d843ac74313a}{P\+A\+D\+C\+F\+G2}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_a0f6d940554ba28b34ed62ae763fd282e}{P\+A\+D\+C\+F\+G1}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a0225d795cda69a19afa6d4b227c7ce6a}{P\+A\+D\+C\+F\+G0}~0x20
+\item 
+\#define \hyperlink{enc28j60_8h_a835f9be221794e025cde45d42fe95794}{T\+X\+C\+R\+C\+E\+N}~0x10
+\item 
+\#define \hyperlink{enc28j60_8h_af7baedc7df3935dcfa00a8a77b510da5}{P\+H\+D\+R\+E\+N}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_a8d4a93947624ed1ff7a9259a371c35a8}{H\+F\+R\+M\+E\+N}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a9ffd80c58ad749f063047912daf64748}{F\+R\+M\+L\+N\+E\+N}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_a5349c2f5efe2df5d38830819f44393c9}{F\+U\+L\+D\+P\+X}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_aa085ec17e53b0396f0f51f36c040c289}{M\+I\+I\+S\+C\+A\+N}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_ae1a002121a1c33e90b17872514ce137a}{M\+I\+I\+R\+D}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_a51966c6a832e8c1d06d30b21b0a77cbd}{N\+V\+A\+L\+I\+D}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a7b114f85cab70531adc738c2e499df6a}{S\+C\+A\+N}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_ab5be0aaddb58ffb9cb20c12530d66316}{B\+U\+S\+Y}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_a967a091fd8fce7c18ddc09e52a5a4a38}{P\+H\+U\+G\+E\+E\+N}~0x08
+\item 
+\#define \hyperlink{enc28j60_8h_af99fc3bf133f8630e037ceb7a55c8cb8}{P\+P\+A\+D\+E\+N}~0x04
+\item 
+\#define \hyperlink{enc28j60_8h_a5b0b80c6fc7b5b84a3e25cdcaafe7c16}{P\+C\+R\+C\+E\+N}~0x02
+\item 
+\#define \hyperlink{enc28j60_8h_a4a3845d1f0c54bf6c05c99a978afe473}{P\+O\+V\+E\+R\+R\+I\+D\+E}~0x01
+\item 
+\#define \hyperlink{enc28j60_8h_aff58be703bdeb74483a909fd5ceb4f0c}{R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}~0x00
+\item 
+\#define \hyperlink{enc28j60_8h_a77b0c5764ff32500b2eaa95151ad75fe}{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}~0x3\+A
+\item 
+\#define \hyperlink{enc28j60_8h_a7156ba0adb02e4b950d43bad5b4bd6d1}{W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}~0x40
+\item 
+\#define \hyperlink{enc28j60_8h_a2f68a569bbc3dfa73c96ea9c57df4fcb}{W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}~0x7\+A
+\item 
+\#define \hyperlink{enc28j60_8h_a70dc124ec853075e596799eb11b17829}{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T}~0x80
+\item 
+\#define \hyperlink{enc28j60_8h_af03f0972ab1c1ca31340ae84d0fcb114}{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R}~0x\+A0
+\item 
+\#define \hyperlink{enc28j60_8h_a74625341a79e3484830c401d8947443c}{S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T}~0x\+F\+F
+\item 
+\#define \hyperlink{enc28j60_8h_aef2fd62a2950211fe8841fff8d8950a8}{R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}~0x00
+\item 
+\#define \hyperlink{enc28j60_8h_a7d0bcd440119b8d43d3a52e8719806d9}{R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}~(0x1\+F\+F\+F -\/ 0x0600 -\/ 1)
+\item 
+\#define \hyperlink{enc28j60_8h_a2fd2b1229a37c6d0d7a37880f5921fd7}{T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}~(0x1\+F\+F\+F -\/ 0x0600)
+\item 
+\#define \hyperlink{enc28j60_8h_a729e5274baa808ecee3f31c36c838354}{T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}~0x1\+F\+F\+F
+\item 
+\#define \hyperlink{enc28j60_8h_ae480dcd4682b4ad7442fdd1db297083e}{M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N}~1500
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{enc28j60_8h_a6ae6915ab4363819a3492bd8509263e5}{enc\+\_\+start} (void)
+\begin{DoxyCompactList}\small\item\em start E\+N\+C28\+J60 pin to write or to read \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_a63e6002e7cdb7ac2433fcb6fb4fc0b16}{enc\+\_\+stop} (void)
+\begin{DoxyCompactList}\small\item\em stop the E\+N\+C28\+J60 pin \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_a9c0a8d055c8531d4ca1aa8e691acf70a}{enc\+\_\+init} (uint8\+\_\+t $\ast$)
+\item 
+void \hyperlink{enc28j60_8h_a7b7b73cf7da394dcfd8425e69eb866c5}{enc\+\_\+write\+\_\+op} (uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em write the operation \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_a9baf5880395c0b49cd2cfccf3dc690e2}{enc\+\_\+write} (uint8\+\_\+t, uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em write on E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_ac9481db892dd46048540a834032f8ef7}{enc\+\_\+set\+\_\+bank} (uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em set the bank on address \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_ab2e6a8f9117e6c212139571a96f0e001}{enc\+\_\+write\+\_\+phy} (uint8\+\_\+t, uint16\+\_\+t)
+\begin{DoxyCompactList}\small\item\em write the data on E\+N\+C28\+J60 physical address \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{enc28j60_8h_aacaf641612f593cef8136d1fdf8d7bee}{enc\+\_\+read\+\_\+phy} (uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em read from physical address of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{enc28j60_8h_a42714a50e71f68faacb88f6d09f30e73}{enc\+\_\+read} (uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em read from from address of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{enc28j60_8h_aaa5de360d4e46ac044b911c01769f0c4}{enc\+\_\+read\+\_\+op} (uint8\+\_\+t, uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em read the operation from address of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_aa75a4325284e67324bcee6b18f882b54}{enc\+\_\+init\+\_\+phy} (void)
+\begin{DoxyCompactList}\small\item\em initialize the physical interface of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_aa518d6801d39ef8d7ad828b0f35684f0}{enc\+\_\+set\+\_\+mac} (uint8\+\_\+t $\ast$)
+\item 
+void \hyperlink{enc28j60_8h_a64c815aeeeac3323b0fe272d90a5c0f0}{enc\+\_\+read\+\_\+buf} (uint16\+\_\+t, uint8\+\_\+t $\ast$)
+\begin{DoxyCompactList}\small\item\em read from the buffer \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_a22151e93b50167d60ea05a0806bed7d0}{enc\+\_\+write\+\_\+buf} (uint16\+\_\+t, uint8\+\_\+t $\ast$)
+\begin{DoxyCompactList}\small\item\em write the buffer \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{enc28j60_8h_a7ac8a98005477e34c31c67395851fc80}{enc\+\_\+get\+\_\+rev} (void)
+\begin{DoxyCompactList}\small\item\em get the revision of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8h_abcc7d56a9babb64610bd346cdaef81a6}{enc\+\_\+send\+\_\+packet} (uint16\+\_\+t, uint8\+\_\+t $\ast$)
+\begin{DoxyCompactList}\small\item\em send a packet to ethernet \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{enc28j60_8h_a955683da076de3f92da57d7d06951ae7}{enc\+\_\+recv\+\_\+packet} (uint16\+\_\+t, uint8\+\_\+t $\ast$)
+\begin{DoxyCompactList}\small\item\em receive a packet from ethernet \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+registers of E\+N\+C28\+J60 device 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 15\+:23\+:13 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{enc28j60_8h_source}{enc28j60.\+h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{enc28j60_8h_a15b16c1073c60f0be255caf0a60251be}{\index{enc28j60.\+h@{enc28j60.\+h}!A\+D\+D\+R\+\_\+\+M\+A\+S\+K@{A\+D\+D\+R\+\_\+\+M\+A\+S\+K}}
+\index{A\+D\+D\+R\+\_\+\+M\+A\+S\+K@{A\+D\+D\+R\+\_\+\+M\+A\+S\+K}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{A\+D\+D\+R\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+D\+D\+R\+\_\+\+M\+A\+S\+K~0x1\+F}}\label{enc28j60_8h_a15b16c1073c60f0be255caf0a60251be}
+
+
+Definition at line 46 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+bank(), and spi\+\_\+write\+\_\+op().
+
+\hypertarget{enc28j60_8h_a6a464c30c6a1f475e1a5002274771902}{\index{enc28j60.\+h@{enc28j60.\+h}!A\+N\+D\+O\+R@{A\+N\+D\+O\+R}}
+\index{A\+N\+D\+O\+R@{A\+N\+D\+O\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{A\+N\+D\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+D\+O\+R~0x40}}\label{enc28j60_8h_a6a464c30c6a1f475e1a5002274771902}
+
+
+Definition at line 378 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aa9c885d30bc1d99229e0cd88766799d0}{\index{enc28j60.\+h@{enc28j60.\+h}!A\+U\+T\+O\+I\+N\+C@{A\+U\+T\+O\+I\+N\+C}}
+\index{A\+U\+T\+O\+I\+N\+C@{A\+U\+T\+O\+I\+N\+C}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{A\+U\+T\+O\+I\+N\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+U\+T\+O\+I\+N\+C~0x80}}\label{enc28j60_8h_aa9c885d30bc1d99229e0cd88766799d0}
+
+
+Definition at line 111 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a4a7bf3d4c8a72b0e09ffd6f866ae60f9}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+A\+N\+K0@{B\+A\+N\+K0}}
+\index{B\+A\+N\+K0@{B\+A\+N\+K0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+A\+N\+K0}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+A\+N\+K0~(0x00)}}\label{enc28j60_8h_a4a7bf3d4c8a72b0e09ffd6f866ae60f9}
+
+
+Definition at line 138 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a8d7bd7d547b12ee3c6a267ad57ab46d3}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+A\+N\+K1@{B\+A\+N\+K1}}
+\index{B\+A\+N\+K1@{B\+A\+N\+K1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+A\+N\+K1}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+A\+N\+K1~(0x20)}}\label{enc28j60_8h_a8d7bd7d547b12ee3c6a267ad57ab46d3}
+
+
+Definition at line 168 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a0bd289e48aaf00c5d668738b94c0ddf4}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+A\+N\+K2@{B\+A\+N\+K2}}
+\index{B\+A\+N\+K2@{B\+A\+N\+K2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+A\+N\+K2}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+A\+N\+K2~(0x40)}}\label{enc28j60_8h_a0bd289e48aaf00c5d668738b94c0ddf4}
+
+
+Definition at line 198 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ae37c2e157f9881e72165f4a01d3ec695}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+A\+N\+K3@{B\+A\+N\+K3}}
+\index{B\+A\+N\+K3@{B\+A\+N\+K3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+A\+N\+K3}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+A\+N\+K3~(0x60)}}\label{enc28j60_8h_ae37c2e157f9881e72165f4a01d3ec695}
+
+
+Definition at line 222 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac60597badc76e6f2c5ce64d862746c67}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+A\+N\+K\+\_\+\+M\+A\+S\+K@{B\+A\+N\+K\+\_\+\+M\+A\+S\+K}}
+\index{B\+A\+N\+K\+\_\+\+M\+A\+S\+K@{B\+A\+N\+K\+\_\+\+M\+A\+S\+K}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+A\+N\+K\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+A\+N\+K\+\_\+\+M\+A\+S\+K~0x60}}\label{enc28j60_8h_ac60597badc76e6f2c5ce64d862746c67}
+
+
+Definition at line 47 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8h_a6f832aaec4fa919685fcdd5b7ce5022a}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+C\+E\+N@{B\+C\+E\+N}}
+\index{B\+C\+E\+N@{B\+C\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+C\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+C\+E\+N~0x01}}\label{enc28j60_8h_a6f832aaec4fa919685fcdd5b7ce5022a}
+
+
+Definition at line 384 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af03f0972ab1c1ca31340ae84d0fcb114}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R@{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R}}
+\index{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R@{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R~0x\+A0}}\label{enc28j60_8h_af03f0972ab1c1ca31340ae84d0fcb114}
+
+
+Definition at line 475 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8h_a70dc124ec853075e596799eb11b17829}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T@{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T}}
+\index{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T@{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T~0x80}}\label{enc28j60_8h_a70dc124ec853075e596799eb11b17829}
+
+
+Definition at line 474 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+recv\+\_\+packet(), enc\+\_\+send\+\_\+packet(), and enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8h_a1320d47d304bce64ebb5494c1538a220}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+S\+E\+L0@{B\+S\+E\+L0}}
+\index{B\+S\+E\+L0@{B\+S\+E\+L0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+S\+E\+L0}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+S\+E\+L0~0x01}}\label{enc28j60_8h_a1320d47d304bce64ebb5494c1538a220}
+
+
+Definition at line 133 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8h_a13585e5eab60890dea97428a87aaedb8}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+S\+E\+L1@{B\+S\+E\+L1}}
+\index{B\+S\+E\+L1@{B\+S\+E\+L1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+S\+E\+L1}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+S\+E\+L1~0x02}}\label{enc28j60_8h_a13585e5eab60890dea97428a87aaedb8}
+
+
+Definition at line 132 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8h_a6e7f68840c27418fc87dd0be1bfb21f3}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+U\+F\+E\+R@{B\+U\+F\+E\+R}}
+\index{B\+U\+F\+E\+R@{B\+U\+F\+E\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+U\+F\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+U\+F\+E\+R~0x40}}\label{enc28j60_8h_a6e7f68840c27418fc87dd0be1bfb21f3}
+
+
+Definition at line 95 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ab5be0aaddb58ffb9cb20c12530d66316}{\index{enc28j60.\+h@{enc28j60.\+h}!B\+U\+S\+Y@{B\+U\+S\+Y}}
+\index{B\+U\+S\+Y@{B\+U\+S\+Y}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{B\+U\+S\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+U\+S\+Y~0x01}}\label{enc28j60_8h_ab5be0aaddb58ffb9cb20c12530d66316}
+
+
+Definition at line 453 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy(), and enc\+\_\+write\+\_\+phy().
+
+\hypertarget{enc28j60_8h_ab8108f29c6eb17edb95d8e3e86269ae2}{\index{enc28j60.\+h@{enc28j60.\+h}!C\+L\+K\+R\+D\+Y@{C\+L\+K\+R\+D\+Y}}
+\index{C\+L\+K\+R\+D\+Y@{C\+L\+K\+R\+D\+Y}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{C\+L\+K\+R\+D\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+L\+K\+R\+D\+Y~0x01}}\label{enc28j60_8h_ab8108f29c6eb17edb95d8e3e86269ae2}
+
+
+Definition at line 100 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a73923927804130f98568baa72e87f207}{\index{enc28j60.\+h@{enc28j60.\+h}!C\+O\+L\+S\+T\+A\+T@{C\+O\+L\+S\+T\+A\+T}}
+\index{C\+O\+L\+S\+T\+A\+T@{C\+O\+L\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{C\+O\+L\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+L\+S\+T\+A\+T~0x0800}}\label{enc28j60_8h_a73923927804130f98568baa72e87f207}
+
+
+Definition at line 313 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aa6ea2a09c411d46b99af2dd78b4c32c7}{\index{enc28j60.\+h@{enc28j60.\+h}!C\+R\+C\+E\+N@{C\+R\+C\+E\+N}}
+\index{C\+R\+C\+E\+N@{C\+R\+C\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{C\+R\+C\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+R\+C\+E\+N~0x20}}\label{enc28j60_8h_aa6ea2a09c411d46b99af2dd78b4c32c7}
+
+
+Definition at line 379 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a09feccd25a7f699bf70204cd868a35e8}{\index{enc28j60.\+h@{enc28j60.\+h}!C\+S\+U\+M\+E\+N@{C\+S\+U\+M\+E\+N}}
+\index{C\+S\+U\+M\+E\+N@{C\+S\+U\+M\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{C\+S\+U\+M\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+S\+U\+M\+E\+N~0x10}}\label{enc28j60_8h_a09feccd25a7f699bf70204cd868a35e8}
+
+
+Definition at line 129 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a6b8293f220c6dcf823b6d8220562b81e}{\index{enc28j60.\+h@{enc28j60.\+h}!D\+M\+A\+I\+E@{D\+M\+A\+I\+E}}
+\index{D\+M\+A\+I\+E@{D\+M\+A\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{D\+M\+A\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+M\+A\+I\+E~0x20}}\label{enc28j60_8h_a6b8293f220c6dcf823b6d8220562b81e}
+
+
+Definition at line 61 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a706233f0bf7e747aaf1d08be4f37d233}{\index{enc28j60.\+h@{enc28j60.\+h}!D\+M\+A\+I\+F@{D\+M\+A\+I\+F}}
+\index{D\+M\+A\+I\+F@{D\+M\+A\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{D\+M\+A\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+M\+A\+I\+F~0x20}}\label{enc28j60_8h_a706233f0bf7e747aaf1d08be4f37d233}
+
+
+Definition at line 78 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a0cc14b13f53f941a87199fd98de97df7}{\index{enc28j60.\+h@{enc28j60.\+h}!D\+M\+A\+S\+T@{D\+M\+A\+S\+T}}
+\index{D\+M\+A\+S\+T@{D\+M\+A\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{D\+M\+A\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+M\+A\+S\+T~0x20}}\label{enc28j60_8h_a0cc14b13f53f941a87199fd98de97df7}
+
+
+Definition at line 128 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a342bfd1e96b1bdd6204fc9c8d48dbd69}{\index{enc28j60.\+h@{enc28j60.\+h}!D\+P\+X\+S\+T\+A\+T@{D\+P\+X\+S\+T\+A\+T}}
+\index{D\+P\+X\+S\+T\+A\+T@{D\+P\+X\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{D\+P\+X\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+P\+X\+S\+T\+A\+T~0x0200}}\label{enc28j60_8h_a342bfd1e96b1bdd6204fc9c8d48dbd69}
+
+
+Definition at line 315 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a92d07eb614520d8f8d7a5c9b76803582}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+\_\+\+R\+X\+E\+N@{E\+\_\+\+R\+X\+E\+N}}
+\index{E\+\_\+\+R\+X\+E\+N@{E\+\_\+\+R\+X\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+\_\+\+R\+X\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+\_\+\+R\+X\+E\+N~0x04}}\label{enc28j60_8h_a92d07eb614520d8f8d7a5c9b76803582}
+
+
+Definition at line 131 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a9adab6368f16f6fe28aa65834b2ede72}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+B\+S\+T\+C\+O\+N@{E\+B\+S\+T\+C\+O\+N}}
+\index{E\+B\+S\+T\+C\+O\+N@{E\+B\+S\+T\+C\+O\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+B\+S\+T\+C\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+B\+S\+T\+C\+O\+N~(0x07 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_a9adab6368f16f6fe28aa65834b2ede72}
+
+
+Definition at line 231 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a04c27a74b64291202f84be89dfe48cb3}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+B\+S\+T\+C\+S\+H@{E\+B\+S\+T\+C\+S\+H}}
+\index{E\+B\+S\+T\+C\+S\+H@{E\+B\+S\+T\+C\+S\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+B\+S\+T\+C\+S\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+B\+S\+T\+C\+S\+H~(0x09 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_a04c27a74b64291202f84be89dfe48cb3}
+
+
+Definition at line 233 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad49243d78eaf5150289b582582b2f2ff}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+B\+S\+T\+C\+S\+L@{E\+B\+S\+T\+C\+S\+L}}
+\index{E\+B\+S\+T\+C\+S\+L@{E\+B\+S\+T\+C\+S\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+B\+S\+T\+C\+S\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+B\+S\+T\+C\+S\+L~(0x08 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_ad49243d78eaf5150289b582582b2f2ff}
+
+
+Definition at line 232 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a03d42560946d9312f090c168ed035988}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+B\+S\+T\+S\+D@{E\+B\+S\+T\+S\+D}}
+\index{E\+B\+S\+T\+S\+D@{E\+B\+S\+T\+S\+D}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+B\+S\+T\+S\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+B\+S\+T\+S\+D~(0x06 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_a03d42560946d9312f090c168ed035988}
+
+
+Definition at line 230 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a023f4ef8ad02a85b4dcfae743368eb87}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+C\+O\+C\+O\+N@{E\+C\+O\+C\+O\+N}}
+\index{E\+C\+O\+C\+O\+N@{E\+C\+O\+C\+O\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+C\+O\+C\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+C\+O\+C\+O\+N~(0x15 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_a023f4ef8ad02a85b4dcfae743368eb87}
+
+
+Definition at line 236 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a461b29cd8a06dc2f331f664eb0f9165a}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+C\+O\+N1@{E\+C\+O\+N1}}
+\index{E\+C\+O\+N1@{E\+C\+O\+N1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+C\+O\+N1}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+C\+O\+N1~0x1\+F}}\label{enc28j60_8h_a461b29cd8a06dc2f331f664eb0f9165a}
+
+
+Definition at line 124 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+send\+\_\+packet(), and enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8h_a86d77e305cc8d23f335fb733870a873c}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+C\+O\+N2@{E\+C\+O\+N2}}
+\index{E\+C\+O\+N2@{E\+C\+O\+N2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+C\+O\+N2}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+C\+O\+N2~0x1\+E}}\label{enc28j60_8h_a86d77e305cc8d23f335fb733870a873c}
+
+
+Definition at line 109 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_ada0a40b35b71cc4b342ef240dd0fbc59}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+C\+O\+N2\+\_\+\+R@{E\+C\+O\+N2\+\_\+\+R}}
+\index{E\+C\+O\+N2\+\_\+\+R@{E\+C\+O\+N2\+\_\+\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+C\+O\+N2\+\_\+\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+C\+O\+N2\+\_\+\+R~0x10}}\label{enc28j60_8h_ada0a40b35b71cc4b342ef240dd0fbc59}
+
+
+Definition at line 114 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a8db6aa7fd9a0f04a045c04f67523621d}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+C\+S\+H@{E\+D\+M\+A\+C\+S\+H}}
+\index{E\+D\+M\+A\+C\+S\+H@{E\+D\+M\+A\+C\+S\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+C\+S\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+C\+S\+H~(0x17 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a8db6aa7fd9a0f04a045c04f67523621d}
+
+
+Definition at line 163 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a9008ca9117933ffaed4f71a0c467ae07}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+C\+S\+L@{E\+D\+M\+A\+C\+S\+L}}
+\index{E\+D\+M\+A\+C\+S\+L@{E\+D\+M\+A\+C\+S\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+C\+S\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+C\+S\+L~(0x16 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a9008ca9117933ffaed4f71a0c467ae07}
+
+
+Definition at line 162 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ab24279deee959774407b010264cb700a}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+D\+S\+T\+H@{E\+D\+M\+A\+D\+S\+T\+H}}
+\index{E\+D\+M\+A\+D\+S\+T\+H@{E\+D\+M\+A\+D\+S\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+D\+S\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+D\+S\+T\+H~(0x15 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_ab24279deee959774407b010264cb700a}
+
+
+Definition at line 161 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a6959cbf10d897b0eac13a15928f87cac}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+D\+S\+T\+L@{E\+D\+M\+A\+D\+S\+T\+L}}
+\index{E\+D\+M\+A\+D\+S\+T\+L@{E\+D\+M\+A\+D\+S\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+D\+S\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+D\+S\+T\+L~(0x14 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a6959cbf10d897b0eac13a15928f87cac}
+
+
+Definition at line 160 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac8866e9f637f6349bb28c6d9152ad658}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+N\+D\+H@{E\+D\+M\+A\+N\+D\+H}}
+\index{E\+D\+M\+A\+N\+D\+H@{E\+D\+M\+A\+N\+D\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+N\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+N\+D\+H~(0x13 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_ac8866e9f637f6349bb28c6d9152ad658}
+
+
+Definition at line 159 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2138d173a354731c15f3ae6ce5d02b56}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+N\+D\+L@{E\+D\+M\+A\+N\+D\+L}}
+\index{E\+D\+M\+A\+N\+D\+L@{E\+D\+M\+A\+N\+D\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+N\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+N\+D\+L~(0x12 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a2138d173a354731c15f3ae6ce5d02b56}
+
+
+Definition at line 158 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a0b279b45e0cfbc32896ec3b68694cf71}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+S\+T\+H@{E\+D\+M\+A\+S\+T\+H}}
+\index{E\+D\+M\+A\+S\+T\+H@{E\+D\+M\+A\+S\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+S\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+S\+T\+H~(0x11 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a0b279b45e0cfbc32896ec3b68694cf71}
+
+
+Definition at line 157 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ae7f7aba80e78f4086dc761608c2da2c4}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+D\+M\+A\+S\+T\+L@{E\+D\+M\+A\+S\+T\+L}}
+\index{E\+D\+M\+A\+S\+T\+L@{E\+D\+M\+A\+S\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+D\+M\+A\+S\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+M\+A\+S\+T\+L~(0x10 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_ae7f7aba80e78f4086dc761608c2da2c4}
+
+
+Definition at line 156 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_abfa8c1ae2adec73924517bf2b1aad124}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+F\+L\+O\+C\+O\+N@{E\+F\+L\+O\+C\+O\+N}}
+\index{E\+F\+L\+O\+C\+O\+N@{E\+F\+L\+O\+C\+O\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+F\+L\+O\+C\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+F\+L\+O\+C\+O\+N~(0x17 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_abfa8c1ae2adec73924517bf2b1aad124}
+
+
+Definition at line 237 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad1d8a24d50000168964dc660074bf044}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T0@{E\+H\+T0}}
+\index{E\+H\+T0@{E\+H\+T0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T0}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T0~(0x00 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_ad1d8a24d50000168964dc660074bf044}
+
+
+Definition at line 170 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_acf17605d4551244f07220b4fdf778b38}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T1@{E\+H\+T1}}
+\index{E\+H\+T1@{E\+H\+T1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T1}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T1~(0x01 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_acf17605d4551244f07220b4fdf778b38}
+
+
+Definition at line 171 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2e1a60e1a93a4e6f288d89c825ff1f26}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T2@{E\+H\+T2}}
+\index{E\+H\+T2@{E\+H\+T2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T2}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T2~(0x02 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a2e1a60e1a93a4e6f288d89c825ff1f26}
+
+
+Definition at line 172 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a1644d7f0cca924f726f81a03423eded6}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T3@{E\+H\+T3}}
+\index{E\+H\+T3@{E\+H\+T3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T3}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T3~(0x03 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a1644d7f0cca924f726f81a03423eded6}
+
+
+Definition at line 173 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad983f328c5a5606195cdf5ace8768335}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T4@{E\+H\+T4}}
+\index{E\+H\+T4@{E\+H\+T4}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T4}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T4~(0x04 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_ad983f328c5a5606195cdf5ace8768335}
+
+
+Definition at line 174 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2788e2e180096007012a6eb7cf6ec951}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T5@{E\+H\+T5}}
+\index{E\+H\+T5@{E\+H\+T5}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T5}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T5~(0x05 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a2788e2e180096007012a6eb7cf6ec951}
+
+
+Definition at line 175 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a4eb1b56144bc6cf300486b8e6da871d3}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T6@{E\+H\+T6}}
+\index{E\+H\+T6@{E\+H\+T6}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T6}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T6~(0x06 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a4eb1b56144bc6cf300486b8e6da871d3}
+
+
+Definition at line 176 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a469059ed79caab2c9733f6044a318d3f}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+H\+T7@{E\+H\+T7}}
+\index{E\+H\+T7@{E\+H\+T7}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+H\+T7}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+H\+T7~(0x07 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a469059ed79caab2c9733f6044a318d3f}
+
+
+Definition at line 177 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a72ac42db94893a565a52821f5ae95856}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+I\+E@{E\+I\+E}}
+\index{E\+I\+E@{E\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+I\+E~0x1\+B}}\label{enc28j60_8h_a72ac42db94893a565a52821f5ae95856}
+
+
+Definition at line 57 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a0ac64e1af64188179c8ebe57cb882fff}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+I\+E\+\_\+\+W\+O\+L\+I\+E@{E\+I\+E\+\_\+\+W\+O\+L\+I\+E}}
+\index{E\+I\+E\+\_\+\+W\+O\+L\+I\+E@{E\+I\+E\+\_\+\+W\+O\+L\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+I\+E\+\_\+\+W\+O\+L\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+I\+E\+\_\+\+W\+O\+L\+I\+E~0x04}}\label{enc28j60_8h_a0ac64e1af64188179c8ebe57cb882fff}
+
+
+Definition at line 64 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a303aba585a8da3f8dc80315dc94cb0e5}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+I\+R@{E\+I\+R}}
+\index{E\+I\+R@{E\+I\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+I\+R~0x1\+C}}\label{enc28j60_8h_a303aba585a8da3f8dc80315dc94cb0e5}
+
+
+Definition at line 75 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a93413173c7231eb9d949db8f2018608e}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+I\+R\+\_\+\+W\+O\+L\+I\+F@{E\+I\+R\+\_\+\+W\+O\+L\+I\+F}}
+\index{E\+I\+R\+\_\+\+W\+O\+L\+I\+F@{E\+I\+R\+\_\+\+W\+O\+L\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+I\+R\+\_\+\+W\+O\+L\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+I\+R\+\_\+\+W\+O\+L\+I\+F~0x04}}\label{enc28j60_8h_a93413173c7231eb9d949db8f2018608e}
+
+
+Definition at line 81 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a3fc2cb9d4e34c421421abe509fc25424}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+A\+U\+S\+H@{E\+P\+A\+U\+S\+H}}
+\index{E\+P\+A\+U\+S\+H@{E\+P\+A\+U\+S\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+A\+U\+S\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+A\+U\+S\+H~(0x19 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_a3fc2cb9d4e34c421421abe509fc25424}
+
+
+Definition at line 239 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac1388dff78c23a31ec55335d727207e9}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+A\+U\+S\+L@{E\+P\+A\+U\+S\+L}}
+\index{E\+P\+A\+U\+S\+L@{E\+P\+A\+U\+S\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+A\+U\+S\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+A\+U\+S\+L~(0x18 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_ac1388dff78c23a31ec55335d727207e9}
+
+
+Definition at line 238 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a029f8b5f05e4e5182aa9a73e31c4a4f0}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+K\+T\+C\+N\+T@{E\+P\+K\+T\+C\+N\+T}}
+\index{E\+P\+K\+T\+C\+N\+T@{E\+P\+K\+T\+C\+N\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+K\+T\+C\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+K\+T\+C\+N\+T~(0x19 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a029f8b5f05e4e5182aa9a73e31c4a4f0}
+
+
+Definition at line 193 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_aea835cc109c3eb4cfedc6f3ad4d7c410}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+C\+S\+H@{E\+P\+M\+C\+S\+H}}
+\index{E\+P\+M\+C\+S\+H@{E\+P\+M\+C\+S\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+C\+S\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+C\+S\+H~(0x11 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_aea835cc109c3eb4cfedc6f3ad4d7c410}
+
+
+Definition at line 187 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a63e21e6d3b5926b59207f79ff66f977d}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+C\+S\+L@{E\+P\+M\+C\+S\+L}}
+\index{E\+P\+M\+C\+S\+L@{E\+P\+M\+C\+S\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+C\+S\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+C\+S\+L~(0x10 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a63e21e6d3b5926b59207f79ff66f977d}
+
+
+Definition at line 186 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a7231ae8160a585d71a3e96d93358970c}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M0@{E\+P\+M\+M0}}
+\index{E\+P\+M\+M0@{E\+P\+M\+M0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M0}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M0~(0x08 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a7231ae8160a585d71a3e96d93358970c}
+
+
+Definition at line 178 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a1a0b4ba274784466f2094833facc6792}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M1@{E\+P\+M\+M1}}
+\index{E\+P\+M\+M1@{E\+P\+M\+M1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M1}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M1~(0x09 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a1a0b4ba274784466f2094833facc6792}
+
+
+Definition at line 179 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a045c306adf0b93289ad90721439ff811}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M2@{E\+P\+M\+M2}}
+\index{E\+P\+M\+M2@{E\+P\+M\+M2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M2}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M2~(0x0\+A $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a045c306adf0b93289ad90721439ff811}
+
+
+Definition at line 180 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af60e219282fed81ae6e08fb65aad48dc}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M3@{E\+P\+M\+M3}}
+\index{E\+P\+M\+M3@{E\+P\+M\+M3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M3}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M3~(0x0\+B $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_af60e219282fed81ae6e08fb65aad48dc}
+
+
+Definition at line 181 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_acc1614ff436a3aee2b85320db84d28ba}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M4@{E\+P\+M\+M4}}
+\index{E\+P\+M\+M4@{E\+P\+M\+M4}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M4}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M4~(0x0\+C $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_acc1614ff436a3aee2b85320db84d28ba}
+
+
+Definition at line 182 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad2c168fc15ba3b06d8ebbf0713ed9e6b}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M5@{E\+P\+M\+M5}}
+\index{E\+P\+M\+M5@{E\+P\+M\+M5}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M5}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M5~(0x0\+D $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_ad2c168fc15ba3b06d8ebbf0713ed9e6b}
+
+
+Definition at line 183 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a8300c5c4aa4c2296ea27686c149006d6}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M6@{E\+P\+M\+M6}}
+\index{E\+P\+M\+M6@{E\+P\+M\+M6}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M6}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M6~(0x0\+E $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a8300c5c4aa4c2296ea27686c149006d6}
+
+
+Definition at line 184 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aabe6953f6fb64613948c418b1764dc20}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+M7@{E\+P\+M\+M7}}
+\index{E\+P\+M\+M7@{E\+P\+M\+M7}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+M7}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+M7~(0x0\+F $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_aabe6953f6fb64613948c418b1764dc20}
+
+
+Definition at line 185 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a432a59eb0f0ccd8d231c82b039dc113d}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+O\+H@{E\+P\+M\+O\+H}}
+\index{E\+P\+M\+O\+H@{E\+P\+M\+O\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+O\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+O\+H~(0x15 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a432a59eb0f0ccd8d231c82b039dc113d}
+
+
+Definition at line 189 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aef01aecd2f0097fc30bf29fe24ab1d05}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+P\+M\+O\+L@{E\+P\+M\+O\+L}}
+\index{E\+P\+M\+O\+L@{E\+P\+M\+O\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+P\+M\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+P\+M\+O\+L~(0x14 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_aef01aecd2f0097fc30bf29fe24ab1d05}
+
+
+Definition at line 188 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a63011487c82b6f6d1fcc749b55e5511e}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+D\+P\+T\+H@{E\+R\+D\+P\+T\+H}}
+\index{E\+R\+D\+P\+T\+H@{E\+R\+D\+P\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+D\+P\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+D\+P\+T\+H~(0x01 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a63011487c82b6f6d1fcc749b55e5511e}
+
+
+Definition at line 141 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a04e5f3a270ebf2b1a1121b38fef2a62e}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+D\+P\+T\+L@{E\+R\+D\+P\+T\+L}}
+\index{E\+R\+D\+P\+T\+L@{E\+R\+D\+P\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+D\+P\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+D\+P\+T\+L~(0x00 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a04e5f3a270ebf2b1a1121b38fef2a62e}
+
+
+Definition at line 140 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a5eec0cbe196f0a26a9b2f30a74e70c60}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+E\+V\+I\+D@{E\+R\+E\+V\+I\+D}}
+\index{E\+R\+E\+V\+I\+D@{E\+R\+E\+V\+I\+D}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+E\+V\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+E\+V\+I\+D~(0x12 $\vert$ B\+A\+N\+K3)}}\label{enc28j60_8h_a5eec0cbe196f0a26a9b2f30a74e70c60}
+
+
+Definition at line 235 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+get\+\_\+rev().
+
+\hypertarget{enc28j60_8h_ac5ff36d9b43977e5dd6548170ec93ddc}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+F\+C\+O\+N@{E\+R\+X\+F\+C\+O\+N}}
+\index{E\+R\+X\+F\+C\+O\+N@{E\+R\+X\+F\+C\+O\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+F\+C\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+F\+C\+O\+N~(0x18 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_ac5ff36d9b43977e5dd6548170ec93ddc}
+
+
+Definition at line 192 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a19ee05a22525dcd9e4124734a3aec1b0}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+N\+D\+H@{E\+R\+X\+N\+D\+H}}
+\index{E\+R\+X\+N\+D\+H@{E\+R\+X\+N\+D\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+N\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+N\+D\+H~(0x0\+B $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a19ee05a22525dcd9e4124734a3aec1b0}
+
+
+Definition at line 151 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a9fa6592ccdfa66aa5a1854dd95b6329c}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+N\+D\+L@{E\+R\+X\+N\+D\+L}}
+\index{E\+R\+X\+N\+D\+L@{E\+R\+X\+N\+D\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+N\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+N\+D\+L~(0x0\+A $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a9fa6592ccdfa66aa5a1854dd95b6329c}
+
+
+Definition at line 150 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a1668b845f0bc37dbb515c2358357a690}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+R\+D\+P\+T\+H@{E\+R\+X\+R\+D\+P\+T\+H}}
+\index{E\+R\+X\+R\+D\+P\+T\+H@{E\+R\+X\+R\+D\+P\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+R\+D\+P\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+R\+D\+P\+T\+H~(0x0\+D $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a1668b845f0bc37dbb515c2358357a690}
+
+
+Definition at line 153 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a0e4345b59cc531bd8daee2cd8c8e906b}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+R\+D\+P\+T\+L@{E\+R\+X\+R\+D\+P\+T\+L}}
+\index{E\+R\+X\+R\+D\+P\+T\+L@{E\+R\+X\+R\+D\+P\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+R\+D\+P\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+R\+D\+P\+T\+L~(0x0\+C $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a0e4345b59cc531bd8daee2cd8c8e906b}
+
+
+Definition at line 152 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_ad4c2a40d74ded1e155f7eb18effb76ba}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+S\+T\+H@{E\+R\+X\+S\+T\+H}}
+\index{E\+R\+X\+S\+T\+H@{E\+R\+X\+S\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+S\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+S\+T\+H~(0x09 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_ad4c2a40d74ded1e155f7eb18effb76ba}
+
+
+Definition at line 149 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a387e1ac675539e1c0c7f158f59eafd51}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+S\+T\+L@{E\+R\+X\+S\+T\+L}}
+\index{E\+R\+X\+S\+T\+L@{E\+R\+X\+S\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+S\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+S\+T\+L~(0x08 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a387e1ac675539e1c0c7f158f59eafd51}
+
+
+Definition at line 148 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a9c9ff6952a5cb0c0b420bc6a405d726c}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+W\+R\+P\+T\+H@{E\+R\+X\+W\+R\+P\+T\+H}}
+\index{E\+R\+X\+W\+R\+P\+T\+H@{E\+R\+X\+W\+R\+P\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+W\+R\+P\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+W\+R\+P\+T\+H~(0x0\+F $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a9c9ff6952a5cb0c0b420bc6a405d726c}
+
+
+Definition at line 155 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a7d78e648da085c6fdf006d75b3c99a7a}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+R\+X\+W\+R\+P\+T\+L@{E\+R\+X\+W\+R\+P\+T\+L}}
+\index{E\+R\+X\+W\+R\+P\+T\+L@{E\+R\+X\+W\+R\+P\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+R\+X\+W\+R\+P\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+X\+W\+R\+P\+T\+L~(0x0\+E $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a7d78e648da085c6fdf006d75b3c99a7a}
+
+
+Definition at line 154 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad05043a04b51b3953259c24040e2e99f}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+S\+T\+A\+T@{E\+S\+T\+A\+T}}
+\index{E\+S\+T\+A\+T@{E\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+S\+T\+A\+T~0x1\+D}}\label{enc28j60_8h_ad05043a04b51b3953259c24040e2e99f}
+
+
+Definition at line 92 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a9058dd6a31f3b04d9c4ad81a6280793f}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+S\+T\+A\+T\+\_\+\+R@{E\+S\+T\+A\+T\+\_\+\+R}}
+\index{E\+S\+T\+A\+T\+\_\+\+R@{E\+S\+T\+A\+T\+\_\+\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+S\+T\+A\+T\+\_\+\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+S\+T\+A\+T\+\_\+\+R~0x20}}\label{enc28j60_8h_a9058dd6a31f3b04d9c4ad81a6280793f}
+
+
+Definition at line 96 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a24597e8d914818adae20bf39c4ac7d0e}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+T\+X\+N\+D\+H@{E\+T\+X\+N\+D\+H}}
+\index{E\+T\+X\+N\+D\+H@{E\+T\+X\+N\+D\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+T\+X\+N\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+T\+X\+N\+D\+H~(0x07 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a24597e8d914818adae20bf39c4ac7d0e}
+
+
+Definition at line 147 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+send\+\_\+packet().
+
+\hypertarget{enc28j60_8h_ad79a19cc60b7dc19cec9df691e658714}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+T\+X\+N\+D\+L@{E\+T\+X\+N\+D\+L}}
+\index{E\+T\+X\+N\+D\+L@{E\+T\+X\+N\+D\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+T\+X\+N\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+T\+X\+N\+D\+L~(0x06 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_ad79a19cc60b7dc19cec9df691e658714}
+
+
+Definition at line 146 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+send\+\_\+packet().
+
+\hypertarget{enc28j60_8h_adfc695618aa5a32160cc9e2b0234c714}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+T\+X\+S\+T\+H@{E\+T\+X\+S\+T\+H}}
+\index{E\+T\+X\+S\+T\+H@{E\+T\+X\+S\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+T\+X\+S\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+T\+X\+S\+T\+H~(0x05 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_adfc695618aa5a32160cc9e2b0234c714}
+
+
+Definition at line 145 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a45a38712c4d618bb5cb013e3d781db46}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+T\+X\+S\+T\+L@{E\+T\+X\+S\+T\+L}}
+\index{E\+T\+X\+S\+T\+L@{E\+T\+X\+S\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+T\+X\+S\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+T\+X\+S\+T\+L~(0x04 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a45a38712c4d618bb5cb013e3d781db46}
+
+
+Definition at line 144 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_ab7da9e76b01d840f66c49ae0cdcb91f9}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+W\+O\+L\+I\+E@{E\+W\+O\+L\+I\+E}}
+\index{E\+W\+O\+L\+I\+E@{E\+W\+O\+L\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+W\+O\+L\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+W\+O\+L\+I\+E~(0x16 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_ab7da9e76b01d840f66c49ae0cdcb91f9}
+
+
+Definition at line 190 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2e40c6ad151e1b77b892b538ff3ea98f}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+W\+O\+L\+I\+R@{E\+W\+O\+L\+I\+R}}
+\index{E\+W\+O\+L\+I\+R@{E\+W\+O\+L\+I\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+W\+O\+L\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+W\+O\+L\+I\+R~(0x17 $\vert$ B\+A\+N\+K1)}}\label{enc28j60_8h_a2e40c6ad151e1b77b892b538ff3ea98f}
+
+
+Definition at line 191 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a7bda37d486623efbe3ac2055198d356a}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+W\+R\+P\+T\+H@{E\+W\+R\+P\+T\+H}}
+\index{E\+W\+R\+P\+T\+H@{E\+W\+R\+P\+T\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+W\+R\+P\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+W\+R\+P\+T\+H~(0x03 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a7bda37d486623efbe3ac2055198d356a}
+
+
+Definition at line 143 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+send\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a684dfa8cb9097ee131a2c9d2ee65d573}{\index{enc28j60.\+h@{enc28j60.\+h}!E\+W\+R\+P\+T\+L@{E\+W\+R\+P\+T\+L}}
+\index{E\+W\+R\+P\+T\+L@{E\+W\+R\+P\+T\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{E\+W\+R\+P\+T\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+W\+R\+P\+T\+L~(0x02 $\vert$ B\+A\+N\+K0)}}\label{enc28j60_8h_a684dfa8cb9097ee131a2c9d2ee65d573}
+
+
+Definition at line 142 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+send\+\_\+packet().
+
+\hypertarget{enc28j60_8h_ac119fb563b9b97951fb10ebff24abdef}{\index{enc28j60.\+h@{enc28j60.\+h}!F\+R\+C\+L\+N\+K@{F\+R\+C\+L\+N\+K}}
+\index{F\+R\+C\+L\+N\+K@{F\+R\+C\+L\+N\+K}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{F\+R\+C\+L\+N\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+R\+C\+L\+N\+K~0x4000}}\label{enc28j60_8h_ac119fb563b9b97951fb10ebff24abdef}
+
+
+Definition at line 295 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a9ffd80c58ad749f063047912daf64748}{\index{enc28j60.\+h@{enc28j60.\+h}!F\+R\+M\+L\+N\+E\+N@{F\+R\+M\+L\+N\+E\+N}}
+\index{F\+R\+M\+L\+N\+E\+N@{F\+R\+M\+L\+N\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{F\+R\+M\+L\+N\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+R\+M\+L\+N\+E\+N~0x02}}\label{enc28j60_8h_a9ffd80c58ad749f063047912daf64748}
+
+
+Definition at line 429 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a5349c2f5efe2df5d38830819f44393c9}{\index{enc28j60.\+h@{enc28j60.\+h}!F\+U\+L\+D\+P\+X@{F\+U\+L\+D\+P\+X}}
+\index{F\+U\+L\+D\+P\+X@{F\+U\+L\+D\+P\+X}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{F\+U\+L\+D\+P\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+U\+L\+D\+P\+X~0x01}}\label{enc28j60_8h_a5349c2f5efe2df5d38830819f44393c9}
+
+
+Definition at line 430 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2ebc9382e95cccc40b7801bcf2b8416d}{\index{enc28j60.\+h@{enc28j60.\+h}!H\+D\+L\+D\+I\+S@{H\+D\+L\+D\+I\+S}}
+\index{H\+D\+L\+D\+I\+S@{H\+D\+L\+D\+I\+S}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{H\+D\+L\+D\+I\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+D\+L\+D\+I\+S~0x0100}}\label{enc28j60_8h_a2ebc9382e95cccc40b7801bcf2b8416d}
+
+
+Definition at line 298 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a8d4a93947624ed1ff7a9259a371c35a8}{\index{enc28j60.\+h@{enc28j60.\+h}!H\+F\+R\+M\+E\+N@{H\+F\+R\+M\+E\+N}}
+\index{H\+F\+R\+M\+E\+N@{H\+F\+R\+M\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{H\+F\+R\+M\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+F\+R\+M\+E\+N~0x04}}\label{enc28j60_8h_a8d4a93947624ed1ff7a9259a371c35a8}
+
+
+Definition at line 428 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_afff546a93b8ff247c54d39f902f2a42b}{\index{enc28j60.\+h@{enc28j60.\+h}!H\+T\+E\+N@{H\+T\+E\+N}}
+\index{H\+T\+E\+N@{H\+T\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{H\+T\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+E\+N~0x04}}\label{enc28j60_8h_afff546a93b8ff247c54d39f902f2a42b}
+
+
+Definition at line 382 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_afeeffe52c8fd59db7c61cf8b02042dbf}{\index{enc28j60.\+h@{enc28j60.\+h}!I\+N\+T@{I\+N\+T}}
+\index{I\+N\+T@{I\+N\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{I\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T~0x80}}\label{enc28j60_8h_afeeffe52c8fd59db7c61cf8b02042dbf}
+
+
+Definition at line 94 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a43a65160b20f5e730c46db801286999a}{\index{enc28j60.\+h@{enc28j60.\+h}!I\+N\+T\+I\+E@{I\+N\+T\+I\+E}}
+\index{I\+N\+T\+I\+E@{I\+N\+T\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{I\+N\+T\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+I\+E~0x80}}\label{enc28j60_8h_a43a65160b20f5e730c46db801286999a}
+
+
+Definition at line 59 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_abed093c12ea5ce91774638595bf3beef}{\index{enc28j60.\+h@{enc28j60.\+h}!J\+A\+B\+B\+E\+R@{J\+A\+B\+B\+E\+R}}
+\index{J\+A\+B\+B\+E\+R@{J\+A\+B\+B\+E\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{J\+A\+B\+B\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\+A\+B\+B\+E\+R~0x0400}}\label{enc28j60_8h_abed093c12ea5ce91774638595bf3beef}
+
+
+Definition at line 297 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_acb9504c7a2bcf4cc394ea7ab4f91b7f0}{\index{enc28j60.\+h@{enc28j60.\+h}!J\+B\+S\+T\+A\+T@{J\+B\+S\+T\+A\+T}}
+\index{J\+B\+S\+T\+A\+T@{J\+B\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{J\+B\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\+B\+S\+T\+A\+T~0x0002}}\label{enc28j60_8h_acb9504c7a2bcf4cc394ea7ab4f91b7f0}
+
+
+Definition at line 276 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a4161e732ac9bbbb0f7bd028383dbad4c}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+A\+C\+F\+G0@{L\+A\+C\+F\+G0}}
+\index{L\+A\+C\+F\+G0@{L\+A\+C\+F\+G0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+A\+C\+F\+G0}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+A\+C\+F\+G0~0x0100}}\label{enc28j60_8h_a4161e732ac9bbbb0f7bd028383dbad4c}
+
+
+Definition at line 360 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a98da28783c63354bf9b4c2c16349c532}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+A\+C\+F\+G1@{L\+A\+C\+F\+G1}}
+\index{L\+A\+C\+F\+G1@{L\+A\+C\+F\+G1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+A\+C\+F\+G1}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+A\+C\+F\+G1~0x0200}}\label{enc28j60_8h_a98da28783c63354bf9b4c2c16349c532}
+
+
+Definition at line 359 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a664d6e229be95c4a45bc300fe7f0218c}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+A\+C\+F\+G2@{L\+A\+C\+F\+G2}}
+\index{L\+A\+C\+F\+G2@{L\+A\+C\+F\+G2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+A\+C\+F\+G2}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+A\+C\+F\+G2~0x0400}}\label{enc28j60_8h_a664d6e229be95c4a45bc300fe7f0218c}
+
+
+Definition at line 358 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aafdc3d3a38025393434af80cb92a39f9}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+A\+C\+F\+G3@{L\+A\+C\+F\+G3}}
+\index{L\+A\+C\+F\+G3@{L\+A\+C\+F\+G3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+A\+C\+F\+G3}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+A\+C\+F\+G3~0x0800}}\label{enc28j60_8h_aafdc3d3a38025393434af80cb92a39f9}
+
+
+Definition at line 357 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_afde62340528064ffed7b85d4a044426b}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+A\+T\+E\+C\+O\+L@{L\+A\+T\+E\+C\+O\+L}}
+\index{L\+A\+T\+E\+C\+O\+L@{L\+A\+T\+E\+C\+O\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+A\+T\+E\+C\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+A\+T\+E\+C\+O\+L~0x10}}\label{enc28j60_8h_afde62340528064ffed7b85d4a044426b}
+
+
+Definition at line 97 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a5bcfbecea7f9c31b775f424439fad83c}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+B\+C\+F\+G0@{L\+B\+C\+F\+G0}}
+\index{L\+B\+C\+F\+G0@{L\+B\+C\+F\+G0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+B\+C\+F\+G0}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+B\+C\+F\+G0~0x0010}}\label{enc28j60_8h_a5bcfbecea7f9c31b775f424439fad83c}
+
+
+Definition at line 364 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_adc155a1530b0365646594fd9baaa0fda}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+B\+C\+F\+G1@{L\+B\+C\+F\+G1}}
+\index{L\+B\+C\+F\+G1@{L\+B\+C\+F\+G1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+B\+C\+F\+G1}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+B\+C\+F\+G1~0x0020}}\label{enc28j60_8h_adc155a1530b0365646594fd9baaa0fda}
+
+
+Definition at line 363 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aaa4dce1c2336a3d333272084f245a871}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+B\+C\+F\+G2@{L\+B\+C\+F\+G2}}
+\index{L\+B\+C\+F\+G2@{L\+B\+C\+F\+G2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+B\+C\+F\+G2}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+B\+C\+F\+G2~0x0040}}\label{enc28j60_8h_aaa4dce1c2336a3d333272084f245a871}
+
+
+Definition at line 362 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a1e9d066206dc14222896824f420c606c}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+B\+C\+F\+G3@{L\+B\+C\+F\+G3}}
+\index{L\+B\+C\+F\+G3@{L\+B\+C\+F\+G3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+B\+C\+F\+G3}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+B\+C\+F\+G3~0x0080}}\label{enc28j60_8h_a1e9d066206dc14222896824f420c606c}
+
+
+Definition at line 361 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a74d1f0b9d37e3b73f6ed1c467165159e}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+F\+R\+Q0@{L\+F\+R\+Q0}}
+\index{L\+F\+R\+Q0@{L\+F\+R\+Q0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+F\+R\+Q0}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+F\+R\+Q0~0x0004}}\label{enc28j60_8h_a74d1f0b9d37e3b73f6ed1c467165159e}
+
+
+Definition at line 366 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a41dfa592003f88c12334ba3b9709bcd6}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+F\+R\+Q1@{L\+F\+R\+Q1}}
+\index{L\+F\+R\+Q1@{L\+F\+R\+Q1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+F\+R\+Q1}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+F\+R\+Q1~0x0008}}\label{enc28j60_8h_a41dfa592003f88c12334ba3b9709bcd6}
+
+
+Definition at line 365 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a1904f4ac5f3a38c3f32feea615ab44e2}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+I\+N\+K\+I\+E@{L\+I\+N\+K\+I\+E}}
+\index{L\+I\+N\+K\+I\+E@{L\+I\+N\+K\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+I\+N\+K\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+N\+K\+I\+E~0x10}}\label{enc28j60_8h_a1904f4ac5f3a38c3f32feea615ab44e2}
+
+
+Definition at line 62 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a19701d42e07672f373b42b235e30a6ea}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+I\+N\+K\+I\+F@{L\+I\+N\+K\+I\+F}}
+\index{L\+I\+N\+K\+I\+F@{L\+I\+N\+K\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+I\+N\+K\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+N\+K\+I\+F~0x10}}\label{enc28j60_8h_a19701d42e07672f373b42b235e30a6ea}
+
+
+Definition at line 79 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ab124829dd1a6f328762044be3e43240a}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+L\+S\+T\+A\+T@{L\+L\+S\+T\+A\+T}}
+\index{L\+L\+S\+T\+A\+T@{L\+L\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+L\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+L\+S\+T\+A\+T~0x0004}}\label{enc28j60_8h_ab124829dd1a6f328762044be3e43240a}
+
+
+Definition at line 275 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ae41878562067c4f0a4b19abdae4f7333}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+O\+O\+P\+B\+K@{L\+O\+O\+P\+B\+K}}
+\index{L\+O\+O\+P\+B\+K@{L\+O\+O\+P\+B\+K}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+O\+O\+P\+B\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+O\+P\+B\+K~0x10}}\label{enc28j60_8h_ae41878562067c4f0a4b19abdae4f7333}
+
+
+Definition at line 394 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ab713fa9322902da83e1e80b0dc0392ac}{\index{enc28j60.\+h@{enc28j60.\+h}!L\+S\+T\+A\+T@{L\+S\+T\+A\+T}}
+\index{L\+S\+T\+A\+T@{L\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{L\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+S\+T\+A\+T~0x0400}}\label{enc28j60_8h_ab713fa9322902da83e1e80b0dc0392ac}
+
+
+Definition at line 314 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a120bccb0df5d68a311c7030cfb96cb60}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+A\+D\+R0@{M\+A\+A\+D\+R0}}
+\index{M\+A\+A\+D\+R0@{M\+A\+A\+D\+R0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+A\+D\+R0}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+A\+D\+R0~(0x01 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_a120bccb0df5d68a311c7030cfb96cb60}
+
+
+Definition at line 225 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+mac().
+
+\hypertarget{enc28j60_8h_ae90f98e596cd117bc03ec08e12303948}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+A\+D\+R1@{M\+A\+A\+D\+R1}}
+\index{M\+A\+A\+D\+R1@{M\+A\+A\+D\+R1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+A\+D\+R1}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+A\+D\+R1~(0x00 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_ae90f98e596cd117bc03ec08e12303948}
+
+
+Definition at line 224 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+mac().
+
+\hypertarget{enc28j60_8h_a12821080889b4c07b4d6592fbcb67aca}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+A\+D\+R2@{M\+A\+A\+D\+R2}}
+\index{M\+A\+A\+D\+R2@{M\+A\+A\+D\+R2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+A\+D\+R2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+A\+D\+R2~(0x03 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_a12821080889b4c07b4d6592fbcb67aca}
+
+
+Definition at line 227 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+mac().
+
+\hypertarget{enc28j60_8h_adab05794c311d260abaaec301a942be5}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+A\+D\+R3@{M\+A\+A\+D\+R3}}
+\index{M\+A\+A\+D\+R3@{M\+A\+A\+D\+R3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+A\+D\+R3}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+A\+D\+R3~(0x02 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_adab05794c311d260abaaec301a942be5}
+
+
+Definition at line 226 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+mac().
+
+\hypertarget{enc28j60_8h_ab5bd94627c03b8c599997934df7f0091}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+A\+D\+R4@{M\+A\+A\+D\+R4}}
+\index{M\+A\+A\+D\+R4@{M\+A\+A\+D\+R4}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+A\+D\+R4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+A\+D\+R4~(0x05 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_ab5bd94627c03b8c599997934df7f0091}
+
+
+Definition at line 229 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+mac().
+
+\hypertarget{enc28j60_8h_ab09dce1b21cca7564099bf5c2977027d}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+A\+D\+R5@{M\+A\+A\+D\+R5}}
+\index{M\+A\+A\+D\+R5@{M\+A\+A\+D\+R5}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+A\+D\+R5}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+A\+D\+R5~(0x04 $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_ab09dce1b21cca7564099bf5c2977027d}
+
+
+Definition at line 228 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+set\+\_\+mac().
+
+\hypertarget{enc28j60_8h_a0aa3bb65f69bc921f3b4020410f7efc2}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+B\+B\+I\+P\+G@{M\+A\+B\+B\+I\+P\+G}}
+\index{M\+A\+B\+B\+I\+P\+G@{M\+A\+B\+B\+I\+P\+G}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+B\+B\+I\+P\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+B\+B\+I\+P\+G~(0x04 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a0aa3bb65f69bc921f3b4020410f7efc2}
+
+
+Definition at line 204 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_af78bae411a3ae7fe363ad63e93a2e618}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+C\+L\+C\+O\+N1@{M\+A\+C\+L\+C\+O\+N1}}
+\index{M\+A\+C\+L\+C\+O\+N1@{M\+A\+C\+L\+C\+O\+N1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+C\+L\+C\+O\+N1}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+C\+L\+C\+O\+N1~(0x08 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_af78bae411a3ae7fe363ad63e93a2e618}
+
+
+Definition at line 207 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_acf3356546b7e518a4cf8b368d48a2710}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+C\+L\+C\+O\+N2@{M\+A\+C\+L\+C\+O\+N2}}
+\index{M\+A\+C\+L\+C\+O\+N2@{M\+A\+C\+L\+C\+O\+N2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+C\+L\+C\+O\+N2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+C\+L\+C\+O\+N2~(0x09 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_acf3356546b7e518a4cf8b368d48a2710}
+
+
+Definition at line 208 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ab64add14e73a7308bd32343c45caf79d}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+C\+O\+N1@{M\+A\+C\+O\+N1}}
+\index{M\+A\+C\+O\+N1@{M\+A\+C\+O\+N1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+C\+O\+N1}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+C\+O\+N1~(0x00 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_ab64add14e73a7308bd32343c45caf79d}
+
+
+Definition at line 200 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a01501b400de6174cd44cd52cf9da0950}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+C\+O\+N2@{M\+A\+C\+O\+N2}}
+\index{M\+A\+C\+O\+N2@{M\+A\+C\+O\+N2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+C\+O\+N2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+C\+O\+N2~(0x01 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a01501b400de6174cd44cd52cf9da0950}
+
+
+Definition at line 201 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a37e80f66673c39e7db383e0b11a159ea}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+C\+O\+N3@{M\+A\+C\+O\+N3}}
+\index{M\+A\+C\+O\+N3@{M\+A\+C\+O\+N3}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+C\+O\+N3}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+C\+O\+N3~(0x02 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a37e80f66673c39e7db383e0b11a159ea}
+
+
+Definition at line 202 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a53c0d8f74a3ba17d1337e297ef749a22}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+C\+O\+N4@{M\+A\+C\+O\+N4}}
+\index{M\+A\+C\+O\+N4@{M\+A\+C\+O\+N4}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+C\+O\+N4}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+C\+O\+N4~(0x03 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a53c0d8f74a3ba17d1337e297ef749a22}
+
+
+Definition at line 203 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a70b21ea01d623429bf3bd1abf583c80f}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+I\+P\+G\+H@{M\+A\+I\+P\+G\+H}}
+\index{M\+A\+I\+P\+G\+H@{M\+A\+I\+P\+G\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+I\+P\+G\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+I\+P\+G\+H~(0x07 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a70b21ea01d623429bf3bd1abf583c80f}
+
+
+Definition at line 206 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a8daa7f7ef529828ef4cc3d90a48ff730}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+I\+P\+G\+L@{M\+A\+I\+P\+G\+L}}
+\index{M\+A\+I\+P\+G\+L@{M\+A\+I\+P\+G\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+I\+P\+G\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+I\+P\+G\+L~(0x06 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a8daa7f7ef529828ef4cc3d90a48ff730}
+
+
+Definition at line 205 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a294e961d04adc72cbc8b866bb6506e8d}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+M\+X\+F\+L\+H@{M\+A\+M\+X\+F\+L\+H}}
+\index{M\+A\+M\+X\+F\+L\+H@{M\+A\+M\+X\+F\+L\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+M\+X\+F\+L\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+M\+X\+F\+L\+H~(0x0\+B $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a294e961d04adc72cbc8b866bb6506e8d}
+
+
+Definition at line 210 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a4ed708903a040c0ea4fc071707863ffc}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+M\+X\+F\+L\+L@{M\+A\+M\+X\+F\+L\+L}}
+\index{M\+A\+M\+X\+F\+L\+L@{M\+A\+M\+X\+F\+L\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+M\+X\+F\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+M\+X\+F\+L\+L~(0x0\+A $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a4ed708903a040c0ea4fc071707863ffc}
+
+
+Definition at line 209 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a816b343221c59f459624c8195e148f7a}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+P\+H\+S\+U\+P@{M\+A\+P\+H\+S\+U\+P}}
+\index{M\+A\+P\+H\+S\+U\+P@{M\+A\+P\+H\+S\+U\+P}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+P\+H\+S\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+P\+H\+S\+U\+P~(0x0\+D $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a816b343221c59f459624c8195e148f7a}
+
+
+Definition at line 211 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac8c4de938f683881693704da4844c807}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+R\+S\+T@{M\+A\+R\+S\+T}}
+\index{M\+A\+R\+S\+T@{M\+A\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+R\+S\+T~0x80}}\label{enc28j60_8h_ac8c4de938f683881693704da4844c807}
+
+
+Definition at line 408 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a5bafdeaf62f6f1040d02c76869a7e6ad}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+R\+X\+E\+N@{M\+A\+R\+X\+E\+N}}
+\index{M\+A\+R\+X\+E\+N@{M\+A\+R\+X\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+R\+X\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+R\+X\+E\+N~0x01}}\label{enc28j60_8h_a5bafdeaf62f6f1040d02c76869a7e6ad}
+
+
+Definition at line 398 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_aeedc39563708ade8d12781b17042a3f1}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+R\+X\+R\+S\+T@{M\+A\+R\+X\+R\+S\+T}}
+\index{M\+A\+R\+X\+R\+S\+T@{M\+A\+R\+X\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+R\+X\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+R\+X\+R\+S\+T~0x08}}\label{enc28j60_8h_aeedc39563708ade8d12781b17042a3f1}
+
+
+Definition at line 410 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a794d36e70816314e560a4cadd46460ab}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+T\+X\+R\+S\+T@{M\+A\+T\+X\+R\+S\+T}}
+\index{M\+A\+T\+X\+R\+S\+T@{M\+A\+T\+X\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+T\+X\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+T\+X\+R\+S\+T~0x02}}\label{enc28j60_8h_a794d36e70816314e560a4cadd46460ab}
+
+
+Definition at line 412 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ae480dcd4682b4ad7442fdd1db297083e}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N@{M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N}}
+\index{M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N@{M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N~1500}}\label{enc28j60_8h_ae480dcd4682b4ad7442fdd1db297083e}
+
+
+Definition at line 483 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_aec2538f8334172a103b7e827052942cb}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+C\+E\+N@{M\+C\+E\+N}}
+\index{M\+C\+E\+N@{M\+C\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+C\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+C\+E\+N~0x02}}\label{enc28j60_8h_aec2538f8334172a103b7e827052942cb}
+
+
+Definition at line 383 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a6ca2ed513306c83432028d8ad3d49354}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+C\+M\+D@{M\+I\+C\+M\+D}}
+\index{M\+I\+C\+M\+D@{M\+I\+C\+M\+D}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+C\+M\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+C\+M\+D~(0x12 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a6ca2ed513306c83432028d8ad3d49354}
+
+
+Definition at line 213 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy().
+
+\hypertarget{enc28j60_8h_a6106a2077dfc25ff781bdb7af193168a}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+C\+O\+N@{M\+I\+C\+O\+N}}
+\index{M\+I\+C\+O\+N@{M\+I\+C\+O\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+C\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+C\+O\+N~(0x11 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a6106a2077dfc25ff781bdb7af193168a}
+
+
+Definition at line 212 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ae1a002121a1c33e90b17872514ce137a}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+I\+R\+D@{M\+I\+I\+R\+D}}
+\index{M\+I\+I\+R\+D@{M\+I\+I\+R\+D}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+I\+R\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+I\+R\+D~0x01}}\label{enc28j60_8h_ae1a002121a1c33e90b17872514ce137a}
+
+
+Definition at line 441 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy().
+
+\hypertarget{enc28j60_8h_aa085ec17e53b0396f0f51f36c040c289}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+I\+S\+C\+A\+N@{M\+I\+I\+S\+C\+A\+N}}
+\index{M\+I\+I\+S\+C\+A\+N@{M\+I\+I\+S\+C\+A\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+I\+S\+C\+A\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+I\+S\+C\+A\+N~0x02}}\label{enc28j60_8h_aa085ec17e53b0396f0f51f36c040c289}
+
+
+Definition at line 440 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ab2316c2a713dc20c6d0f892faa5c618b}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+R\+D\+H@{M\+I\+R\+D\+H}}
+\index{M\+I\+R\+D\+H@{M\+I\+R\+D\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+R\+D\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+R\+D\+H~(0x19 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_ab2316c2a713dc20c6d0f892faa5c618b}
+
+
+Definition at line 218 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy().
+
+\hypertarget{enc28j60_8h_adc002e2f058cbc1cf556b4a33d0c401c}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+R\+D\+L@{M\+I\+R\+D\+L}}
+\index{M\+I\+R\+D\+L@{M\+I\+R\+D\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+R\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+R\+D\+L~(0x18 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_adc002e2f058cbc1cf556b4a33d0c401c}
+
+
+Definition at line 217 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy().
+
+\hypertarget{enc28j60_8h_a01fb4e4ea7a7b71cbf2b341b0ebd77a3}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+R\+E\+G\+A\+D\+R@{M\+I\+R\+E\+G\+A\+D\+R}}
+\index{M\+I\+R\+E\+G\+A\+D\+R@{M\+I\+R\+E\+G\+A\+D\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+R\+E\+G\+A\+D\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+R\+E\+G\+A\+D\+R~(0x14 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a01fb4e4ea7a7b71cbf2b341b0ebd77a3}
+
+
+Definition at line 214 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy(), and enc\+\_\+write\+\_\+phy().
+
+\hypertarget{enc28j60_8h_abd6aab564bb58e789243684804aff335}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+S\+T\+A\+T@{M\+I\+S\+T\+A\+T}}
+\index{M\+I\+S\+T\+A\+T@{M\+I\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+S\+T\+A\+T~(0x0\+A $\vert$ B\+A\+N\+K3 $\vert$ 0x80)}}\label{enc28j60_8h_abd6aab564bb58e789243684804aff335}
+
+
+Definition at line 234 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+phy(), and enc\+\_\+write\+\_\+phy().
+
+\hypertarget{enc28j60_8h_af5d129bad4e0df51b5a2f9f7ee0f2da4}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+W\+R\+H@{M\+I\+W\+R\+H}}
+\index{M\+I\+W\+R\+H@{M\+I\+W\+R\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+W\+R\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+W\+R\+H~(0x17 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_af5d129bad4e0df51b5a2f9f7ee0f2da4}
+
+
+Definition at line 216 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+write\+\_\+phy().
+
+\hypertarget{enc28j60_8h_a18aba35be6189e6150a9b4e2c2c29b69}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+I\+W\+R\+L@{M\+I\+W\+R\+L}}
+\index{M\+I\+W\+R\+L@{M\+I\+W\+R\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+I\+W\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+W\+R\+L~(0x16 $\vert$ B\+A\+N\+K2 $\vert$ 0x80)}}\label{enc28j60_8h_a18aba35be6189e6150a9b4e2c2c29b69}
+
+
+Definition at line 215 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+write\+\_\+phy().
+
+\hypertarget{enc28j60_8h_a0864d35006104ecf63cd990c98b70652}{\index{enc28j60.\+h@{enc28j60.\+h}!M\+P\+E\+N@{M\+P\+E\+N}}
+\index{M\+P\+E\+N@{M\+P\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{M\+P\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+P\+E\+N~0x08}}\label{enc28j60_8h_a0864d35006104ecf63cd990c98b70652}
+
+
+Definition at line 381 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a51966c6a832e8c1d06d30b21b0a77cbd}{\index{enc28j60.\+h@{enc28j60.\+h}!N\+V\+A\+L\+I\+D@{N\+V\+A\+L\+I\+D}}
+\index{N\+V\+A\+L\+I\+D@{N\+V\+A\+L\+I\+D}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{N\+V\+A\+L\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+V\+A\+L\+I\+D~0x04}}\label{enc28j60_8h_a51966c6a832e8c1d06d30b21b0a77cbd}
+
+
+Definition at line 451 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a0225d795cda69a19afa6d4b227c7ce6a}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+A\+D\+C\+F\+G0@{P\+A\+D\+C\+F\+G0}}
+\index{P\+A\+D\+C\+F\+G0@{P\+A\+D\+C\+F\+G0}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+A\+D\+C\+F\+G0}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+D\+C\+F\+G0~0x20}}\label{enc28j60_8h_a0225d795cda69a19afa6d4b227c7ce6a}
+
+
+Definition at line 425 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a0f6d940554ba28b34ed62ae763fd282e}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+A\+D\+C\+F\+G1@{P\+A\+D\+C\+F\+G1}}
+\index{P\+A\+D\+C\+F\+G1@{P\+A\+D\+C\+F\+G1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+A\+D\+C\+F\+G1}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+D\+C\+F\+G1~0x40}}\label{enc28j60_8h_a0f6d940554ba28b34ed62ae763fd282e}
+
+
+Definition at line 424 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2b8bdee490bf09caea57d843ac74313a}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+A\+D\+C\+F\+G2@{P\+A\+D\+C\+F\+G2}}
+\index{P\+A\+D\+C\+F\+G2@{P\+A\+D\+C\+F\+G2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+A\+D\+C\+F\+G2}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+D\+C\+F\+G2~0x80}}\label{enc28j60_8h_a2b8bdee490bf09caea57d843ac74313a}
+
+
+Definition at line 423 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a855e7fd8e53376cc176f875000c08abb}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+A\+S\+S\+A\+L\+L@{P\+A\+S\+S\+A\+L\+L}}
+\index{P\+A\+S\+S\+A\+L\+L@{P\+A\+S\+S\+A\+L\+L}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+A\+S\+S\+A\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+S\+S\+A\+L\+L~0x02}}\label{enc28j60_8h_a855e7fd8e53376cc176f875000c08abb}
+
+
+Definition at line 397 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a5b0b80c6fc7b5b84a3e25cdcaafe7c16}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+C\+R\+C\+E\+N@{P\+C\+R\+C\+E\+N}}
+\index{P\+C\+R\+C\+E\+N@{P\+C\+R\+C\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+C\+R\+C\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+R\+C\+E\+N~0x02}}\label{enc28j60_8h_a5b0b80c6fc7b5b84a3e25cdcaafe7c16}
+
+
+Definition at line 464 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad5ab5d28ca8a473a8c2403b399f286ad}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+D\+P\+X\+M\+D@{P\+D\+P\+X\+M\+D}}
+\index{P\+D\+P\+X\+M\+D@{P\+D\+P\+X\+M\+D}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+D\+P\+X\+M\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+D\+P\+X\+M\+D~0x0100}}\label{enc28j60_8h_ad5ab5d28ca8a473a8c2403b399f286ad}
+
+
+Definition at line 260 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af99a7aaeee980b3dac9e10654462667e}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+F\+D\+P\+X@{P\+F\+D\+P\+X}}
+\index{P\+F\+D\+P\+X@{P\+F\+D\+P\+X}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+F\+D\+P\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+F\+D\+P\+X~0x1000}}\label{enc28j60_8h_af99a7aaeee980b3dac9e10654462667e}
+
+
+Definition at line 273 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a62a2c98486c2645e45b1883c3df47d68}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+G\+E\+I\+E@{P\+G\+E\+I\+E}}
+\index{P\+G\+E\+I\+E@{P\+G\+E\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+G\+E\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+G\+E\+I\+E~0x0002}}\label{enc28j60_8h_a62a2c98486c2645e45b1883c3df47d68}
+
+
+Definition at line 330 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac7c6d23472420a412371d964879c7d6f}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+G\+I\+F@{P\+G\+I\+F}}
+\index{P\+G\+I\+F@{P\+G\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+G\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+G\+I\+F~0x0004}}\label{enc28j60_8h_ac7c6d23472420a412371d964879c7d6f}
+
+
+Definition at line 344 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a03e10f035e4f21f0d422a10037bd484c}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+C\+O\+N1@{P\+H\+C\+O\+N1}}
+\index{P\+H\+C\+O\+N1@{P\+H\+C\+O\+N1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+C\+O\+N1}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+C\+O\+N1~0x00}}\label{enc28j60_8h_a03e10f035e4f21f0d422a10037bd484c}
+
+
+Definition at line 255 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a9cf7f25d840eaf2d2101797ee0e2e29e}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+C\+O\+N2@{P\+H\+C\+O\+N2}}
+\index{P\+H\+C\+O\+N2@{P\+H\+C\+O\+N2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+C\+O\+N2}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+C\+O\+N2~0x10}}\label{enc28j60_8h_a9cf7f25d840eaf2d2101797ee0e2e29e}
+
+
+Definition at line 293 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_aef964ef47f20a00e872053803d53adc1}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+D\+P\+X@{P\+H\+D\+P\+X}}
+\index{P\+H\+D\+P\+X@{P\+H\+D\+P\+X}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+D\+P\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+D\+P\+X~0x0800}}\label{enc28j60_8h_aef964ef47f20a00e872053803d53adc1}
+
+
+Definition at line 274 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af7baedc7df3935dcfa00a8a77b510da5}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+D\+R\+E\+N@{P\+H\+D\+R\+E\+N}}
+\index{P\+H\+D\+R\+E\+N@{P\+H\+D\+R\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+D\+R\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+D\+R\+E\+N~0x08}}\label{enc28j60_8h_af7baedc7df3935dcfa00a8a77b510da5}
+
+
+Definition at line 427 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2bf519ac94423619c5aa5ee1e16e5b19}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+H\+I\+D1@{P\+H\+H\+I\+D1}}
+\index{P\+H\+H\+I\+D1@{P\+H\+H\+I\+D1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+H\+I\+D1}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+H\+I\+D1~0x02}}\label{enc28j60_8h_a2bf519ac94423619c5aa5ee1e16e5b19}
+
+
+Definition at line 279 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aff08147128718490f111dbe35a6b9ac3}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+H\+I\+D2@{P\+H\+H\+I\+D2}}
+\index{P\+H\+H\+I\+D2@{P\+H\+H\+I\+D2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+H\+I\+D2}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+H\+I\+D2~0x03}}\label{enc28j60_8h_aff08147128718490f111dbe35a6b9ac3}
+
+
+Definition at line 282 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a1f3e93fc5cdb723f0d77d9f7303cbf9a}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+I\+E@{P\+H\+I\+E}}
+\index{P\+H\+I\+E@{P\+H\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+I\+E~0x12}}\label{enc28j60_8h_a1f3e93fc5cdb723f0d77d9f7303cbf9a}
+
+
+Definition at line 327 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a62760190e719a54dd75a66d8b0a24aa2}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+I\+R@{P\+H\+I\+R}}
+\index{P\+H\+I\+R@{P\+H\+I\+R}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+I\+R~0x13}}\label{enc28j60_8h_a62760190e719a54dd75a66d8b0a24aa2}
+
+
+Definition at line 341 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a311d5ecccdeb773484bf84f33f0f0b37}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+L\+C\+O\+N@{P\+H\+L\+C\+O\+N}}
+\index{P\+H\+L\+C\+O\+N@{P\+H\+L\+C\+O\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+L\+C\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+L\+C\+O\+N~0x14}}\label{enc28j60_8h_a311d5ecccdeb773484bf84f33f0f0b37}
+
+
+Definition at line 355 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init\+\_\+phy().
+
+\hypertarget{enc28j60_8h_a050305807ece6fe1683464afecf06e6e}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+S\+T\+A\+T1@{P\+H\+S\+T\+A\+T1}}
+\index{P\+H\+S\+T\+A\+T1@{P\+H\+S\+T\+A\+T1}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+S\+T\+A\+T1}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+S\+T\+A\+T1~0x01}}\label{enc28j60_8h_a050305807ece6fe1683464afecf06e6e}
+
+
+Definition at line 271 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aec37b8c76a880a3c2b8205920f8b911d}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+S\+T\+A\+T2@{P\+H\+S\+T\+A\+T2}}
+\index{P\+H\+S\+T\+A\+T2@{P\+H\+S\+T\+A\+T2}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+S\+T\+A\+T2}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+S\+T\+A\+T2~0x11}}\label{enc28j60_8h_aec37b8c76a880a3c2b8205920f8b911d}
+
+
+Definition at line 309 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a967a091fd8fce7c18ddc09e52a5a4a38}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+H\+U\+G\+E\+E\+N@{P\+H\+U\+G\+E\+E\+N}}
+\index{P\+H\+U\+G\+E\+E\+N@{P\+H\+U\+G\+E\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+H\+U\+G\+E\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+U\+G\+E\+E\+N~0x08}}\label{enc28j60_8h_a967a091fd8fce7c18ddc09e52a5a4a38}
+
+
+Definition at line 462 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2749c0d85a8e2a2686eb6c05ccae2087}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+K\+T\+D\+E\+C@{P\+K\+T\+D\+E\+C}}
+\index{P\+K\+T\+D\+E\+C@{P\+K\+T\+D\+E\+C}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+K\+T\+D\+E\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+K\+T\+D\+E\+C~0x40}}\label{enc28j60_8h_a2749c0d85a8e2a2686eb6c05ccae2087}
+
+
+Definition at line 112 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a53aa835c371385eab675a3a582a8ba2d}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+K\+T\+I\+E@{P\+K\+T\+I\+E}}
+\index{P\+K\+T\+I\+E@{P\+K\+T\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+K\+T\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+K\+T\+I\+E~0x40}}\label{enc28j60_8h_a53aa835c371385eab675a3a582a8ba2d}
+
+
+Definition at line 60 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a567e73e06d0b2569df3aa2c53c4540bb}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+K\+T\+I\+F@{P\+K\+T\+I\+F}}
+\index{P\+K\+T\+I\+F@{P\+K\+T\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+K\+T\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+K\+T\+I\+F~0x40}}\label{enc28j60_8h_a567e73e06d0b2569df3aa2c53c4540bb}
+
+
+Definition at line 77 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad6351bf051134ad3f24a46cb1564acb5}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+L\+N\+K\+I\+E@{P\+L\+N\+K\+I\+E}}
+\index{P\+L\+N\+K\+I\+E@{P\+L\+N\+K\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+L\+N\+K\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+L\+N\+K\+I\+E~0x0010}}\label{enc28j60_8h_ad6351bf051134ad3f24a46cb1564acb5}
+
+
+Definition at line 329 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aa2fbed01cf78450485ba8a56e919ff52}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+L\+N\+K\+I\+F@{P\+L\+N\+K\+I\+F}}
+\index{P\+L\+N\+K\+I\+F@{P\+L\+N\+K\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+L\+N\+K\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+L\+N\+K\+I\+F~0x0010}}\label{enc28j60_8h_aa2fbed01cf78450485ba8a56e919ff52}
+
+
+Definition at line 343 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a8089d7201c8f002964485c86e22dfc12}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+L\+O\+O\+P\+B\+K@{P\+L\+O\+O\+P\+B\+K}}
+\index{P\+L\+O\+O\+P\+B\+K@{P\+L\+O\+O\+P\+B\+K}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+L\+O\+O\+P\+B\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+L\+O\+O\+P\+B\+K~0x4000}}\label{enc28j60_8h_a8089d7201c8f002964485c86e22dfc12}
+
+
+Definition at line 258 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a54464499f9c2356a78cc21dd2ab206b5}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+L\+R\+I\+T\+Y@{P\+L\+R\+I\+T\+Y}}
+\index{P\+L\+R\+I\+T\+Y@{P\+L\+R\+I\+T\+Y}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+L\+R\+I\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+L\+R\+I\+T\+Y~0x0020}}\label{enc28j60_8h_a54464499f9c2356a78cc21dd2ab206b5}
+
+
+Definition at line 316 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aab75aacb28b5df133d505df4e54ae701}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+M\+E\+N@{P\+M\+E\+N}}
+\index{P\+M\+E\+N@{P\+M\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+M\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+M\+E\+N~0x10}}\label{enc28j60_8h_aab75aacb28b5df133d505df4e54ae701}
+
+
+Definition at line 380 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a4a3845d1f0c54bf6c05c99a978afe473}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+O\+V\+E\+R\+R\+I\+D\+E@{P\+O\+V\+E\+R\+R\+I\+D\+E}}
+\index{P\+O\+V\+E\+R\+R\+I\+D\+E@{P\+O\+V\+E\+R\+R\+I\+D\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+O\+V\+E\+R\+R\+I\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+V\+E\+R\+R\+I\+D\+E~0x01}}\label{enc28j60_8h_a4a3845d1f0c54bf6c05c99a978afe473}
+
+
+Definition at line 465 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af99fc3bf133f8630e037ceb7a55c8cb8}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+P\+A\+D\+E\+N@{P\+P\+A\+D\+E\+N}}
+\index{P\+P\+A\+D\+E\+N@{P\+P\+A\+D\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+P\+A\+D\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+P\+A\+D\+E\+N~0x04}}\label{enc28j60_8h_af99fc3bf133f8630e037ceb7a55c8cb8}
+
+
+Definition at line 463 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a70f502c598dbc4771225b65c3aeea3a8}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+P\+W\+R\+S\+V@{P\+P\+W\+R\+S\+V}}
+\index{P\+P\+W\+R\+S\+V@{P\+P\+W\+R\+S\+V}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+P\+W\+R\+S\+V}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+P\+W\+R\+S\+V~0x0800}}\label{enc28j60_8h_a70f502c598dbc4771225b65c3aeea3a8}
+
+
+Definition at line 259 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a7c9554b1e26e43719ced636b9c6d3f40}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+R\+S\+T@{P\+R\+S\+T}}
+\index{P\+R\+S\+T@{P\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+S\+T~0x8000}}\label{enc28j60_8h_a7c9554b1e26e43719ced636b9c6d3f40}
+
+
+Definition at line 257 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a1cccb4a1ed06b0b6f0fb15f586a6e907}{\index{enc28j60.\+h@{enc28j60.\+h}!P\+W\+R\+S\+V@{P\+W\+R\+S\+V}}
+\index{P\+W\+R\+S\+V@{P\+W\+R\+S\+V}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{P\+W\+R\+S\+V}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+W\+R\+S\+V~0x20}}\label{enc28j60_8h_a1cccb4a1ed06b0b6f0fb15f586a6e907}
+
+
+Definition at line 113 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a77b0c5764ff32500b2eaa95151ad75fe}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}}
+\index{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M~0x3\+A}}\label{enc28j60_8h_a77b0c5764ff32500b2eaa95151ad75fe}
+
+
+Definition at line 471 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf(), and enc\+\_\+recv\+\_\+packet().
+
+\hypertarget{enc28j60_8h_aff58be703bdeb74483a909fd5ceb4f0c}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G@{R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}}
+\index{R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G@{R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G~0x00}}\label{enc28j60_8h_aff58be703bdeb74483a909fd5ceb4f0c}
+
+
+Definition at line 470 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+read().
+
+\hypertarget{enc28j60_8h_abfb18e020b5d6fdf88882a3950f1a404}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+F\+U\+N\+R\+S\+T@{R\+F\+U\+N\+R\+S\+T}}
+\index{R\+F\+U\+N\+R\+S\+T@{R\+F\+U\+N\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+F\+U\+N\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+F\+U\+N\+R\+S\+T~0x04}}\label{enc28j60_8h_abfb18e020b5d6fdf88882a3950f1a404}
+
+
+Definition at line 411 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a0479a5a53a99ecec5d77edf8f3367406}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+N\+D\+R\+S\+T@{R\+N\+D\+R\+S\+T}}
+\index{R\+N\+D\+R\+S\+T@{R\+N\+D\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+N\+D\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+N\+D\+R\+S\+T~0x40}}\label{enc28j60_8h_a0479a5a53a99ecec5d77edf8f3367406}
+
+
+Definition at line 409 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aef2fd62a2950211fe8841fff8d8950a8}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T@{R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}}
+\index{R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T@{R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T~0x00}}\label{enc28j60_8h_aef2fd62a2950211fe8841fff8d8950a8}
+
+
+Definition at line 478 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a7d0bcd440119b8d43d3a52e8719806d9}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T@{R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}}
+\index{R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T@{R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T~(0x1\+F\+F\+F -\/ 0x0600 -\/ 1)}}\label{enc28j60_8h_a7d0bcd440119b8d43d3a52e8719806d9}
+
+
+Definition at line 479 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_adc44bbf15dfbdb380389cef57af88b6d}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+B\+U\+S\+Y@{R\+X\+B\+U\+S\+Y}}
+\index{R\+X\+B\+U\+S\+Y@{R\+X\+B\+U\+S\+Y}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+B\+U\+S\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+B\+U\+S\+Y~0x04}}\label{enc28j60_8h_adc44bbf15dfbdb380389cef57af88b6d}
+
+
+Definition at line 98 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ad13655c69641fe3b2c0cc90fd3d42084}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+E\+R\+I\+E@{R\+X\+E\+R\+I\+E}}
+\index{R\+X\+E\+R\+I\+E@{R\+X\+E\+R\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+E\+R\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+E\+R\+I\+E~0x01}}\label{enc28j60_8h_ad13655c69641fe3b2c0cc90fd3d42084}
+
+
+Definition at line 66 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_adb3411c72b313ba961c0cf775cf9db02}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+E\+R\+I\+F@{R\+X\+E\+R\+I\+F}}
+\index{R\+X\+E\+R\+I\+F@{R\+X\+E\+R\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+E\+R\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+E\+R\+I\+F~0x01}}\label{enc28j60_8h_adb3411c72b313ba961c0cf775cf9db02}
+
+
+Definition at line 83 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a13e2c5a266fa002bd903394ea9313708}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+P\+A\+U\+S@{R\+X\+P\+A\+U\+S}}
+\index{R\+X\+P\+A\+U\+S@{R\+X\+P\+A\+U\+S}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+P\+A\+U\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+P\+A\+U\+S~0x04}}\label{enc28j60_8h_a13e2c5a266fa002bd903394ea9313708}
+
+
+Definition at line 396 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_ad1aa5e4bcaed448c4d161b97b8ac1282}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+R\+S\+T@{R\+X\+R\+S\+T}}
+\index{R\+X\+R\+S\+T@{R\+X\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+R\+S\+T~0x40}}\label{enc28j60_8h_ad1aa5e4bcaed448c4d161b97b8ac1282}
+
+
+Definition at line 127 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a10bfd47c41c0b92e4613786eda43b768}{\index{enc28j60.\+h@{enc28j60.\+h}!R\+X\+S\+T\+A\+T@{R\+X\+S\+T\+A\+T}}
+\index{R\+X\+S\+T\+A\+T@{R\+X\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{R\+X\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+X\+S\+T\+A\+T~0x1000}}\label{enc28j60_8h_a10bfd47c41c0b92e4613786eda43b768}
+
+
+Definition at line 312 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a7b114f85cab70531adc738c2e499df6a}{\index{enc28j60.\+h@{enc28j60.\+h}!S\+C\+A\+N@{S\+C\+A\+N}}
+\index{S\+C\+A\+N@{S\+C\+A\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{S\+C\+A\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+A\+N~0x02}}\label{enc28j60_8h_a7b114f85cab70531adc738c2e499df6a}
+
+
+Definition at line 452 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a74625341a79e3484830c401d8947443c}{\index{enc28j60.\+h@{enc28j60.\+h}!S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T@{S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T}}
+\index{S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T@{S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T~0x\+F\+F}}\label{enc28j60_8h_a74625341a79e3484830c401d8947443c}
+
+
+Definition at line 476 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_af95ee1390b9678f34abf0c4e19bfb051}{\index{enc28j60.\+h@{enc28j60.\+h}!S\+P\+R\+D\+\_\+\+M\+A\+S\+K@{S\+P\+R\+D\+\_\+\+M\+A\+S\+K}}
+\index{S\+P\+R\+D\+\_\+\+M\+A\+S\+K@{S\+P\+R\+D\+\_\+\+M\+A\+S\+K}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{S\+P\+R\+D\+\_\+\+M\+A\+S\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+R\+D\+\_\+\+M\+A\+S\+K~0x80}}\label{enc28j60_8h_af95ee1390b9678f34abf0c4e19bfb051}
+
+
+Definition at line 48 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af5bf5e7cd73fb57fc3df0547c75cb268}{\index{enc28j60.\+h@{enc28j60.\+h}!S\+T\+R\+C\+H@{S\+T\+R\+C\+H}}
+\index{S\+T\+R\+C\+H@{S\+T\+R\+C\+H}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{S\+T\+R\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+R\+C\+H~0x0002}}\label{enc28j60_8h_af5bf5e7cd73fb57fc3df0547c75cb268}
+
+
+Definition at line 367 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a8922215868c2db2e7399c5534b0176d7}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+F\+U\+N\+R\+S\+T@{T\+F\+U\+N\+R\+S\+T}}
+\index{T\+F\+U\+N\+R\+S\+T@{T\+F\+U\+N\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+F\+U\+N\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+F\+U\+N\+R\+S\+T~0x01}}\label{enc28j60_8h_a8922215868c2db2e7399c5534b0176d7}
+
+
+Definition at line 413 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2fd2b1229a37c6d0d7a37880f5921fd7}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T@{T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}}
+\index{T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T@{T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T~(0x1\+F\+F\+F -\/ 0x0600)}}\label{enc28j60_8h_a2fd2b1229a37c6d0d7a37880f5921fd7}
+
+
+Definition at line 480 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+send\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a729e5274baa808ecee3f31c36c838354}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T@{T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}}
+\index{T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T@{T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T~0x1\+F\+F\+F}}\label{enc28j60_8h_a729e5274baa808ecee3f31c36c838354}
+
+
+Definition at line 481 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a772c979aff8b1cfc6d64612c7b6d1a73}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+A\+B\+R\+T@{T\+X\+A\+B\+R\+T}}
+\index{T\+X\+A\+B\+R\+T@{T\+X\+A\+B\+R\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+A\+B\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+A\+B\+R\+T~0x02}}\label{enc28j60_8h_a772c979aff8b1cfc6d64612c7b6d1a73}
+
+
+Definition at line 99 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a835f9be221794e025cde45d42fe95794}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+C\+R\+C\+E\+N@{T\+X\+C\+R\+C\+E\+N}}
+\index{T\+X\+C\+R\+C\+E\+N@{T\+X\+C\+R\+C\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+C\+R\+C\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+C\+R\+C\+E\+N~0x10}}\label{enc28j60_8h_a835f9be221794e025cde45d42fe95794}
+
+
+Definition at line 426 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a141ecf954628f1b8dd7cf51e7147f378}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+D\+I\+S@{T\+X\+D\+I\+S}}
+\index{T\+X\+D\+I\+S@{T\+X\+D\+I\+S}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+D\+I\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+D\+I\+S~0x2000}}\label{enc28j60_8h_a141ecf954628f1b8dd7cf51e7147f378}
+
+
+Definition at line 296 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac2f309bd5f52f64ecbb04e394b834a44}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+E\+R\+I\+E@{T\+X\+E\+R\+I\+E}}
+\index{T\+X\+E\+R\+I\+E@{T\+X\+E\+R\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+E\+R\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+E\+R\+I\+E~0x02}}\label{enc28j60_8h_ac2f309bd5f52f64ecbb04e394b834a44}
+
+
+Definition at line 65 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a7a0f9cb1aef73f027e31bd01426f2d7a}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+E\+R\+I\+F@{T\+X\+E\+R\+I\+F}}
+\index{T\+X\+E\+R\+I\+F@{T\+X\+E\+R\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+E\+R\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+E\+R\+I\+F~0x02}}\label{enc28j60_8h_a7a0f9cb1aef73f027e31bd01426f2d7a}
+
+
+Definition at line 82 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_af85ac7f4899bd56c36ed2a0ca53df422}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+I\+E@{T\+X\+I\+E}}
+\index{T\+X\+I\+E@{T\+X\+I\+E}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+I\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+I\+E~0x08}}\label{enc28j60_8h_af85ac7f4899bd56c36ed2a0ca53df422}
+
+
+Definition at line 63 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac765fb3c77a3c11ddd4e7ac9ea7b4bed}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+I\+F@{T\+X\+I\+F}}
+\index{T\+X\+I\+F@{T\+X\+I\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+I\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+I\+F~0x08}}\label{enc28j60_8h_ac765fb3c77a3c11ddd4e7ac9ea7b4bed}
+
+
+Definition at line 80 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_aa96ab16a2dddfccd77b723367e7d9acd}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+P\+A\+U\+S@{T\+X\+P\+A\+U\+S}}
+\index{T\+X\+P\+A\+U\+S@{T\+X\+P\+A\+U\+S}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+P\+A\+U\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+P\+A\+U\+S~0x08}}\label{enc28j60_8h_aa96ab16a2dddfccd77b723367e7d9acd}
+
+
+Definition at line 395 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_a24074ab99aa1bbaa1c6ea4cca511f3ef}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+R\+S\+T@{T\+X\+R\+S\+T}}
+\index{T\+X\+R\+S\+T@{T\+X\+R\+S\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+R\+S\+T~0x80}}\label{enc28j60_8h_a24074ab99aa1bbaa1c6ea4cca511f3ef}
+
+
+Definition at line 126 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_ac97c83c67cb160908e4f640370155c2a}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+R\+T\+S@{T\+X\+R\+T\+S}}
+\index{T\+X\+R\+T\+S@{T\+X\+R\+T\+S}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+R\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+R\+T\+S~0x08}}\label{enc28j60_8h_ac97c83c67cb160908e4f640370155c2a}
+
+
+Definition at line 130 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+send\+\_\+packet().
+
+\hypertarget{enc28j60_8h_a9b55c5012b89b417ee348b39a8d708c3}{\index{enc28j60.\+h@{enc28j60.\+h}!T\+X\+S\+T\+A\+T@{T\+X\+S\+T\+A\+T}}
+\index{T\+X\+S\+T\+A\+T@{T\+X\+S\+T\+A\+T}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{T\+X\+S\+T\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+X\+S\+T\+A\+T~0x2000}}\label{enc28j60_8h_a9b55c5012b89b417ee348b39a8d708c3}
+
+
+Definition at line 311 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a410de19a3f17fcce4aea328aba4dcf97}{\index{enc28j60.\+h@{enc28j60.\+h}!U\+C\+E\+N@{U\+C\+E\+N}}
+\index{U\+C\+E\+N@{U\+C\+E\+N}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{U\+C\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+C\+E\+N~0x80}}\label{enc28j60_8h_a410de19a3f17fcce4aea328aba4dcf97}
+
+
+Definition at line 377 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+init().
+
+\hypertarget{enc28j60_8h_adcc697ac647d091ace83a79ec0df74c0}{\index{enc28j60.\+h@{enc28j60.\+h}!V\+R\+P\+F@{V\+R\+P\+F}}
+\index{V\+R\+P\+F@{V\+R\+P\+F}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{V\+R\+P\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+R\+P\+F~0x08}}\label{enc28j60_8h_adcc697ac647d091ace83a79ec0df74c0}
+
+
+Definition at line 115 of file enc28j60.\+h.
+
+\hypertarget{enc28j60_8h_a2f68a569bbc3dfa73c96ea9c57df4fcb}{\index{enc28j60.\+h@{enc28j60.\+h}!W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M@{W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}}
+\index{W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M@{W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M~0x7\+A}}\label{enc28j60_8h_a2f68a569bbc3dfa73c96ea9c57df4fcb}
+
+
+Definition at line 473 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+send\+\_\+packet(), and enc\+\_\+write\+\_\+buf().
+
+\hypertarget{enc28j60_8h_a7156ba0adb02e4b950d43bad5b4bd6d1}{\index{enc28j60.\+h@{enc28j60.\+h}!W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G@{W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}}
+\index{W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G@{W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G~0x40}}\label{enc28j60_8h_a7156ba0adb02e4b950d43bad5b4bd6d1}
+
+
+Definition at line 472 of file enc28j60.\+h.
+
+
+
+Referenced by enc\+\_\+write().
+
+
+
+\subsection{Function Documentation}
+\hypertarget{enc28j60_8h_a7ac8a98005477e34c31c67395851fc80}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+get\+\_\+rev@{enc\+\_\+get\+\_\+rev}}
+\index{enc\+\_\+get\+\_\+rev@{enc\+\_\+get\+\_\+rev}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+get\+\_\+rev}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+get\+\_\+rev (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a7ac8a98005477e34c31c67395851fc80}
+
+
+get the revision of E\+N\+C28\+J60 
+
+\begin{DoxyReturn}{Returns}
+revision 
+\end{DoxyReturn}
+
+
+Definition at line 332 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+read(), and E\+R\+E\+V\+I\+D.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_a7ac8a98005477e34c31c67395851fc80_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_a9c0a8d055c8531d4ca1aa8e691acf70a}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+init@{enc\+\_\+init}}
+\index{enc\+\_\+init@{enc\+\_\+init}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a9c0a8d055c8531d4ca1aa8e691acf70a}
+
+
+Referenced by main().
+
+\hypertarget{enc28j60_8h_aa75a4325284e67324bcee6b18f882b54}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+init\+\_\+phy@{enc\+\_\+init\+\_\+phy}}
+\index{enc\+\_\+init\+\_\+phy@{enc\+\_\+init\+\_\+phy}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+init\+\_\+phy}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+init\+\_\+phy (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_aa75a4325284e67324bcee6b18f882b54}
+
+
+initialize the physical interface of E\+N\+C28\+J60 
+
+
+
+Definition at line 270 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+write\+\_\+phy(), and P\+H\+L\+C\+O\+N.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_aa75a4325284e67324bcee6b18f882b54_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_a42714a50e71f68faacb88f6d09f30e73}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+read@{enc\+\_\+read}}
+\index{enc\+\_\+read@{enc\+\_\+read}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a42714a50e71f68faacb88f6d09f30e73}
+
+
+read from from address of E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+operation 
+\end{DoxyReturn}
+
+
+Definition at line 235 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+read\+\_\+op(), enc\+\_\+set\+\_\+bank(), and R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+get\+\_\+rev(), enc\+\_\+init(), enc\+\_\+read\+\_\+phy(), enc\+\_\+recv\+\_\+packet(), and enc\+\_\+write\+\_\+phy().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_a42714a50e71f68faacb88f6d09f30e73_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_a64c815aeeeac3323b0fe272d90a5c0f0}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+read\+\_\+buf@{enc\+\_\+read\+\_\+buf}}
+\index{enc\+\_\+read\+\_\+buf@{enc\+\_\+read\+\_\+buf}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+read\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+read\+\_\+buf (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a64c815aeeeac3323b0fe272d90a5c0f0}
+
+
+read from the buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of data \\
+\hline
+{\em data} & data to read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 295 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M, spi\+\_\+read(), and spi\+\_\+write().
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{enc28j60_8h_a64c815aeeeac3323b0fe272d90a5c0f0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_aaa5de360d4e46ac044b911c01769f0c4}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+read\+\_\+op@{enc\+\_\+read\+\_\+op}}
+\index{enc\+\_\+read\+\_\+op@{enc\+\_\+read\+\_\+op}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+read\+\_\+op}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+read\+\_\+op (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{op, }
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_aaa5de360d4e46ac044b911c01769f0c4}
+
+
+read the operation from address of E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & operation \\
+\hline
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data from S\+P\+I 
+\end{DoxyReturn}
+
+
+Definition at line 251 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), spi\+\_\+read\+\_\+addr(), spi\+\_\+write(), and spi\+\_\+write\+\_\+op().
+
+
+
+Referenced by enc\+\_\+read(), and enc\+\_\+recv\+\_\+packet().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{enc28j60_8h_aaa5de360d4e46ac044b911c01769f0c4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_aacaf641612f593cef8136d1fdf8d7bee}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+read\+\_\+phy@{enc\+\_\+read\+\_\+phy}}
+\index{enc\+\_\+read\+\_\+phy@{enc\+\_\+read\+\_\+phy}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+read\+\_\+phy}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t enc\+\_\+read\+\_\+phy (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_aacaf641612f593cef8136d1fdf8d7bee}
+
+
+read from physical address of E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file enc28j60.\+c.
+
+
+
+References B\+U\+S\+Y, enc\+\_\+read(), enc\+\_\+write(), M\+I\+C\+M\+D, M\+I\+I\+R\+D, M\+I\+R\+D\+H, M\+I\+R\+D\+L, M\+I\+R\+E\+G\+A\+D\+R, and M\+I\+S\+T\+A\+T.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_aacaf641612f593cef8136d1fdf8d7bee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_a955683da076de3f92da57d7d06951ae7}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+recv\+\_\+packet@{enc\+\_\+recv\+\_\+packet}}
+\index{enc\+\_\+recv\+\_\+packet@{enc\+\_\+recv\+\_\+packet}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+recv\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t enc\+\_\+recv\+\_\+packet (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{maxlen, }
+\item[{uint8\+\_\+t $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a955683da076de3f92da57d7d06951ae7}
+
+
+receive a packet from ethernet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxlen} & maximum length of packet to receive \\
+\hline
+{\em packet} & packet to receive\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length of received packet 
+\end{DoxyReturn}
+
+
+Definition at line 368 of file enc28j60.\+c.
+
+
+
+References B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, E\+C\+O\+N2, enc\+\_\+read(), enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write(), enc\+\_\+write\+\_\+op(), E\+P\+K\+T\+C\+N\+T, E\+R\+D\+P\+T\+H, E\+R\+D\+P\+T\+L, E\+R\+X\+R\+D\+P\+T\+H, E\+R\+X\+R\+D\+P\+T\+L, M\+I\+N, p\+\_\+next, P\+K\+T\+D\+E\+C, and R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_a955683da076de3f92da57d7d06951ae7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_abcc7d56a9babb64610bd346cdaef81a6}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+send\+\_\+packet@{enc\+\_\+send\+\_\+packet}}
+\index{enc\+\_\+send\+\_\+packet@{enc\+\_\+send\+\_\+packet}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+send\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+send\+\_\+packet (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_abcc7d56a9babb64610bd346cdaef81a6}
+
+
+send a packet to ethernet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of packet \\
+\hline
+{\em packet} & packet to send \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 344 of file enc28j60.\+c.
+
+
+
+References B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, E\+C\+O\+N1, enc\+\_\+write(), enc\+\_\+write\+\_\+buf(), enc\+\_\+write\+\_\+op(), E\+T\+X\+N\+D\+H, E\+T\+X\+N\+D\+L, E\+W\+R\+P\+T\+H, E\+W\+R\+P\+T\+L, T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T, T\+X\+R\+T\+S, and W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M.
+
+
+
+Referenced by arp\+\_\+answer(), echo\+\_\+reply(), and udp\+\_\+reply().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_abcc7d56a9babb64610bd346cdaef81a6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_ac9481db892dd46048540a834032f8ef7}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+set\+\_\+bank@{enc\+\_\+set\+\_\+bank}}
+\index{enc\+\_\+set\+\_\+bank@{enc\+\_\+set\+\_\+bank}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+set\+\_\+bank}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+set\+\_\+bank (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_ac9481db892dd46048540a834032f8ef7}
+
+
+set the bank on address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file enc28j60.\+c.
+
+
+
+References A\+D\+D\+R\+\_\+\+M\+A\+S\+K, B\+A\+N\+K\+\_\+\+M\+A\+S\+K, B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R, B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, B\+S\+E\+L0, B\+S\+E\+L1, E\+C\+O\+N1, enc\+\_\+bank, and enc\+\_\+write\+\_\+op().
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+read(), and enc\+\_\+write().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_ac9481db892dd46048540a834032f8ef7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_aa518d6801d39ef8d7ad828b0f35684f0}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+set\+\_\+mac@{enc\+\_\+set\+\_\+mac}}
+\index{enc\+\_\+set\+\_\+mac@{enc\+\_\+set\+\_\+mac}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+set\+\_\+mac}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+set\+\_\+mac (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_aa518d6801d39ef8d7ad828b0f35684f0}
+\hypertarget{enc28j60_8h_a6ae6915ab4363819a3492bd8509263e5}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+start@{enc\+\_\+start}}
+\index{enc\+\_\+start@{enc\+\_\+start}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a6ae6915ab4363819a3492bd8509263e5}
+
+
+start E\+N\+C28\+J60 pin to write or to read 
+
+
+
+Definition at line 38 of file enc28j60.\+c.
+
+
+
+References E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+S, and E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write\+\_\+buf(), and enc\+\_\+write\+\_\+op().
+
+\hypertarget{enc28j60_8h_a63e6002e7cdb7ac2433fcb6fb4fc0b16}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+stop@{enc\+\_\+stop}}
+\index{enc\+\_\+stop@{enc\+\_\+stop}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+stop}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a63e6002e7cdb7ac2433fcb6fb4fc0b16}
+
+
+stop the E\+N\+C28\+J60 pin 
+
+
+
+Definition at line 47 of file enc28j60.\+c.
+
+
+
+References E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+S, and E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write\+\_\+buf(), and enc\+\_\+write\+\_\+op().
+
+\hypertarget{enc28j60_8h_a9baf5880395c0b49cd2cfccf3dc690e2}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+write@{enc\+\_\+write}}
+\index{enc\+\_\+write@{enc\+\_\+write}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a9baf5880395c0b49cd2cfccf3dc690e2}
+
+
+write on E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address to write \\
+\hline
+{\em data} & data to send \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 162 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+set\+\_\+bank(), enc\+\_\+write\+\_\+op(), and W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+read\+\_\+phy(), enc\+\_\+recv\+\_\+packet(), enc\+\_\+send\+\_\+packet(), enc\+\_\+set\+\_\+mac(), and enc\+\_\+write\+\_\+phy().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_a9baf5880395c0b49cd2cfccf3dc690e2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_a22151e93b50167d60ea05a0806bed7d0}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+write\+\_\+buf@{enc\+\_\+write\+\_\+buf}}
+\index{enc\+\_\+write\+\_\+buf@{enc\+\_\+write\+\_\+buf}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+write\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write\+\_\+buf (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a22151e93b50167d60ea05a0806bed7d0}
+
+
+write the buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of data \\
+\hline
+{\em data} & data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 314 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), spi\+\_\+write(), and W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M.
+
+
+
+Referenced by enc\+\_\+send\+\_\+packet().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{enc28j60_8h_a22151e93b50167d60ea05a0806bed7d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_a7b7b73cf7da394dcfd8425e69eb866c5}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+write\+\_\+op@{enc\+\_\+write\+\_\+op}}
+\index{enc\+\_\+write\+\_\+op@{enc\+\_\+write\+\_\+op}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+write\+\_\+op}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write\+\_\+op (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{op, }
+\item[{uint8\+\_\+t}]{addr, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_a7b7b73cf7da394dcfd8425e69eb866c5}
+
+
+write the operation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & operation to write on S\+P\+I \\
+\hline
+{\em addr} & address to write \\
+\hline
+{\em data} & data to send on S\+P\+I \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), spi\+\_\+write(), and spi\+\_\+write\+\_\+op().
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+recv\+\_\+packet(), enc\+\_\+send\+\_\+packet(), enc\+\_\+set\+\_\+bank(), and enc\+\_\+write().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{enc28j60_8h_a7b7b73cf7da394dcfd8425e69eb866c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8h_ab2e6a8f9117e6c212139571a96f0e001}{\index{enc28j60.\+h@{enc28j60.\+h}!enc\+\_\+write\+\_\+phy@{enc\+\_\+write\+\_\+phy}}
+\index{enc\+\_\+write\+\_\+phy@{enc\+\_\+write\+\_\+phy}!enc28j60.\+h@{enc28j60.\+h}}
+\subsubsection[{enc\+\_\+write\+\_\+phy}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write\+\_\+phy (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr, }
+\item[{uint16\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8h_ab2e6a8f9117e6c212139571a96f0e001}
+
+
+write the data on E\+N\+C28\+J60 physical address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address \\
+\hline
+{\em data} & data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 190 of file enc28j60.\+c.
+
+
+
+References B\+U\+S\+Y, enc\+\_\+read(), enc\+\_\+write(), M\+I\+R\+E\+G\+A\+D\+R, M\+I\+S\+T\+A\+T, M\+I\+W\+R\+H, and M\+I\+W\+R\+L.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+init\+\_\+phy().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8h_ab2e6a8f9117e6c212139571a96f0e001_cgraph}
+\end{center}
+\end{figure}
+
+

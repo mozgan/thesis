@@ -1,0 +1,249 @@
+\hypertarget{leds_8c}{\section{driver/leds.c File Reference}
+\label{leds_8c}\index{driver/leds.\+c@{driver/leds.\+c}}
+}
+
+
+driver for leds (to use for debugging)  
+
+
+{\ttfamily \#include $<$driver/leds.\+h$>$}\\*
+Include dependency graph for leds.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{leds_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{leds_8c_a67cfc3137a465e560792490e81365254}{leds\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em initialize all L\+E\+Ds \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_a2c5ea08ddf7fca2dbc2e74128df07075}{led\+\_\+init} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em initialize a led \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_a4e79f1752d7b67cfed2c7831307cf32c}{leds\+\_\+on} (void)
+\begin{DoxyCompactList}\small\item\em turn on all L\+E\+Ds \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_a8a1a7cc3d6801ed463c63127ac4ed627}{led\+\_\+on} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em turn on a led \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_a4bf53abfd4d628a2791bf1783de96b27}{leds\+\_\+off} (void)
+\begin{DoxyCompactList}\small\item\em turn off all L\+E\+Ds \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_aac10c6d29c0a4b744a60e941f002c47f}{led\+\_\+off} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em turn off a led \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_a779f03508ef6685f03e64616c7c2fc58}{leds\+\_\+toggle} (void)
+\begin{DoxyCompactList}\small\item\em toggle all L\+E\+Ds \end{DoxyCompactList}\item 
+void \hyperlink{leds_8c_a15aeb6fd48b8cbb5fb0c0380f88fa676}{led\+\_\+toggle} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em toggle a led \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+driver for leds (to use for debugging) 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 15\+:27\+:38 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, G\+N\+U/\+Linux, 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000007}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{leds_8c_source}{leds.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{leds_8c_a2c5ea08ddf7fca2dbc2e74128df07075}{\index{leds.\+c@{leds.\+c}!led\+\_\+init@{led\+\_\+init}}
+\index{led\+\_\+init@{led\+\_\+init}!leds.\+c@{leds.\+c}}
+\subsubsection[{led\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void led\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{led}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a2c5ea08ddf7fca2dbc2e74128df07075}
+
+
+initialize a led 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & the number of led \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+D\+D\+R, and L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+\hypertarget{leds_8c_aac10c6d29c0a4b744a60e941f002c47f}{\index{leds.\+c@{leds.\+c}!led\+\_\+off@{led\+\_\+off}}
+\index{led\+\_\+off@{led\+\_\+off}!leds.\+c@{leds.\+c}}
+\subsubsection[{led\+\_\+off}]{\setlength{\rightskip}{0pt plus 5cm}void led\+\_\+off (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{led}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_aac10c6d29c0a4b744a60e941f002c47f}
+
+
+turn off a led 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & the number of led \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+\hypertarget{leds_8c_a8a1a7cc3d6801ed463c63127ac4ed627}{\index{leds.\+c@{leds.\+c}!led\+\_\+on@{led\+\_\+on}}
+\index{led\+\_\+on@{led\+\_\+on}!leds.\+c@{leds.\+c}}
+\subsubsection[{led\+\_\+on}]{\setlength{\rightskip}{0pt plus 5cm}void led\+\_\+on (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{led}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a8a1a7cc3d6801ed463c63127ac4ed627}
+
+
+turn on a led 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & the number of led \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+\hypertarget{leds_8c_a15aeb6fd48b8cbb5fb0c0380f88fa676}{\index{leds.\+c@{leds.\+c}!led\+\_\+toggle@{led\+\_\+toggle}}
+\index{led\+\_\+toggle@{led\+\_\+toggle}!leds.\+c@{leds.\+c}}
+\subsubsection[{led\+\_\+toggle}]{\setlength{\rightskip}{0pt plus 5cm}void led\+\_\+toggle (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{led}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a15aeb6fd48b8cbb5fb0c0380f88fa676}
+
+
+toggle a led 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & the number of led \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+
+
+Referenced by trigger().
+
+\hypertarget{leds_8c_a67cfc3137a465e560792490e81365254}{\index{leds.\+c@{leds.\+c}!leds\+\_\+init@{leds\+\_\+init}}
+\index{leds\+\_\+init@{leds\+\_\+init}!leds.\+c@{leds.\+c}}
+\subsubsection[{leds\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void leds\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a67cfc3137a465e560792490e81365254}
+
+
+initialize all L\+E\+Ds 
+
+
+
+Definition at line 33 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+A\+L\+L, L\+E\+D\+\_\+\+D\+D\+R, L\+E\+D\+\_\+\+O\+F\+F, and L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+
+
+Referenced by main().
+
+\hypertarget{leds_8c_a4bf53abfd4d628a2791bf1783de96b27}{\index{leds.\+c@{leds.\+c}!leds\+\_\+off@{leds\+\_\+off}}
+\index{leds\+\_\+off@{leds\+\_\+off}!leds.\+c@{leds.\+c}}
+\subsubsection[{leds\+\_\+off}]{\setlength{\rightskip}{0pt plus 5cm}void leds\+\_\+off (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a4bf53abfd4d628a2791bf1783de96b27}
+
+
+turn off all L\+E\+Ds 
+
+
+
+Definition at line 75 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+O\+F\+F, and L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+\hypertarget{leds_8c_a4e79f1752d7b67cfed2c7831307cf32c}{\index{leds.\+c@{leds.\+c}!leds\+\_\+on@{leds\+\_\+on}}
+\index{leds\+\_\+on@{leds\+\_\+on}!leds.\+c@{leds.\+c}}
+\subsubsection[{leds\+\_\+on}]{\setlength{\rightskip}{0pt plus 5cm}void leds\+\_\+on (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a4e79f1752d7b67cfed2c7831307cf32c}
+
+
+turn on all L\+E\+Ds 
+
+
+
+Definition at line 55 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+A\+L\+L, and L\+E\+D\+\_\+\+P\+O\+R\+T.
+
+\hypertarget{leds_8c_a779f03508ef6685f03e64616c7c2fc58}{\index{leds.\+c@{leds.\+c}!leds\+\_\+toggle@{leds\+\_\+toggle}}
+\index{leds\+\_\+toggle@{leds\+\_\+toggle}!leds.\+c@{leds.\+c}}
+\subsubsection[{leds\+\_\+toggle}]{\setlength{\rightskip}{0pt plus 5cm}void leds\+\_\+toggle (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{leds_8c_a779f03508ef6685f03e64616c7c2fc58}
+
+
+toggle all L\+E\+Ds 
+
+
+
+Definition at line 95 of file leds.\+c.
+
+
+
+References L\+E\+D\+\_\+\+A\+L\+L, and L\+E\+D\+\_\+\+P\+O\+R\+T.
+

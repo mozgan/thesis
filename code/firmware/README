@@ -1,0 +1,42 @@
+
+
+firmware/
+	|-- board/
+	|   `-- freq.h
+	|
+	|-- device/
+	|   |-- atmega16.h
+	|   `-- enc28j60.h
+	|
+	|-- driver/
+	|   |-- enc28j60.c
+	|   |-- icp.c
+	|   |-- icp.h
+	|   |-- leds.c
+	|   |-- leds.h
+	|   |-- net.c
+	|   |-- net.h
+	|   |-- spi.c
+	|   |-- spi.h
+	|   |-- timer0.c
+	|   `-- timer0.h
+	|
+	|-- include/
+	|   |-- common.h
+	|   `-- stdbool.h
+	|
+	|-- lib/
+	|   |-- buffer.c
+	|   `-- buffer.h
+	|
+	|-- AUTHORS
+	|-- BSDmakefile
+	|-- GNUmakefile
+	|-- LICENSE
+	|-- Makefile
+	|-- Makefile.mk
+	|-- README
+	|-- config.mk
+	|-- doxy.file
+	`-- main.c
+

@@ -1,0 +1,24 @@
+
+
+        $ make help
+        Usage:	make [option]
+ 
+        Options:
+        	help	    print this help message			
+        	make	    generate the executable			
+        	clean	    remove executable, object(s), and doc	
+        	doxy	    generate doxygen documentation		
+        	install	    install the executable			
+        	uninstall   uninstall the executable from PREFIX	
+        	dist	    generate a distribution			
+        	distcheck   check the distribution			
+        	distclean   remove the dist, doc, exec, and object(s)	
+ 
+        Defaults:   PREFIX=/usr/local	    
+        	    BIN=/usr/local/bin	    
+ 
+        To install in other directory:	    
+           make prefix=/path/to/install install
+        
+
+

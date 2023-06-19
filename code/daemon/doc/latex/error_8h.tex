@@ -1,0 +1,89 @@
+\hypertarget{error_8h}{\section{src/error.h File Reference}
+\label{error_8h}\index{src/error.\+h@{src/error.\+h}}
+}
+
+
+header file for error  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+Include dependency graph for error.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{error_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{error_8h_a7c50c1dd9ff2f0d7d88bef6a99b4315c}{sys\+\_\+err} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em if an error occured then print the error message and exit from program \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+header file for error 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+23.\+08.\+2013 22\+:20\+:44 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{error_8h_source}{error.\+h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{error_8h_a7c50c1dd9ff2f0d7d88bef6a99b4315c}{\index{error.\+h@{error.\+h}!sys\+\_\+err@{sys\+\_\+err}}
+\index{sys\+\_\+err@{sys\+\_\+err}!error.\+h@{error.\+h}}
+\subsubsection[{sys\+\_\+err}]{\setlength{\rightskip}{0pt plus 5cm}void sys\+\_\+err (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}}\label{error_8h_a7c50c1dd9ff2f0d7d88bef6a99b4315c}
+
+
+if an error occured then print the error message and exit from program 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & programmer message to print \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{error_8c_source_l00035}{35} of file \hyperlink{error_8c_source}{error.\+c}.
+
+
+
+Referenced by \hyperlink{udp_8c_source_l00060}{binding()}, \hyperlink{udp_8c_source_l00108}{close\+\_\+socket()}, \hyperlink{udp_8c_source_l00070}{communication()}, and \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}.
+

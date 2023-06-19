@@ -1,0 +1,35 @@
+\chapter{Einführung}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivation}
+
+Um die elektrotechnischen Geräte in Betrieb nehmen zu können, wird eine Versorgungsspannung von einer Spannungsquelle benötigt, die als Gleich- oder Wechselspannungsquelle bezeichnet wird. Die Gleichspannungsquelle hat zu jedem Zeitpunkt einen konstanten Wert. Im Gegensatz hat die Wechselspannung einen periodisch unterschiedlichen Spannungswert, wie die allgemeine Form in der \autoref{signal:math} beschrieben wird. Die Periode ist eine Eigenschaft eines Vorgangs, der in einer gewissen Dauer beschränkt ist und in der laufenden Zeit wiederholt auftritt. Und die Frequenz ist ein Maß, wie schnell ein periodischer Vorgang regelmäßig aufeinander auftritt. Aus diesem Grund wird die Frequenz der Wechselspannung zur Erklärung herausgegeben. Der Zusammenhang zwischen der Periode $T$ und der Frequenz $f$ ist beschreibbar wie 
+
+\begin{align}
+	Frequenz [Hz] = \frac{1}{Periodendauer [s]}
+\end{align}
+
+und bedeutet, dass die Frequenz die Anzahl der Schwingungen pro Sekunde ist.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problemstellung und Zielsetzung}
+
+Bei sinkender Stromstärke spielt die Frequenz eine wichtige Rolle. Aus diesem Grund hat die Netzfrequenz eine große Bedeutung und wird beobachtet. Wenn die Frequenz hoch ist, ist der Spannungswert bzw. der fließende Strom in betriebenen Geräten störend. Wenn der Spannungswert zu niedrig ist, dann fließt Stromstärke zu gering, um Geräte zu betreiben. \smallskip \smallskip
+
+Eine Wechselspannung wird mittels einer rotierenden Maschiene erzeugt, die aus einer Spule bzw. einem homogenen Magnetfeld besteht. Die Höhe der Wechselspannung ist von der Drehfrequenz dieses Motors (\textit{Winkelgeschwindigkeit}) abhängig, wie in der folgenden mathematischen Form dargestellt wird:
+
+\begin{align} 
+	U_{ind}(t) = \frac{U_{max}}{sin(wt)}
+\end{align}
+
+wobei $U_{ind}$ die Induktionsspannung im Verlauf der Zeit und $U_{max}$ die maximale Spannung, welche von der Maschiene erzeugt wird, sind. Hier ist der maximale Spannungswert $U_{max}$ von der magnetischen Spulenfläche und von der Flussdichte abhängig. Umso höher die Drehfrequenz ist, desto schneller ist die Änderung dieser Fläche. Abhängig davon bildet sich der Spannungswert. \smallskip \smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Zielsetzung}
+
+In dieser Arbeit soll ein Messgerät für die Netzfrequenz enstehen, das eine möglichst kleine Bauform hat und mit verschwindend kleiner Leistung auskommt. Ein sinusförmiges Signal wird digitalisiert und die Frequenz davon gemessen. \smallskip \smallskip
+
+Zusätzlich sollte das Gerät seine Messdaten an einen zentralen Server schicken können, um die Änderungen der gemessenen Netzfrequenz unabhängig vom gemessenen Ort zu beobachten. Außerdem werden die Frequenzwerte an dem Server archiviert. Um diese Messdatensendung zu realisieren, wird ein Kommunikationsprotokoll benötigt und implementiert.
+

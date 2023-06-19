@@ -1,0 +1,445 @@
+\hypertarget{net_8c}{\section{driver/net.c File Reference}
+\label{net_8c}\index{driver/net.\+c@{driver/net.\+c}}
+}
+
+
+driver for network communication  
+
+
+{\ttfamily \#include $<$board/freq.\+h$>$}\\*
+{\ttfamily \#include $<$device/enc28j60.\+h$>$}\\*
+{\ttfamily \#include $<$driver/net.\+h$>$}\\*
+{\ttfamily \#include $<$driver/leds.\+h$>$}\\*
+Include dependency graph for net.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{net_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{net_8c_a044265f0081346e76e9686ec54badf5b}{net\+\_\+init} (uint8\+\_\+t $\ast$\hyperlink{main_8c_ae0177d7710b28f95720d54e2b1d37d65}{mymac}, uint8\+\_\+t $\ast$\hyperlink{main_8c_a60983d0ff040975723414a8f21375c77}{myip})
+\begin{DoxyCompactList}\small\item\em initialize the network \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{net_8c_a2e5cb2f2e4db612d3ac1262da515f20f}{eth\+\_\+arp} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf}, uint8\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em make the network wirh arp \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{net_8c_af0b4a02ade3a716c6b10ce1fc821770b}{eth\+\_\+ip} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf}, uint8\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em make the network communication with ip address \end{DoxyCompactList}\item 
+void \hyperlink{net_8c_ad8c59c931bff8fe806ce7598efb6047c}{arp\+\_\+answer} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf}, uint8\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em make an answer if request \end{DoxyCompactList}\item 
+void \hyperlink{net_8c_a4f72e5a5ef17368554a9b5368d05b5bd}{echo\+\_\+reply} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf}, uint8\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em make an echo answer (ping -\/ pong) if request \end{DoxyCompactList}\item 
+void \hyperlink{net_8c_a26c789f4ef67752529324ebba5ac51a1}{udp\+\_\+reply} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf}, char $\ast$data, uint8\+\_\+t len, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em make the U\+D\+P protocol \end{DoxyCompactList}\item 
+void \hyperlink{net_8c_a0b1ae978a785d4da05a5c17be80f6314}{make\+\_\+eth} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf})
+\begin{DoxyCompactList}\small\item\em make the ethernet header \end{DoxyCompactList}\item 
+void \hyperlink{net_8c_a03c6b5196ad75d2eeca9ff69537a3214}{make\+\_\+ip} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf})
+\begin{DoxyCompactList}\small\item\em make the ip header \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{net_8c_acda4291ff558e4c9c4ca87e87679e4a7}{checksum} (uint8\+\_\+t $\ast$\hyperlink{main_8c_aef549d19c508d258c21e95059b300d13}{buf}, uint16\+\_\+t len, uint8\+\_\+t type)
+\begin{DoxyCompactList}\small\item\em checksum \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{net_8c_ad6ffa7743848d35021d59a06df02d7cb}{macaddr} \mbox{[}6\mbox{]}
+\item 
+static uint8\+\_\+t \hyperlink{net_8c_a1c5949b1405b137e3beb728106cb127d}{ipaddr} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+driver for network communication 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20.\+08.\+2013 13\+:29\+:36 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, G\+N\+U/\+Linux, 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000009}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000009}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{net_8c_source}{net.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{net_8c_ad8c59c931bff8fe806ce7598efb6047c}{\index{net.\+c@{net.\+c}!arp\+\_\+answer@{arp\+\_\+answer}}
+\index{arp\+\_\+answer@{arp\+\_\+answer}!net.\+c@{net.\+c}}
+\subsubsection[{arp\+\_\+answer}]{\setlength{\rightskip}{0pt plus 5cm}void arp\+\_\+answer (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf, }
+\item[{uint8\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}}\label{net_8c_ad8c59c931bff8fe806ce7598efb6047c}
+
+
+make an answer if request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+{\em len} & length of buffer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 125 of file net.\+c.
+
+
+
+References A\+R\+P\+\_\+\+D\+E\+S\+T\+\_\+\+I\+P\+\_\+\+P, A\+R\+P\+\_\+\+D\+E\+S\+T\+\_\+\+M\+A\+C\+\_\+\+P, A\+R\+P\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+H\+\_\+\+P, A\+R\+P\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+L\+\_\+\+P, A\+R\+P\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+R\+E\+P\+L\+Y\+\_\+\+H\+\_\+\+V, A\+R\+P\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+R\+E\+P\+L\+Y\+\_\+\+L\+\_\+\+V, A\+R\+P\+\_\+\+S\+R\+C\+\_\+\+I\+P\+\_\+\+P, A\+R\+P\+\_\+\+S\+R\+C\+\_\+\+M\+A\+C\+\_\+\+P, enc\+\_\+send\+\_\+packet(), ipaddr, macaddr, and make\+\_\+eth().
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{net_8c_ad8c59c931bff8fe806ce7598efb6047c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{net_8c_acda4291ff558e4c9c4ca87e87679e4a7}{\index{net.\+c@{net.\+c}!checksum@{checksum}}
+\index{checksum@{checksum}!net.\+c@{net.\+c}}
+\subsubsection[{checksum}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t checksum (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf, }
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}}\label{net_8c_acda4291ff558e4c9c4ca87e87679e4a7}
+
+
+checksum 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+{\em len} & length \\
+\hline
+{\em type} & type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sum 
+\end{DoxyReturn}
+
+
+Definition at line 277 of file net.\+c.
+
+
+
+References buf, I\+P\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+C\+P\+\_\+\+V, and I\+P\+\_\+\+P\+R\+O\+T\+O\+\_\+\+U\+D\+P\+\_\+\+V.
+
+
+
+Referenced by make\+\_\+ip(), and udp\+\_\+reply().
+
+\hypertarget{net_8c_a4f72e5a5ef17368554a9b5368d05b5bd}{\index{net.\+c@{net.\+c}!echo\+\_\+reply@{echo\+\_\+reply}}
+\index{echo\+\_\+reply@{echo\+\_\+reply}!net.\+c@{net.\+c}}
+\subsubsection[{echo\+\_\+reply}]{\setlength{\rightskip}{0pt plus 5cm}void echo\+\_\+reply (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf, }
+\item[{uint8\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}}\label{net_8c_a4f72e5a5ef17368554a9b5368d05b5bd}
+
+
+make an echo answer (ping -\/ pong) if request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+{\em len} & length of buffer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 158 of file net.\+c.
+
+
+
+References enc\+\_\+send\+\_\+packet(), I\+C\+M\+P\+\_\+\+C\+H\+E\+C\+K\+S\+U\+M\+\_\+\+P, I\+C\+M\+P\+\_\+\+R\+E\+P\+L\+Y\+\_\+\+V, I\+C\+M\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+P, make\+\_\+eth(), and make\+\_\+ip().
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{net_8c_a4f72e5a5ef17368554a9b5368d05b5bd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{net_8c_a2e5cb2f2e4db612d3ac1262da515f20f}{\index{net.\+c@{net.\+c}!eth\+\_\+arp@{eth\+\_\+arp}}
+\index{eth\+\_\+arp@{eth\+\_\+arp}!net.\+c@{net.\+c}}
+\subsubsection[{eth\+\_\+arp}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t eth\+\_\+arp (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf, }
+\item[{uint8\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}}\label{net_8c_a2e5cb2f2e4db612d3ac1262da515f20f}
+
+
+make the network wirh arp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+{\em len} & length of buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if success, otherwise zero 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file net.\+c.
+
+
+
+References A\+R\+P\+\_\+\+D\+E\+S\+T\+\_\+\+I\+P\+\_\+\+P, E\+T\+H\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+\_\+\+P, E\+T\+H\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+\_\+\+P, E\+T\+H\+T\+Y\+P\+E\+\_\+\+A\+R\+P\+\_\+\+H\+\_\+\+V, E\+T\+H\+T\+Y\+P\+E\+\_\+\+A\+R\+P\+\_\+\+L\+\_\+\+V, and ipaddr.
+
+
+
+Referenced by main().
+
+\hypertarget{net_8c_af0b4a02ade3a716c6b10ce1fc821770b}{\index{net.\+c@{net.\+c}!eth\+\_\+ip@{eth\+\_\+ip}}
+\index{eth\+\_\+ip@{eth\+\_\+ip}!net.\+c@{net.\+c}}
+\subsubsection[{eth\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t eth\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf, }
+\item[{uint8\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}}\label{net_8c_af0b4a02ade3a716c6b10ce1fc821770b}
+
+
+make the network communication with ip address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+{\em len} & length of buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns 1 if success, otherwise zero 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file net.\+c.
+
+
+
+References E\+T\+H\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+\_\+\+P, E\+T\+H\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+\_\+\+P, E\+T\+H\+T\+Y\+P\+E\+\_\+\+I\+P\+\_\+\+H\+\_\+\+V, E\+T\+H\+T\+Y\+P\+E\+\_\+\+I\+P\+\_\+\+L\+\_\+\+V, I\+P\+\_\+\+D\+E\+S\+T\+\_\+\+P, and ipaddr.
+
+
+
+Referenced by main().
+
+\hypertarget{net_8c_a0b1ae978a785d4da05a5c17be80f6314}{\index{net.\+c@{net.\+c}!make\+\_\+eth@{make\+\_\+eth}}
+\index{make\+\_\+eth@{make\+\_\+eth}!net.\+c@{net.\+c}}
+\subsubsection[{make\+\_\+eth}]{\setlength{\rightskip}{0pt plus 5cm}void make\+\_\+eth (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}}\label{net_8c_a0b1ae978a785d4da05a5c17be80f6314}
+
+
+make the ethernet header 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 225 of file net.\+c.
+
+
+
+References E\+T\+H\+\_\+\+D\+E\+S\+T\+\_\+\+M\+A\+C, E\+T\+H\+\_\+\+S\+R\+C\+\_\+\+M\+A\+C, and macaddr.
+
+
+
+Referenced by arp\+\_\+answer(), echo\+\_\+reply(), and udp\+\_\+reply().
+
+\hypertarget{net_8c_a03c6b5196ad75d2eeca9ff69537a3214}{\index{net.\+c@{net.\+c}!make\+\_\+ip@{make\+\_\+ip}}
+\index{make\+\_\+ip@{make\+\_\+ip}!net.\+c@{net.\+c}}
+\subsubsection[{make\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}void make\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}}\label{net_8c_a03c6b5196ad75d2eeca9ff69537a3214}
+
+
+make the ip header 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file net.\+c.
+
+
+
+References checksum(), I\+P\+\_\+\+C\+H\+E\+C\+K\+S\+U\+M\+\_\+\+P, I\+P\+\_\+\+D\+E\+S\+T\+\_\+\+P, I\+P\+\_\+\+F\+L\+A\+G\+S\+\_\+\+P, I\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N, I\+P\+\_\+\+P, I\+P\+\_\+\+S\+R\+C\+\_\+\+P, I\+P\+\_\+\+T\+T\+L\+\_\+\+P, and ipaddr.
+
+
+
+Referenced by echo\+\_\+reply(), and udp\+\_\+reply().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{net_8c_a03c6b5196ad75d2eeca9ff69537a3214_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{net_8c_a044265f0081346e76e9686ec54badf5b}{\index{net.\+c@{net.\+c}!net\+\_\+init@{net\+\_\+init}}
+\index{net\+\_\+init@{net\+\_\+init}!net.\+c@{net.\+c}}
+\subsubsection[{net\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void net\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{mymac, }
+\item[{uint8\+\_\+t $\ast$}]{myip}
+\end{DoxyParamCaption}
+)}}\label{net_8c_a044265f0081346e76e9686ec54badf5b}
+
+
+initialize the network 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mymac} & my mac address \\
+\hline
+{\em myip} & my ip address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file net.\+c.
+
+
+
+References ipaddr, and macaddr.
+
+
+
+Referenced by main().
+
+\hypertarget{net_8c_a26c789f4ef67752529324ebba5ac51a1}{\index{net.\+c@{net.\+c}!udp\+\_\+reply@{udp\+\_\+reply}}
+\index{udp\+\_\+reply@{udp\+\_\+reply}!net.\+c@{net.\+c}}
+\subsubsection[{udp\+\_\+reply}]{\setlength{\rightskip}{0pt plus 5cm}void udp\+\_\+reply (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{buf, }
+\item[{char $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{len, }
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)}}\label{net_8c_a26c789f4ef67752529324ebba5ac51a1}
+
+
+make the U\+D\+P protocol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer \\
+\hline
+{\em data} & data \\
+\hline
+{\em len} & length \\
+\hline
+{\em port} & port number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 182 of file net.\+c.
+
+
+
+References checksum(), enc\+\_\+send\+\_\+packet(), E\+T\+H\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N, I\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N, I\+P\+\_\+\+S\+R\+C\+\_\+\+P, I\+P\+\_\+\+T\+O\+T\+L\+E\+N\+\_\+\+H\+\_\+\+P, I\+P\+\_\+\+T\+O\+T\+L\+E\+N\+\_\+\+L\+\_\+\+P, make\+\_\+eth(), make\+\_\+ip(), U\+D\+P\+\_\+\+C\+H\+E\+C\+K\+S\+U\+M\+\_\+\+H\+\_\+\+P, U\+D\+P\+\_\+\+C\+H\+E\+C\+K\+S\+U\+M\+\_\+\+L\+\_\+\+P, U\+D\+P\+\_\+\+D\+A\+T\+A\+\_\+\+P, U\+D\+P\+\_\+\+D\+E\+S\+T\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+\+P, U\+D\+P\+\_\+\+D\+E\+S\+T\+\_\+\+P\+O\+R\+T\+\_\+\+L\+\_\+\+P, U\+D\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N, U\+D\+P\+\_\+\+L\+E\+N\+\_\+\+H\+\_\+\+P, U\+D\+P\+\_\+\+L\+E\+N\+\_\+\+L\+\_\+\+P, U\+D\+P\+\_\+\+S\+R\+C\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+\+P, and U\+D\+P\+\_\+\+S\+R\+C\+\_\+\+P\+O\+R\+T\+\_\+\+L\+\_\+\+P.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{net_8c_a26c789f4ef67752529324ebba5ac51a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{net_8c_a1c5949b1405b137e3beb728106cb127d}{\index{net.\+c@{net.\+c}!ipaddr@{ipaddr}}
+\index{ipaddr@{ipaddr}!net.\+c@{net.\+c}}
+\subsubsection[{ipaddr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t ipaddr\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{net_8c_a1c5949b1405b137e3beb728106cb127d}
+
+
+Definition at line 34 of file net.\+c.
+
+
+
+Referenced by arp\+\_\+answer(), eth\+\_\+arp(), eth\+\_\+ip(), make\+\_\+ip(), and net\+\_\+init().
+
+\hypertarget{net_8c_ad6ffa7743848d35021d59a06df02d7cb}{\index{net.\+c@{net.\+c}!macaddr@{macaddr}}
+\index{macaddr@{macaddr}!net.\+c@{net.\+c}}
+\subsubsection[{macaddr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t macaddr\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{net_8c_ad6ffa7743848d35021d59a06df02d7cb}
+
+
+Definition at line 33 of file net.\+c.
+
+
+
+Referenced by arp\+\_\+answer(), make\+\_\+eth(), and net\+\_\+init().
+

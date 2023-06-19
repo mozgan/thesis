@@ -1,0 +1,8 @@
+<map id="driver/enc28j60.c" name="driver/enc28j60.c">
+<area shape="rect" id="node2" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="257,229,346,256"/>
+<area shape="rect" id="node8" href="$enc28j60_8h.html" title="registers of ENC28J60 device " alt="" coords="125,155,248,181"/>
+<area shape="rect" id="node14" href="$spi_8h.html" title="header file for spi interface " alt="" coords="323,80,405,107"/>
+<area shape="rect" id="node3" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="297,304,426,331"/>
+<area shape="rect" id="node9" href="$common_8h.html" title="some useful definitions " alt="" coords="9,229,130,256"/>
+<area shape="rect" id="node10" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="33,304,106,331"/>
+</map>

@@ -1,0 +1,320 @@
+\hypertarget{udp_8h}{\section{src/udp.h File Reference}
+\label{udp_8h}\index{src/udp.\+h@{src/udp.\+h}}
+}
+
+
+header file for udp communication  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$netdb.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$netinet/in.\+h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\+h$>$}\\*
+Include dependency graph for udp.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{udp_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{udp_8h_aaf12d2783d89167480b76853da8ba5e1}{u\+\_\+long}~unsigned long
+\item 
+\#define \hyperlink{udp_8h_a4d04a8261523c8f3473946257c12ce5b}{h\+\_\+addr}~h\+\_\+addr\+\_\+list\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{udp_8h_af62eaae41c3f2e3caa57d3735a0ec053}{make\+\_\+socket} (const char $\ast$, unsigned int)
+\begin{DoxyCompactList}\small\item\em make the socket \end{DoxyCompactList}\item 
+void \hyperlink{udp_8h_a165726b24e152a113fdde7732b667b5f}{binding} (void)
+\begin{DoxyCompactList}\small\item\em bind to host \end{DoxyCompactList}\item 
+void \hyperlink{udp_8h_a0b55dfe2fd6924e01624911af758ae03}{communication} (void)
+\begin{DoxyCompactList}\small\item\em make the communication with host (recv or send the datagrams) \end{DoxyCompactList}\item 
+void \hyperlink{udp_8h_a1926d0bf833c9a35c53d2a2f601faa60}{close\+\_\+socket} (void)
+\begin{DoxyCompactList}\small\item\em close the socket if not to use in future \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct hostent $\ast$ \hyperlink{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}{h\+\_\+name}
+\item 
+struct sockaddr\+\_\+in \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\+\_\+addr}
+\item 
+struct sockaddr\+\_\+in \hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\+\_\+addr}
+\item 
+int \hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\+\_\+fd}
+\item 
+unsigned int \hyperlink{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{port\+\_\+nr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+header file for udp communication 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+23.\+08.\+2013 22\+:02\+:31 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000005}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{udp_8h_a4d04a8261523c8f3473946257c12ce5b}{\index{udp.\+h@{udp.\+h}!h\+\_\+addr@{h\+\_\+addr}}
+\index{h\+\_\+addr@{h\+\_\+addr}!udp.\+h@{udp.\+h}}
+\subsubsection[{h\+\_\+addr}]{\setlength{\rightskip}{0pt plus 5cm}\#define h\+\_\+addr~h\+\_\+addr\+\_\+list\mbox{[}0\mbox{]}}}\label{udp_8h_a4d04a8261523c8f3473946257c12ce5b}
+
+
+Definition at line \hyperlink{udp_8h_source_l00052}{52} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+\hypertarget{udp_8h_aaf12d2783d89167480b76853da8ba5e1}{\index{udp.\+h@{udp.\+h}!u\+\_\+long@{u\+\_\+long}}
+\index{u\+\_\+long@{u\+\_\+long}!udp.\+h@{udp.\+h}}
+\subsubsection[{u\+\_\+long}]{\setlength{\rightskip}{0pt plus 5cm}\#define u\+\_\+long~unsigned long}}\label{udp_8h_aaf12d2783d89167480b76853da8ba5e1}
+
+
+Definition at line \hyperlink{udp_8h_source_l00045}{45} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+Referenced by \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{udp_8h_a165726b24e152a113fdde7732b667b5f}{\index{udp.\+h@{udp.\+h}!binding@{binding}}
+\index{binding@{binding}!udp.\+h@{udp.\+h}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void binding (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{udp_8h_a165726b24e152a113fdde7732b667b5f}
+
+
+bind to host 
+
+bind to the socket 
+
+Definition at line \hyperlink{udp_8c_source_l00060}{60} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00058}{serv\+\_\+addr}, \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, and \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{udp_8h_a165726b24e152a113fdde7732b667b5f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udp_8h_a1926d0bf833c9a35c53d2a2f601faa60}{\index{udp.\+h@{udp.\+h}!close\+\_\+socket@{close\+\_\+socket}}
+\index{close\+\_\+socket@{close\+\_\+socket}!udp.\+h@{udp.\+h}}
+\subsubsection[{close\+\_\+socket}]{\setlength{\rightskip}{0pt plus 5cm}void close\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{udp_8h_a1926d0bf833c9a35c53d2a2f601faa60}
+
+
+close the socket if not to use in future 
+
+close the open socket 
+
+Definition at line \hyperlink{udp_8c_source_l00108}{108} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, and \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{udp_8h_a1926d0bf833c9a35c53d2a2f601faa60_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udp_8h_a0b55dfe2fd6924e01624911af758ae03}{\index{udp.\+h@{udp.\+h}!communication@{communication}}
+\index{communication@{communication}!udp.\+h@{udp.\+h}}
+\subsubsection[{communication}]{\setlength{\rightskip}{0pt plus 5cm}void communication (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{udp_8h_a0b55dfe2fd6924e01624911af758ae03}
+
+
+make the communication with host (recv or send the datagrams) 
+
+communication 
+
+Definition at line \hyperlink{udp_8c_source_l00070}{70} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00057}{dest\+\_\+addr}, \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, and \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{udp_8h_a0b55dfe2fd6924e01624911af758ae03_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udp_8h_af62eaae41c3f2e3caa57d3735a0ec053}{\index{udp.\+h@{udp.\+h}!make\+\_\+socket@{make\+\_\+socket}}
+\index{make\+\_\+socket@{make\+\_\+socket}!udp.\+h@{udp.\+h}}
+\subsubsection[{make\+\_\+socket}]{\setlength{\rightskip}{0pt plus 5cm}void make\+\_\+socket (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{hostname, }
+\item[{unsigned int}]{port}
+\end{DoxyParamCaption}
+)}}\label{udp_8h_af62eaae41c3f2e3caa57d3735a0ec053}
+
+
+make the socket 
+
+make a socket
+
+
+\begin{DoxyParams}{Parameters}
+{\em hostname} & get the hostname \\
+\hline
+{\em port} & port number to connection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{udp_8c_source_l00037}{37} of file \hyperlink{udp_8c_source}{udp.\+c}.
+
+
+
+References \hyperlink{udp_8h_source_l00057}{dest\+\_\+addr}, \hyperlink{udp_8h_source_l00055}{h\+\_\+name}, \hyperlink{udp_8h_source_l00058}{serv\+\_\+addr}, \hyperlink{udp_8h_source_l00060}{sock\+\_\+fd}, \hyperlink{error_8c_source_l00035}{sys\+\_\+err()}, and \hyperlink{udp_8h_source_l00045}{u\+\_\+long}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{udp_8h_af62eaae41c3f2e3caa57d3735a0ec053_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{\index{udp.\+h@{udp.\+h}!dest\+\_\+addr@{dest\+\_\+addr}}
+\index{dest\+\_\+addr@{dest\+\_\+addr}!udp.\+h@{udp.\+h}}
+\subsubsection[{dest\+\_\+addr}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\+\_\+in dest\+\_\+addr}}\label{udp_8h_a072220ecebc8a6044aca4afa78eefebd}
+destination address 
+
+Definition at line \hyperlink{udp_8h_source_l00057}{57} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+Referenced by \hyperlink{udp_8c_source_l00070}{communication()}, and \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}.
+
+\hypertarget{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}{\index{udp.\+h@{udp.\+h}!h\+\_\+name@{h\+\_\+name}}
+\index{h\+\_\+name@{h\+\_\+name}!udp.\+h@{udp.\+h}}
+\subsubsection[{h\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}struct hostent$\ast$ h\+\_\+name}}\label{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}
+real hostname 
+
+Definition at line \hyperlink{udp_8h_source_l00055}{55} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+Referenced by \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}.
+
+\hypertarget{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{\index{udp.\+h@{udp.\+h}!port\+\_\+nr@{port\+\_\+nr}}
+\index{port\+\_\+nr@{port\+\_\+nr}!udp.\+h@{udp.\+h}}
+\subsubsection[{port\+\_\+nr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int port\+\_\+nr}}\label{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}
+port number 
+
+Definition at line \hyperlink{udp_8h_source_l00061}{61} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+Referenced by \hyperlink{main_8c_source_l00060}{main()}.
+
+\hypertarget{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{\index{udp.\+h@{udp.\+h}!serv\+\_\+addr@{serv\+\_\+addr}}
+\index{serv\+\_\+addr@{serv\+\_\+addr}!udp.\+h@{udp.\+h}}
+\subsubsection[{serv\+\_\+addr}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\+\_\+in serv\+\_\+addr}}\label{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}
+server address 
+
+Definition at line \hyperlink{udp_8h_source_l00058}{58} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+Referenced by \hyperlink{udp_8c_source_l00060}{binding()}, and \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}.
+
+\hypertarget{udp_8h_a514331e6141a28289f8ddead55eadebd}{\index{udp.\+h@{udp.\+h}!sock\+\_\+fd@{sock\+\_\+fd}}
+\index{sock\+\_\+fd@{sock\+\_\+fd}!udp.\+h@{udp.\+h}}
+\subsubsection[{sock\+\_\+fd}]{\setlength{\rightskip}{0pt plus 5cm}int sock\+\_\+fd}}\label{udp_8h_a514331e6141a28289f8ddead55eadebd}
+socket description 
+
+Definition at line \hyperlink{udp_8h_source_l00060}{60} of file \hyperlink{udp_8h_source}{udp.\+h}.
+
+
+
+Referenced by \hyperlink{udp_8c_source_l00060}{binding()}, \hyperlink{udp_8c_source_l00108}{close\+\_\+socket()}, \hyperlink{udp_8c_source_l00070}{communication()}, and \hyperlink{udp_8c_source_l00037}{make\+\_\+socket()}.
+

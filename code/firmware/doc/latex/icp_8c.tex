@@ -1,0 +1,110 @@
+\hypertarget{icp_8c}{\section{driver/icp.c File Reference}
+\label{icp_8c}\index{driver/icp.\+c@{driver/icp.\+c}}
+}
+
+
+driver for input capture pin operations  
+
+
+{\ttfamily \#include $<$driver/leds.\+h$>$}\\*
+{\ttfamily \#include $<$driver/icp.\+h$>$}\\*
+Include dependency graph for icp.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{icp_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{icp_8c_a9aea3198ad5628ffd740d6dc46d0f640}{icp\+\_\+init} (void($\ast$call\+\_\+back)(uint16\+\_\+t))
+\begin{DoxyCompactList}\small\item\em initialize the input capture pin on timer 1 \end{DoxyCompactList}\item 
+\hyperlink{icp_8c_a5da59e05fa5ade4be7c7656aee78291a}{I\+S\+R} (T\+I\+M\+E\+R1\+\_\+\+C\+A\+P\+T\+\_\+vect)
+\begin{DoxyCompactList}\small\item\em Timer1 Input Capture Interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+driver for input capture pin operations 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22.\+08.\+2013 15\+:57\+:28 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000005}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{icp_8c_source}{icp.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{icp_8c_a9aea3198ad5628ffd740d6dc46d0f640}{\index{icp.\+c@{icp.\+c}!icp\+\_\+init@{icp\+\_\+init}}
+\index{icp\+\_\+init@{icp\+\_\+init}!icp.\+c@{icp.\+c}}
+\subsubsection[{icp\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void icp\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(uint16\+\_\+t)}]{call\+\_\+back}
+\end{DoxyParamCaption}
+)}}\label{icp_8c_a9aea3198ad5628ffd740d6dc46d0f640}
+
+
+initialize the input capture pin on timer 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+\_\+back} & call back function from interrupt to call \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file icp.\+c.
+
+
+
+References F\+\_\+\+C\+P\+U, icp\+\_\+handler, and N\+U\+L\+L.
+
+
+
+Referenced by main().
+
+\hypertarget{icp_8c_a5da59e05fa5ade4be7c7656aee78291a}{\index{icp.\+c@{icp.\+c}!I\+S\+R@{I\+S\+R}}
+\index{I\+S\+R@{I\+S\+R}!icp.\+c@{icp.\+c}}
+\subsubsection[{I\+S\+R}]{\setlength{\rightskip}{0pt plus 5cm}I\+S\+R (
+\begin{DoxyParamCaption}
+\item[{T\+I\+M\+E\+R1\+\_\+\+C\+A\+P\+T\+\_\+vect}]{}
+\end{DoxyParamCaption}
+)}}\label{icp_8c_a5da59e05fa5ade4be7c7656aee78291a}
+
+
+Timer1 Input Capture Interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+I\+M\+E\+R1\+\_\+\+C\+A\+P\+T\+\_\+vect} & interrupt name \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file icp.\+c.
+
+
+
+References icp\+\_\+handler, and N\+U\+L\+L.
+

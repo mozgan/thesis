@@ -1,0 +1,136 @@
+\hypertarget{buffer_8c}{\section{lib/buffer.c File Reference}
+\label{buffer_8c}\index{lib/buffer.\+c@{lib/buffer.\+c}}
+}
+
+
+library for ring-\/buffer  
+
+
+{\ttfamily \#include $<$lib/buffer.\+h$>$}\\*
+Include dependency graph for buffer.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{buffer_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{buffer_8c_ae4a17adb1fbf755574c338b7d17a68e6}{buffer\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em initialize the ring buffer \end{DoxyCompactList}\item 
+void \hyperlink{buffer_8c_a7760b3d8ac8ebcf70f3ec2b91efb6dc5}{buffer\+\_\+write} (uint16\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em write the new data in ring buffer \end{DoxyCompactList}\item 
+float \hyperlink{buffer_8c_ab4c57bf12ec39024ce3d6d56ad70abe9}{buffer\+\_\+medium} (void)
+\begin{DoxyCompactList}\small\item\em calculate the medium of ring buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+library for ring-\/buffer 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20.\+08.\+2013 20\+:28\+:03 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000017}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000017}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{buffer_8c_source}{buffer.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{buffer_8c_ae4a17adb1fbf755574c338b7d17a68e6}{\index{buffer.\+c@{buffer.\+c}!buffer\+\_\+init@{buffer\+\_\+init}}
+\index{buffer\+\_\+init@{buffer\+\_\+init}!buffer.\+c@{buffer.\+c}}
+\subsubsection[{buffer\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void buffer\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{buffer_8c_ae4a17adb1fbf755574c338b7d17a68e6}
+
+
+initialize the ring buffer 
+
+
+
+Definition at line 33 of file buffer.\+c.
+
+
+
+References head, and tail.
+
+
+
+Referenced by main().
+
+\hypertarget{buffer_8c_ab4c57bf12ec39024ce3d6d56ad70abe9}{\index{buffer.\+c@{buffer.\+c}!buffer\+\_\+medium@{buffer\+\_\+medium}}
+\index{buffer\+\_\+medium@{buffer\+\_\+medium}!buffer.\+c@{buffer.\+c}}
+\subsubsection[{buffer\+\_\+medium}]{\setlength{\rightskip}{0pt plus 5cm}float buffer\+\_\+medium (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{buffer_8c_ab4c57bf12ec39024ce3d6d56ad70abe9}
+
+
+calculate the medium of ring buffer 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 59 of file buffer.\+c.
+
+
+
+References buffer, and L\+E\+N.
+
+
+
+Referenced by main().
+
+\hypertarget{buffer_8c_a7760b3d8ac8ebcf70f3ec2b91efb6dc5}{\index{buffer.\+c@{buffer.\+c}!buffer\+\_\+write@{buffer\+\_\+write}}
+\index{buffer\+\_\+write@{buffer\+\_\+write}!buffer.\+c@{buffer.\+c}}
+\subsubsection[{buffer\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}void buffer\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)}}\label{buffer_8c_a7760b3d8ac8ebcf70f3ec2b91efb6dc5}
+
+
+write the new data in ring buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & new data to write in ring buffer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file buffer.\+c.
+
+
+
+References buffer, head, and L\+E\+N.
+
+
+
+Referenced by trigger().
+

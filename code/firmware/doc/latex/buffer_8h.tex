@@ -1,0 +1,209 @@
+\hypertarget{buffer_8h}{\section{lib/buffer.h File Reference}
+\label{buffer_8h}\index{lib/buffer.\+h@{lib/buffer.\+h}}
+}
+
+
+header file for ring buffer  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$include/common.\+h$>$}\\*
+Include dependency graph for buffer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{buffer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{buffer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{buffer_8h_a05b49c662c073f89e86804f7856622a0}{L\+E\+N}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{buffer_8h_ae4a17adb1fbf755574c338b7d17a68e6}{buffer\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em initialize the ring buffer \end{DoxyCompactList}\item 
+void \hyperlink{buffer_8h_a6877d39cb4f8447fd311634feadee37f}{buffer\+\_\+write} (uint16\+\_\+t)
+\begin{DoxyCompactList}\small\item\em write the new data in ring buffer \end{DoxyCompactList}\item 
+float \hyperlink{buffer_8h_ab4c57bf12ec39024ce3d6d56ad70abe9}{buffer\+\_\+medium} (void)
+\begin{DoxyCompactList}\small\item\em calculate the medium of ring buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint16\+\_\+t \hyperlink{buffer_8h_a4db531aa05826b3ece7d6ebce1ba1ab4}{buffer} \mbox{[}\hyperlink{buffer_8h_a05b49c662c073f89e86804f7856622a0}{L\+E\+N}\mbox{]}
+\item 
+volatile uint8\+\_\+t \hyperlink{buffer_8h_aae22e2b3b3f930af186a18d70c863648}{head}
+\item 
+volatile uint8\+\_\+t \hyperlink{buffer_8h_a7d299975a87db769b08769ea6b6561eb}{tail}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+header file for ring buffer 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20.\+08.\+2013 20\+:24\+:11 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000018}{Bug}]none \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000018}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{buffer_8h_source}{buffer.\+h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{buffer_8h_a05b49c662c073f89e86804f7856622a0}{\index{buffer.\+h@{buffer.\+h}!L\+E\+N@{L\+E\+N}}
+\index{L\+E\+N@{L\+E\+N}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{L\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+E\+N~10}}\label{buffer_8h_a05b49c662c073f89e86804f7856622a0}
+max. length of ring buffer 
+
+Definition at line 33 of file buffer.\+h.
+
+
+
+Referenced by buffer\+\_\+medium(), buffer\+\_\+write(), main(), and trigger().
+
+
+
+\subsection{Function Documentation}
+\hypertarget{buffer_8h_ae4a17adb1fbf755574c338b7d17a68e6}{\index{buffer.\+h@{buffer.\+h}!buffer\+\_\+init@{buffer\+\_\+init}}
+\index{buffer\+\_\+init@{buffer\+\_\+init}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{buffer\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void buffer\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{buffer_8h_ae4a17adb1fbf755574c338b7d17a68e6}
+
+
+initialize the ring buffer 
+
+
+
+Definition at line 33 of file buffer.\+c.
+
+
+
+References head, and tail.
+
+
+
+Referenced by main().
+
+\hypertarget{buffer_8h_ab4c57bf12ec39024ce3d6d56ad70abe9}{\index{buffer.\+h@{buffer.\+h}!buffer\+\_\+medium@{buffer\+\_\+medium}}
+\index{buffer\+\_\+medium@{buffer\+\_\+medium}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{buffer\+\_\+medium}]{\setlength{\rightskip}{0pt plus 5cm}float buffer\+\_\+medium (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{buffer_8h_ab4c57bf12ec39024ce3d6d56ad70abe9}
+
+
+calculate the medium of ring buffer 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 59 of file buffer.\+c.
+
+
+
+References buffer, and L\+E\+N.
+
+
+
+Referenced by main().
+
+\hypertarget{buffer_8h_a6877d39cb4f8447fd311634feadee37f}{\index{buffer.\+h@{buffer.\+h}!buffer\+\_\+write@{buffer\+\_\+write}}
+\index{buffer\+\_\+write@{buffer\+\_\+write}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{buffer\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}void buffer\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)}}\label{buffer_8h_a6877d39cb4f8447fd311634feadee37f}
+
+
+write the new data in ring buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & new data to write in ring buffer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file buffer.\+c.
+
+
+
+References buffer, head, and L\+E\+N.
+
+
+
+Referenced by trigger().
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{buffer_8h_a4db531aa05826b3ece7d6ebce1ba1ab4}{\index{buffer.\+h@{buffer.\+h}!buffer@{buffer}}
+\index{buffer@{buffer}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\+\_\+t buffer\mbox{[}{\bf L\+E\+N}\mbox{]}}}\label{buffer_8h_a4db531aa05826b3ece7d6ebce1ba1ab4}
+ring buffer 
+
+Definition at line 35 of file buffer.\+h.
+
+
+
+Referenced by buffer\+\_\+medium(), and buffer\+\_\+write().
+
+\hypertarget{buffer_8h_aae22e2b3b3f930af186a18d70c863648}{\index{buffer.\+h@{buffer.\+h}!head@{head}}
+\index{head@{head}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint8\+\_\+t head}}\label{buffer_8h_aae22e2b3b3f930af186a18d70c863648}
+point the head of ring buffer 
+
+Definition at line 36 of file buffer.\+h.
+
+
+
+Referenced by buffer\+\_\+init(), and buffer\+\_\+write().
+
+\hypertarget{buffer_8h_a7d299975a87db769b08769ea6b6561eb}{\index{buffer.\+h@{buffer.\+h}!tail@{tail}}
+\index{tail@{tail}!buffer.\+h@{buffer.\+h}}
+\subsubsection[{tail}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint8\+\_\+t tail}}\label{buffer_8h_a7d299975a87db769b08769ea6b6561eb}
+point the tail of ring buffer 
+
+Definition at line 37 of file buffer.\+h.
+
+
+
+Referenced by buffer\+\_\+init().
+

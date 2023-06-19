@@ -1,0 +1,787 @@
+\hypertarget{enc28j60_8c}{\section{driver/enc28j60.c File Reference}
+\label{enc28j60_8c}\index{driver/enc28j60.\+c@{driver/enc28j60.\+c}}
+}
+
+
+E\+N\+C28\+J60 ethernet driver.  
+
+
+{\ttfamily \#include $<$board/freq.\+h$>$}\\*
+{\ttfamily \#include $<$device/enc28j60.\+h$>$}\\*
+{\ttfamily \#include $<$driver/spi.\+h$>$}\\*
+Include dependency graph for enc28j60.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{enc28j60_8c_a6ae6915ab4363819a3492bd8509263e5}{enc\+\_\+start} (void)
+\begin{DoxyCompactList}\small\item\em start E\+N\+C28\+J60 pin to write or to read \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_a63e6002e7cdb7ac2433fcb6fb4fc0b16}{enc\+\_\+stop} (void)
+\begin{DoxyCompactList}\small\item\em stop the E\+N\+C28\+J60 pin \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_a3de012f2c3b25ad182f94f5b1ab9a771}{enc\+\_\+set\+\_\+mac} (uint8\+\_\+t \hyperlink{main_8c_ae0177d7710b28f95720d54e2b1d37d65}{mymac}\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em set the mac-\/address to B\+A\+N\+K3 register \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_a786c5765ce9469049ee56d2ca66dcf25}{enc\+\_\+init} (uint8\+\_\+t \hyperlink{main_8c_ae0177d7710b28f95720d54e2b1d37d65}{mymac}\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em initialize the E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_ab64d8270b5a710a2ff635d4449c91a08}{enc\+\_\+write\+\_\+op} (uint8\+\_\+t op, uint8\+\_\+t addr, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em write the operation \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_a7520f33b52393de8d0e3caa796e0baa2}{enc\+\_\+write} (uint8\+\_\+t addr, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em write on E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_ac175ce9462129e5d35f06935aa42c9f6}{enc\+\_\+set\+\_\+bank} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em set the bank on address \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_ab6908af0f98d4b54d35cbcd699119346}{enc\+\_\+write\+\_\+phy} (uint8\+\_\+t addr, uint16\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em write the data on E\+N\+C28\+J60 physical address \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{enc28j60_8c_ab1b8f7c1f5dbcb0e500da8ed87219cd7}{enc\+\_\+read\+\_\+phy} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em read from physical address of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{enc28j60_8c_a0619a7608315f0484d493da171ee37ae}{enc\+\_\+read} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em read from from address of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{enc28j60_8c_a28f10fce3f5c8c1e29efcce27932d149}{enc\+\_\+read\+\_\+op} (uint8\+\_\+t op, uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em read the operation from address of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_aa75a4325284e67324bcee6b18f882b54}{enc\+\_\+init\+\_\+phy} (void)
+\begin{DoxyCompactList}\small\item\em initialize the physical interface of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_ae07e529513d99c8612e7878b7524109d}{enc\+\_\+read\+\_\+buf} (uint16\+\_\+t len, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em read from the buffer \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_a8ae17d4efc162d054952cc4cb80d422c}{enc\+\_\+write\+\_\+buf} (uint16\+\_\+t len, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em write the buffer \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{enc28j60_8c_a7ac8a98005477e34c31c67395851fc80}{enc\+\_\+get\+\_\+rev} (void)
+\begin{DoxyCompactList}\small\item\em get the revision of E\+N\+C28\+J60 \end{DoxyCompactList}\item 
+void \hyperlink{enc28j60_8c_a094a800fcadc3033c6d1e90d2eecba23}{enc\+\_\+send\+\_\+packet} (uint16\+\_\+t len, uint8\+\_\+t $\ast$packet)
+\begin{DoxyCompactList}\small\item\em send a packet to ethernet \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{enc28j60_8c_a412f11a9dbdb9cf9bf812751044f4d4f}{enc\+\_\+recv\+\_\+packet} (uint16\+\_\+t maxlen, uint8\+\_\+t $\ast$packet)
+\begin{DoxyCompactList}\small\item\em receive a packet from ethernet \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{enc28j60_8c_a8cf887c83e16783a97183adf9b0bd5eb}{enc\+\_\+bank}
+\item 
+unsigned int \hyperlink{enc28j60_8c_ad7e304a214204367dd0528e5df3c59f0}{p\+\_\+next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+E\+N\+C28\+J60 ethernet driver. 
+
+\begin{DoxyAuthor}{Author}
+M. Ozgan, \href{mailto:mozgan@mozgan.org}{\tt mozgan@mozgan.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+19.\+08.\+2013 18\+:51\+:18 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Compiler}
+gcc (on Mac, and 4.\+4\+B\+S\+D) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+T\+U Wien 
+\end{DoxyParagraph}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]'enc\+\_\+send\+\_\+packet' gives a warning with compiler option '-\/\+Woverflow'. You can devide as bytes the 16-\/bit registers. \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]none \end{DoxyRefDesc}
+
+
+Definition in file \hyperlink{enc28j60_8c_source}{enc28j60.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{enc28j60_8c_a7ac8a98005477e34c31c67395851fc80}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+get\+\_\+rev@{enc\+\_\+get\+\_\+rev}}
+\index{enc\+\_\+get\+\_\+rev@{enc\+\_\+get\+\_\+rev}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+get\+\_\+rev}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+get\+\_\+rev (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a7ac8a98005477e34c31c67395851fc80}
+
+
+get the revision of E\+N\+C28\+J60 
+
+\begin{DoxyReturn}{Returns}
+revision 
+\end{DoxyReturn}
+
+
+Definition at line 332 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+read(), and E\+R\+E\+V\+I\+D.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a7ac8a98005477e34c31c67395851fc80_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a786c5765ce9469049ee56d2ca66dcf25}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+init@{enc\+\_\+init}}
+\index{enc\+\_\+init@{enc\+\_\+init}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mymac\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a786c5765ce9469049ee56d2ca66dcf25}
+
+
+initialize the E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mymac\mbox{[}$\,$\mbox{]}} & my mac address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file enc28j60.\+c.
+
+
+
+References B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, C\+L\+K\+R\+D\+Y, C\+R\+C\+E\+N, E\+\_\+\+R\+X\+E\+N, E\+C\+O\+N1, E\+I\+E, E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+S, E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+D\+D\+R, E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T, enc\+\_\+read(), enc\+\_\+set\+\_\+bank(), enc\+\_\+set\+\_\+mac(), enc\+\_\+write(), enc\+\_\+write\+\_\+op(), enc\+\_\+write\+\_\+phy(), E\+P\+M\+C\+S\+H, E\+P\+M\+C\+S\+L, E\+P\+M\+M0, E\+P\+M\+M1, E\+R\+X\+F\+C\+O\+N, E\+R\+X\+N\+D\+H, E\+R\+X\+N\+D\+L, E\+R\+X\+R\+D\+P\+T\+H, E\+R\+X\+R\+D\+P\+T\+L, E\+R\+X\+S\+T\+H, E\+R\+X\+S\+T\+L, E\+S\+T\+A\+T, E\+T\+X\+N\+D\+H, E\+T\+X\+N\+D\+L, E\+T\+X\+S\+T\+H, E\+T\+X\+S\+T\+L, F\+R\+M\+L\+N\+E\+N, H\+D\+L\+D\+I\+S, I\+N\+T\+I\+E, M\+A\+B\+B\+I\+P\+G, M\+A\+C\+O\+N1, M\+A\+C\+O\+N2, M\+A\+C\+O\+N3, M\+A\+I\+P\+G\+H, M\+A\+I\+P\+G\+L, M\+A\+M\+X\+F\+L\+H, M\+A\+M\+X\+F\+L\+L, M\+A\+R\+X\+E\+N, M\+A\+X\+\_\+\+F\+R\+A\+M\+E\+\_\+\+L\+E\+N, p\+\_\+next, P\+A\+D\+C\+F\+G0, P\+H\+C\+O\+N2, P\+K\+T\+I\+E, P\+M\+E\+N, R\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T, R\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T, R\+X\+P\+A\+U\+S, S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T, spi\+\_\+init(), T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T, T\+X\+\_\+\+S\+T\+O\+P\+\_\+\+I\+N\+I\+T, T\+X\+C\+R\+C\+E\+N, T\+X\+P\+A\+U\+S, and U\+C\+E\+N.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a786c5765ce9469049ee56d2ca66dcf25_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_aa75a4325284e67324bcee6b18f882b54}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+init\+\_\+phy@{enc\+\_\+init\+\_\+phy}}
+\index{enc\+\_\+init\+\_\+phy@{enc\+\_\+init\+\_\+phy}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+init\+\_\+phy}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+init\+\_\+phy (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_aa75a4325284e67324bcee6b18f882b54}
+
+
+initialize the physical interface of E\+N\+C28\+J60 
+
+
+
+Definition at line 270 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+write\+\_\+phy(), and P\+H\+L\+C\+O\+N.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_aa75a4325284e67324bcee6b18f882b54_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a0619a7608315f0484d493da171ee37ae}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+read@{enc\+\_\+read}}
+\index{enc\+\_\+read@{enc\+\_\+read}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a0619a7608315f0484d493da171ee37ae}
+
+
+read from from address of E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+operation 
+\end{DoxyReturn}
+
+
+Definition at line 235 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+read\+\_\+op(), enc\+\_\+set\+\_\+bank(), and R\+E\+A\+D\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+get\+\_\+rev(), enc\+\_\+init(), enc\+\_\+read\+\_\+phy(), enc\+\_\+recv\+\_\+packet(), and enc\+\_\+write\+\_\+phy().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a0619a7608315f0484d493da171ee37ae_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_ae07e529513d99c8612e7878b7524109d}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+read\+\_\+buf@{enc\+\_\+read\+\_\+buf}}
+\index{enc\+\_\+read\+\_\+buf@{enc\+\_\+read\+\_\+buf}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+read\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+read\+\_\+buf (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_ae07e529513d99c8612e7878b7524109d}
+
+
+read from the buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of data \\
+\hline
+{\em data} & data to read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 295 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M, spi\+\_\+read(), and spi\+\_\+write().
+
+
+
+Referenced by enc\+\_\+recv\+\_\+packet().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{enc28j60_8c_ae07e529513d99c8612e7878b7524109d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a28f10fce3f5c8c1e29efcce27932d149}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+read\+\_\+op@{enc\+\_\+read\+\_\+op}}
+\index{enc\+\_\+read\+\_\+op@{enc\+\_\+read\+\_\+op}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+read\+\_\+op}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+read\+\_\+op (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{op, }
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a28f10fce3f5c8c1e29efcce27932d149}
+
+
+read the operation from address of E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & operation \\
+\hline
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data from S\+P\+I 
+\end{DoxyReturn}
+
+
+Definition at line 251 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), spi\+\_\+read\+\_\+addr(), spi\+\_\+write(), and spi\+\_\+write\+\_\+op().
+
+
+
+Referenced by enc\+\_\+read(), and enc\+\_\+recv\+\_\+packet().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{enc28j60_8c_a28f10fce3f5c8c1e29efcce27932d149_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_ab1b8f7c1f5dbcb0e500da8ed87219cd7}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+read\+\_\+phy@{enc\+\_\+read\+\_\+phy}}
+\index{enc\+\_\+read\+\_\+phy@{enc\+\_\+read\+\_\+phy}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+read\+\_\+phy}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t enc\+\_\+read\+\_\+phy (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_ab1b8f7c1f5dbcb0e500da8ed87219cd7}
+
+
+read from physical address of E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file enc28j60.\+c.
+
+
+
+References B\+U\+S\+Y, enc\+\_\+read(), enc\+\_\+write(), M\+I\+C\+M\+D, M\+I\+I\+R\+D, M\+I\+R\+D\+H, M\+I\+R\+D\+L, M\+I\+R\+E\+G\+A\+D\+R, and M\+I\+S\+T\+A\+T.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_ab1b8f7c1f5dbcb0e500da8ed87219cd7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a412f11a9dbdb9cf9bf812751044f4d4f}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+recv\+\_\+packet@{enc\+\_\+recv\+\_\+packet}}
+\index{enc\+\_\+recv\+\_\+packet@{enc\+\_\+recv\+\_\+packet}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+recv\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t enc\+\_\+recv\+\_\+packet (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{maxlen, }
+\item[{uint8\+\_\+t $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a412f11a9dbdb9cf9bf812751044f4d4f}
+
+
+receive a packet from ethernet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxlen} & maximum length of packet to receive \\
+\hline
+{\em packet} & packet to receive\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length of received packet 
+\end{DoxyReturn}
+
+
+Definition at line 368 of file enc28j60.\+c.
+
+
+
+References B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, E\+C\+O\+N2, enc\+\_\+read(), enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write(), enc\+\_\+write\+\_\+op(), E\+P\+K\+T\+C\+N\+T, E\+R\+D\+P\+T\+H, E\+R\+D\+P\+T\+L, E\+R\+X\+R\+D\+P\+T\+H, E\+R\+X\+R\+D\+P\+T\+L, M\+I\+N, p\+\_\+next, P\+K\+T\+D\+E\+C, and R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a412f11a9dbdb9cf9bf812751044f4d4f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a094a800fcadc3033c6d1e90d2eecba23}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+send\+\_\+packet@{enc\+\_\+send\+\_\+packet}}
+\index{enc\+\_\+send\+\_\+packet@{enc\+\_\+send\+\_\+packet}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+send\+\_\+packet}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+send\+\_\+packet (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a094a800fcadc3033c6d1e90d2eecba23}
+
+
+send a packet to ethernet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of packet \\
+\hline
+{\em packet} & packet to send \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 344 of file enc28j60.\+c.
+
+
+
+References B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, E\+C\+O\+N1, enc\+\_\+write(), enc\+\_\+write\+\_\+buf(), enc\+\_\+write\+\_\+op(), E\+T\+X\+N\+D\+H, E\+T\+X\+N\+D\+L, E\+W\+R\+P\+T\+H, E\+W\+R\+P\+T\+L, T\+X\+\_\+\+S\+T\+A\+R\+T\+\_\+\+I\+N\+I\+T, T\+X\+R\+T\+S, and W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M.
+
+
+
+Referenced by arp\+\_\+answer(), echo\+\_\+reply(), and udp\+\_\+reply().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a094a800fcadc3033c6d1e90d2eecba23_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_ac175ce9462129e5d35f06935aa42c9f6}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+set\+\_\+bank@{enc\+\_\+set\+\_\+bank}}
+\index{enc\+\_\+set\+\_\+bank@{enc\+\_\+set\+\_\+bank}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+set\+\_\+bank}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+set\+\_\+bank (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_ac175ce9462129e5d35f06935aa42c9f6}
+
+
+set the bank on address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file enc28j60.\+c.
+
+
+
+References A\+D\+D\+R\+\_\+\+M\+A\+S\+K, B\+A\+N\+K\+\_\+\+M\+A\+S\+K, B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+L\+R, B\+I\+T\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+E\+T, B\+S\+E\+L0, B\+S\+E\+L1, E\+C\+O\+N1, enc\+\_\+bank, and enc\+\_\+write\+\_\+op().
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+read(), and enc\+\_\+write().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_ac175ce9462129e5d35f06935aa42c9f6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a3de012f2c3b25ad182f94f5b1ab9a771}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+set\+\_\+mac@{enc\+\_\+set\+\_\+mac}}
+\index{enc\+\_\+set\+\_\+mac@{enc\+\_\+set\+\_\+mac}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+set\+\_\+mac}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+set\+\_\+mac (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mymac\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a3de012f2c3b25ad182f94f5b1ab9a771}
+
+
+set the mac-\/address to B\+A\+N\+K3 register 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mymac\mbox{[}$\,$\mbox{]}} & my mac address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+write(), M\+A\+A\+D\+R0, M\+A\+A\+D\+R1, M\+A\+A\+D\+R2, M\+A\+A\+D\+R3, M\+A\+A\+D\+R4, and M\+A\+A\+D\+R5.
+
+
+
+Referenced by enc\+\_\+init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a3de012f2c3b25ad182f94f5b1ab9a771_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a6ae6915ab4363819a3492bd8509263e5}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+start@{enc\+\_\+start}}
+\index{enc\+\_\+start@{enc\+\_\+start}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a6ae6915ab4363819a3492bd8509263e5}
+
+
+start E\+N\+C28\+J60 pin to write or to read 
+
+
+
+Definition at line 38 of file enc28j60.\+c.
+
+
+
+References E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+S, and E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write\+\_\+buf(), and enc\+\_\+write\+\_\+op().
+
+\hypertarget{enc28j60_8c_a63e6002e7cdb7ac2433fcb6fb4fc0b16}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+stop@{enc\+\_\+stop}}
+\index{enc\+\_\+stop@{enc\+\_\+stop}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+stop}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a63e6002e7cdb7ac2433fcb6fb4fc0b16}
+
+
+stop the E\+N\+C28\+J60 pin 
+
+
+
+Definition at line 47 of file enc28j60.\+c.
+
+
+
+References E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+S, and E\+N\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T.
+
+
+
+Referenced by enc\+\_\+read\+\_\+buf(), enc\+\_\+read\+\_\+op(), enc\+\_\+write\+\_\+buf(), and enc\+\_\+write\+\_\+op().
+
+\hypertarget{enc28j60_8c_a7520f33b52393de8d0e3caa796e0baa2}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+write@{enc\+\_\+write}}
+\index{enc\+\_\+write@{enc\+\_\+write}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a7520f33b52393de8d0e3caa796e0baa2}
+
+
+write on E\+N\+C28\+J60 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address to write \\
+\hline
+{\em data} & data to send \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 162 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+set\+\_\+bank(), enc\+\_\+write\+\_\+op(), and W\+R\+I\+T\+E\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G.
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+read\+\_\+phy(), enc\+\_\+recv\+\_\+packet(), enc\+\_\+send\+\_\+packet(), enc\+\_\+set\+\_\+mac(), and enc\+\_\+write\+\_\+phy().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_a7520f33b52393de8d0e3caa796e0baa2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_a8ae17d4efc162d054952cc4cb80d422c}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+write\+\_\+buf@{enc\+\_\+write\+\_\+buf}}
+\index{enc\+\_\+write\+\_\+buf@{enc\+\_\+write\+\_\+buf}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+write\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write\+\_\+buf (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{len, }
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_a8ae17d4efc162d054952cc4cb80d422c}
+
+
+write the buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & length of data \\
+\hline
+{\em data} & data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 314 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), spi\+\_\+write(), and W\+R\+I\+T\+E\+\_\+\+B\+U\+F\+\_\+\+M\+E\+M.
+
+
+
+Referenced by enc\+\_\+send\+\_\+packet().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{enc28j60_8c_a8ae17d4efc162d054952cc4cb80d422c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_ab64d8270b5a710a2ff635d4449c91a08}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+write\+\_\+op@{enc\+\_\+write\+\_\+op}}
+\index{enc\+\_\+write\+\_\+op@{enc\+\_\+write\+\_\+op}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+write\+\_\+op}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write\+\_\+op (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{op, }
+\item[{uint8\+\_\+t}]{addr, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_ab64d8270b5a710a2ff635d4449c91a08}
+
+
+write the operation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & operation to write on S\+P\+I \\
+\hline
+{\em addr} & address to write \\
+\hline
+{\em data} & data to send on S\+P\+I \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file enc28j60.\+c.
+
+
+
+References enc\+\_\+start(), enc\+\_\+stop(), spi\+\_\+write(), and spi\+\_\+write\+\_\+op().
+
+
+
+Referenced by enc\+\_\+init(), enc\+\_\+recv\+\_\+packet(), enc\+\_\+send\+\_\+packet(), enc\+\_\+set\+\_\+bank(), and enc\+\_\+write().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{enc28j60_8c_ab64d8270b5a710a2ff635d4449c91a08_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{enc28j60_8c_ab6908af0f98d4b54d35cbcd699119346}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+write\+\_\+phy@{enc\+\_\+write\+\_\+phy}}
+\index{enc\+\_\+write\+\_\+phy@{enc\+\_\+write\+\_\+phy}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+write\+\_\+phy}]{\setlength{\rightskip}{0pt plus 5cm}void enc\+\_\+write\+\_\+phy (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr, }
+\item[{uint16\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}}\label{enc28j60_8c_ab6908af0f98d4b54d35cbcd699119346}
+
+
+write the data on E\+N\+C28\+J60 physical address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address \\
+\hline
+{\em data} & data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 190 of file enc28j60.\+c.
+
+
+
+References B\+U\+S\+Y, enc\+\_\+read(), enc\+\_\+write(), M\+I\+R\+E\+G\+A\+D\+R, M\+I\+S\+T\+A\+T, M\+I\+W\+R\+H, and M\+I\+W\+R\+L.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+init\+\_\+phy().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enc28j60_8c_ab6908af0f98d4b54d35cbcd699119346_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{enc28j60_8c_a8cf887c83e16783a97183adf9b0bd5eb}{\index{enc28j60.\+c@{enc28j60.\+c}!enc\+\_\+bank@{enc\+\_\+bank}}
+\index{enc\+\_\+bank@{enc\+\_\+bank}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{enc\+\_\+bank}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t enc\+\_\+bank}}\label{enc28j60_8c_a8cf887c83e16783a97183adf9b0bd5eb}
+
+
+Definition at line 31 of file enc28j60.\+c.
+
+
+
+Referenced by enc\+\_\+set\+\_\+bank().
+
+\hypertarget{enc28j60_8c_ad7e304a214204367dd0528e5df3c59f0}{\index{enc28j60.\+c@{enc28j60.\+c}!p\+\_\+next@{p\+\_\+next}}
+\index{p\+\_\+next@{p\+\_\+next}!enc28j60.\+c@{enc28j60.\+c}}
+\subsubsection[{p\+\_\+next}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int p\+\_\+next}}\label{enc28j60_8c_ad7e304a214204367dd0528e5df3c59f0}
+
+
+Definition at line 32 of file enc28j60.\+c.
+
+
+
+Referenced by enc\+\_\+init(), and enc\+\_\+recv\+\_\+packet().
+

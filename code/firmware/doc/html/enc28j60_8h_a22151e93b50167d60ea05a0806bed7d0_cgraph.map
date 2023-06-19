@@ -1,0 +1,5 @@
+<map id="enc_write_buf" name="enc_write_buf">
+<area shape="rect" id="node2" href="$enc28j60_8c.html#a6ae6915ab4363819a3492bd8509263e5" title="start ENC28J60 pin to write or to read " alt="" coords="154,5,227,32"/>
+<area shape="rect" id="node3" href="$enc28j60_8c.html#a63e6002e7cdb7ac2433fcb6fb4fc0b16" title="stop the ENC28J60 pin " alt="" coords="153,56,228,83"/>
+<area shape="rect" id="node4" href="$spi_8c.html#a656cafaeae25fbe893fb580a06360dba" title="write the data to SPI " alt="" coords="155,107,227,133"/>
+</map>

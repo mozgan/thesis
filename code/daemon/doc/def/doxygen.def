@@ -1,0 +1,928 @@
+AutoGen Definitions dummy;
+file = {
+  file-id   = 'error_8c';
+  file-name = 'error.c';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'sys_err';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'msg';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/error.c';
+      func-mem-desc-line = '35';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+if an error occured then print the error message and exit from program
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param msg programmer message to print
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1a165726b24e152a113fdde7732b667b5f';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'binding';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1a1926d0bf833c9a35c53d2a2f601faa60';
+        func-mem-ref-line = '108';
+        func-mem-ref-name = 'close_socket';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1a0b55dfe2fd6924e01624911af758ae03';
+        func-mem-ref-line = '70';
+        func-mem-ref-name = 'communication';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        func-mem-ref-line = '37';
+        func-mem-ref-name = 'make_socket';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = '/Users/mozgan/Dropbox/thesis/code/daemon/src/error.c';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+error handling
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author M. Ozgan, <mozgan@mozgan.org>
+@version        0.1
+@date   23.08.2013 22:21:22
+\internal 
+     $Compiler: gcc (on Mac, and 4.4BSD) $
+     $Company:  TU Wien $
+
+\xrefitem bug 1.\xrefitem todo 1.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'error_8h';
+  file-name = 'error.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'error_8h_1a7c50c1dd9ff2f0d7d88bef6a99b4315c';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'sys_err';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-defname = 'msg';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/error.h';
+      func-mem-desc-line = '36';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+if an error occured then print the error message and exit from program
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param msg programmer message to print
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1a165726b24e152a113fdde7732b667b5f';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'binding';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1a1926d0bf833c9a35c53d2a2f601faa60';
+        func-mem-ref-line = '108';
+        func-mem-ref-name = 'close_socket';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1a0b55dfe2fd6924e01624911af758ae03';
+        func-mem-ref-line = '70';
+        func-mem-ref-name = 'communication';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        func-mem-ref-line = '37';
+        func-mem-ref-name = 'make_socket';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = '/Users/mozgan/Dropbox/thesis/code/daemon/src/error.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+header file for error
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author M. Ozgan, <mozgan@mozgan.org>
+@version        0.1
+@date   23.08.2013 22:20:44
+\internal 
+     $Compiler: gcc (on Mac, and 4.4BSD) $
+     $Company:  TU Wien $
+
+\xrefitem bug 2.\xrefitem todo 2.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8c';
+  file-name = 'main.c';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8c_1ae8605e2b78cd4a81b6c6b5c30cb7366a';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'usage';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/main.c';
+      func-mem-desc-line = '41';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+usage of program how to call this
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'main_8c_1a8a8a6db7728221fbc910782969be77c2';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'prg_name';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+        func-mem-param-array = '[]';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/main.c';
+      func-mem-desc-line = '60';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+main - start program
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param argc count of arguments
+@param argv vector of arguments
+
+@return int (if success returns EXIT_SUCCESS, otherwise returns EXIT_FAILURE)
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8c_1a165726b24e152a113fdde7732b667b5f';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'binding';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8c_1a1926d0bf833c9a35c53d2a2f601faa60';
+        func-mem-ref-line = '108';
+        func-mem-ref-name = 'close_socket';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8c_1a0b55dfe2fd6924e01624911af758ae03';
+        func-mem-ref-line = '70';
+        func-mem-ref-name = 'communication';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8c_1af78c25c84b170f47fc907e752c1409b4';
+        func-mem-ref-line = '37';
+        func-mem-ref-name = 'make_socket';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'main_8c_1adc0221a311d122f5c20b9ce7982f95ee';
+        func-mem-ref-line = '34';
+        func-mem-ref-name = 'optstr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a54fac18369fc17e05c94bf0ab06ef7ac';
+        func-mem-ref-line = '61';
+        func-mem-ref-name = 'port_nr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'main_8c_1a8a8a6db7728221fbc910782969be77c2';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'prg_name';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'main_8c_1ae8605e2b78cd4a81b6c6b5c30cb7366a';
+        func-mem-ref-line = '41';
+        func-mem-ref-name = 'usage';
+    };
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'main_8c_1adc0221a311d122f5c20b9ce7982f95ee';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'optstr';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "h:p:"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/main.c';
+      var-mem-desc-line = '34';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+options  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        var-mem-ref-line = '60';
+        var-mem-ref-name = 'main';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'main_8c_1a8a8a6db7728221fbc910782969be77c2';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'prg_name';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "<not yet set>"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/main.c';
+      var-mem-desc-line = '35';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+program name  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        var-mem-ref-line = '60';
+        var-mem-ref-name = 'main';
+    };
+      var-mem-referenceby = {
+        var-mem-ref-id = 'main_8c_1ae8605e2b78cd4a81b6c6b5c30cb7366a';
+        var-mem-ref-line = '41';
+        var-mem-ref-name = 'usage';
+    };
+    }; /* var-member */
+    };
+  file-full-name  = '/Users/mozgan/Dropbox/thesis/code/daemon/src/main.c';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+udp communication
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author M. Ozgan, <mozgan@mozgan.org>
+@version        0.1
+@date   23.08.2013 22:00:56
+\internal 
+     $Compiler: gcc (on Mac, and 4.4BSD) $
+     $Company:  TU Wien $
+
+\xrefitem bug 3.\xrefitem todo 3.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'udp_8c';
+  file-name = 'udp.c';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8c_1af78c25c84b170f47fc907e752c1409b4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'make_socket';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'hostname';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'port';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.c';
+      func-mem-desc-line = '37';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+make the socket
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param hostname get the hostname
+@param port port number to connection
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a072220ecebc8a6044aca4afa78eefebd';
+        func-mem-ref-line = '57';
+        func-mem-ref-name = 'dest_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1aecc6f69775dc6fdfbfde27f60b417932';
+        func-mem-ref-line = '55';
+        func-mem-ref-name = 'h_name';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1ac724fe70ae8af2d1406927ee7b574a1b';
+        func-mem-ref-line = '58';
+        func-mem-ref-name = 'serv_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1aaf12d2783d89167480b76853da8ba5e1';
+        func-mem-ref-line = '45';
+        func-mem-ref-name = 'u_long';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8c_1a165726b24e152a113fdde7732b667b5f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'binding';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.c';
+      func-mem-desc-line = '60';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+bind to host
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+bind to the socket  
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1ac724fe70ae8af2d1406927ee7b574a1b';
+        func-mem-ref-line = '58';
+        func-mem-ref-name = 'serv_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8c_1a0b55dfe2fd6924e01624911af758ae03';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'communication';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.c';
+      func-mem-desc-line = '70';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+make the communication with host (recv or send the datagrams)
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+communication  
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a072220ecebc8a6044aca4afa78eefebd';
+        func-mem-ref-line = '57';
+        func-mem-ref-name = 'dest_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8c_1a1926d0bf833c9a35c53d2a2f601faa60';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'close_socket';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.c';
+      func-mem-desc-line = '108';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+close the socket if not to use in future
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+close the open socket  
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.c';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+udp communication
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author M. Ozgan, <mozgan@mozgan.org>
+@version        0.1
+@date   23.08.2013 22:01:48
+\internal 
+     $Compiler: gcc (on Mac, and 4.4BSD) $
+     $Company:  TU Wien $
+
+\xrefitem bug 4.\xrefitem todo 4.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'udp_8h';
+  file-name = 'udp.h';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'udp_8h_1aaf12d2783d89167480b76853da8ba5e1';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'u_long';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+unsigned long
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      define-mem-desc-line = '45';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-referenceby = {
+        define-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        define-mem-ref-line = '37';
+        define-mem-ref-name = 'make_socket';
+    };
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'udp_8h_1a4d04a8261523c8f3473946257c12ce5b';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'h_addr';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+h_addr_list[0]
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      define-mem-desc-line = '52';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8h_1af62eaae41c3f2e3caa57d3735a0ec053';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'make_socket';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-defname = 'hostname';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'int';
+        func-mem-param-defname = 'port';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      func-mem-desc-line = '63';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+make the socket
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+make a socket  
+
+@param hostname get the hostname
+@param port port number to connection
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a072220ecebc8a6044aca4afa78eefebd';
+        func-mem-ref-line = '57';
+        func-mem-ref-name = 'dest_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1aecc6f69775dc6fdfbfde27f60b417932';
+        func-mem-ref-line = '55';
+        func-mem-ref-name = 'h_name';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1ac724fe70ae8af2d1406927ee7b574a1b';
+        func-mem-ref-line = '58';
+        func-mem-ref-name = 'serv_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1aaf12d2783d89167480b76853da8ba5e1';
+        func-mem-ref-line = '45';
+        func-mem-ref-name = 'u_long';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8h_1a165726b24e152a113fdde7732b667b5f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'binding';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      func-mem-desc-line = '64';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+bind to host
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+bind to the socket  
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1ac724fe70ae8af2d1406927ee7b574a1b';
+        func-mem-ref-line = '58';
+        func-mem-ref-name = 'serv_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8h_1a0b55dfe2fd6924e01624911af758ae03';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'communication';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      func-mem-desc-line = '65';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+make the communication with host (recv or send the datagrams)
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+communication  
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a072220ecebc8a6044aca4afa78eefebd';
+        func-mem-ref-line = '57';
+        func-mem-ref-name = 'dest_addr';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'udp_8h_1a1926d0bf833c9a35c53d2a2f601faa60';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'close_socket';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      func-mem-desc-line = '66';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+close the socket if not to use in future
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+close the open socket  
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'sock_fd';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'error_8c_1acf9a2facd46adb3083d36dbb8ea97521';
+        func-mem-ref-line = '35';
+        func-mem-ref-name = 'sys_err';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '60';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'udp_8h_1aecc6f69775dc6fdfbfde27f60b417932';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+struct hostent *
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'h_name';
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      var-mem-desc-line = '55';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+real hostname  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        var-mem-ref-line = '37';
+        var-mem-ref-name = 'make_socket';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'udp_8h_1a072220ecebc8a6044aca4afa78eefebd';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+struct sockaddr_in
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'dest_addr';
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      var-mem-desc-line = '55';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+destination address  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1a0b55dfe2fd6924e01624911af758ae03';
+        var-mem-ref-line = '70';
+        var-mem-ref-name = 'communication';
+    };
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        var-mem-ref-line = '37';
+        var-mem-ref-name = 'make_socket';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'udp_8h_1ac724fe70ae8af2d1406927ee7b574a1b';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+struct sockaddr_in
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'serv_addr';
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      var-mem-desc-line = '55';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+server address  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1a165726b24e152a113fdde7732b667b5f';
+        var-mem-ref-line = '60';
+        var-mem-ref-name = 'binding';
+    };
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        var-mem-ref-line = '37';
+        var-mem-ref-name = 'make_socket';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'udp_8h_1a514331e6141a28289f8ddead55eadebd';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'sock_fd';
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      var-mem-desc-line = '60';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+socket description  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1a165726b24e152a113fdde7732b667b5f';
+        var-mem-ref-line = '60';
+        var-mem-ref-name = 'binding';
+    };
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1a1926d0bf833c9a35c53d2a2f601faa60';
+        var-mem-ref-line = '108';
+        var-mem-ref-name = 'close_socket';
+    };
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1a0b55dfe2fd6924e01624911af758ae03';
+        var-mem-ref-line = '70';
+        var-mem-ref-name = 'communication';
+    };
+      var-mem-referenceby = {
+        var-mem-ref-id = 'udp_8c_1af62eaae41c3f2e3caa57d3735a0ec053';
+        var-mem-ref-line = '37';
+        var-mem-ref-name = 'make_socket';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'udp_8h_1a54fac18369fc17e05c94bf0ab06ef7ac';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'port_nr';
+      var-mem-desc-file = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+      var-mem-desc-line = '61';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+port number  
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'main_8c_1a0ddf1224851353fc92bfbff6f499fa97';
+        var-mem-ref-line = '60';
+        var-mem-ref-name = 'main';
+    };
+    }; /* var-member */
+    };
+  file-full-name  = '/Users/mozgan/Dropbox/thesis/code/daemon/src/udp.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+header file for udp communication
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author M. Ozgan, <mozgan@mozgan.org>
+@version        0.1
+@date   23.08.2013 22:02:31
+\internal 
+     $Compiler: gcc (on Mac, and 4.4BSD) $
+     $Company:  TU Wien $
+
+\xrefitem bug 5.\xrefitem todo 5.
+_EnD_oF_dEf_TeXt_;
+}; /* file */

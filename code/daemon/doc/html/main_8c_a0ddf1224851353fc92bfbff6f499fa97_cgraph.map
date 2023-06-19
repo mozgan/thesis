@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$udp_8c.html#a165726b24e152a113fdde7732b667b5f" title="bind to host " alt="" coords="123,5,186,32"/>
+<area shape="rect" id="node4" href="$udp_8c.html#a1926d0bf833c9a35c53d2a2f601faa60" title="close the socket if not to use in future " alt="" coords="107,56,202,83"/>
+<area shape="rect" id="node5" href="$udp_8c.html#a0b55dfe2fd6924e01624911af758ae03" title="make the communication with host (recv or send the datagrams) " alt="" coords="103,107,207,133"/>
+<area shape="rect" id="node6" href="$udp_8c.html#af78c25c84b170f47fc907e752c1409b4" title="make the socket " alt="" coords="107,157,203,184"/>
+<area shape="rect" id="node7" href="$main_8c.html#ae8605e2b78cd4a81b6c6b5c30cb7366a" title="usage of program how to call this " alt="" coords="125,208,184,235"/>
+<area shape="rect" id="node3" href="$error_8c.html#acf9a2facd46adb3083d36dbb8ea97521" title="if an error occured then print the error message and exit from program " alt="" coords="255,81,317,108"/>
+</map>

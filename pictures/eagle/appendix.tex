@@ -1,0 +1,35 @@
+\documentclass[a4paper,12pt,twoside,ngerman]{article} 
+\usepackage{setspace} 
+\setstretch{1.5} 
+\parindent0pt 
+\parskip6pt 
+\usepackage{lmodern} 
+\usepackage{microtype} 
+\usepackage[ngerman]{babel} 
+\usepackage[titletoc,toc,title]{appendix} % Anhang 
+
+\begin{document} 
+\tableofcontents %Inhaltsverzeichnis 
+\newpage 
+\section{eins} 
+asdfs  sdf 
+\newpage 
+\subsection{einseins} 
+asdf sdf 
+\newpage 
+\begin{appendix} 
+\appendixpage 
+\renewcommand\thetable{\thesection\arabic{table}} 
+\renewcommand\thefigure{\thesection\arabic{figure}} 
+\section{zwei} 
+asdf sadf 
+\newpage 
+\section{drei} 
+asdf 
+\subsection{dreeins} 
+sadf as df 
+\newpage 
+\end{appendix} 
+\section{vier} 
+asdfas 
+\end{document}

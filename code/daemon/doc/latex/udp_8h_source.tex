@@ -1,0 +1,56 @@
+\hypertarget{udp_8h_source}{\section{udp.\+h}
+\label{udp_8h_source}\index{src/udp.\+h@{src/udp.\+h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*-}
+00002 \textcolor{comment}{ * Copyright (c) 2013, mozgan.}
+00003 \textcolor{comment}{ * All Rights Reserved with BSD License.}
+00004 \textcolor{comment}{ * Read LICENSE file.}
+00005 \textcolor{comment}{ */}
+00006 
+00022 \textcolor{comment}{/*}
+00023 \textcolor{comment}{ *      @(#) src/udp.h          TU Wien 23.08.2013}
+00024 \textcolor{comment}{ *  $Id: udp.h,v 0.1 23.08.2013 22:02:31 mozgan Exp $}
+00025 \textcolor{comment}{ */}
+00026 
+00027 \textcolor{preprocessor}{#ifndef \_\_UDP\_H\_\_}
+00028 \textcolor{preprocessor}{#define \_\_UDP\_H\_\_}
+00029 
+00030 \textcolor{preprocessor}{#include <stdio.h>}
+00031 \textcolor{preprocessor}{#include <stdlib.h>}
+00032 \textcolor{preprocessor}{#include <string.h>}
+00033 \textcolor{preprocessor}{#include <unistd.h>}
+00034 
+00035 \textcolor{preprocessor}{#include <netdb.h>}
+00036 \textcolor{preprocessor}{#include <sys/types.h>}
+00037 \textcolor{preprocessor}{#include <netinet/in.h>}
+00038 \textcolor{preprocessor}{#include <arpa/inet.h>}
+00039 \textcolor{preprocessor}{#include <sys/socket.h>}
+00040 
+00041 \textcolor{comment}{/*}
+00042 \textcolor{comment}{ * many compiler do not know the type 'u\_long'}
+00043 \textcolor{comment}{ */}
+00044 \textcolor{preprocessor}{#ifndef u\_long}
+\hypertarget{udp_8h_source_l00045}{}\hyperlink{udp_8h_aaf12d2783d89167480b76853da8ba5e1}{00045} \textcolor{preprocessor}{#define u\_long  unsigned long}
+00046 \textcolor{preprocessor}{#endif}
+00047 
+00048 \textcolor{comment}{/*}
+00049 \textcolor{comment}{ * in many systems has not defined 'h\_addr'}
+00050 \textcolor{comment}{ */}
+00051 \textcolor{preprocessor}{#ifndef h\_addr}
+\hypertarget{udp_8h_source_l00052}{}\hyperlink{udp_8h_a4d04a8261523c8f3473946257c12ce5b}{00052} \textcolor{preprocessor}{#define h\_addr h\_addr\_list[0]}
+00053 \textcolor{preprocessor}{#endif}
+00054 
+\hypertarget{udp_8h_source_l00055}{}\hyperlink{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}{00055} \textcolor{keyword}{struct }hostent *\hyperlink{udp_8h_aecc6f69775dc6fdfbfde27f60b417932}{h\_name};                   
+\hypertarget{udp_8h_source_l00057}{}\hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{00057} \textcolor{keyword}{struct }sockaddr\_in \hyperlink{udp_8h_a072220ecebc8a6044aca4afa78eefebd}{dest\_addr};          
+\hypertarget{udp_8h_source_l00058}{}\hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{00058} \textcolor{keyword}{struct }sockaddr\_in \hyperlink{udp_8h_ac724fe70ae8af2d1406927ee7b574a1b}{serv\_addr};          
+\hypertarget{udp_8h_source_l00060}{}\hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{00060} \textcolor{keywordtype}{int}             \hyperlink{udp_8h_a514331e6141a28289f8ddead55eadebd}{sock\_fd};         
+\hypertarget{udp_8h_source_l00061}{}\hyperlink{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{00061} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}    \hyperlink{udp_8h_a54fac18369fc17e05c94bf0ab06ef7ac}{port\_nr};         
+00063 \textcolor{keywordtype}{void}            \hyperlink{udp_8h_af62eaae41c3f2e3caa57d3735a0ec053}{make\_socket}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int});  
+00064 \textcolor{keywordtype}{void}            \hyperlink{udp_8h_a165726b24e152a113fdde7732b667b5f}{binding}(\textcolor{keywordtype}{void});           
+00065 \textcolor{keywordtype}{void}            \hyperlink{udp_8h_a0b55dfe2fd6924e01624911af758ae03}{communication}(\textcolor{keywordtype}{void});       
+00066 \textcolor{keywordtype}{void}            \hyperlink{udp_8h_a1926d0bf833c9a35c53d2a2f601faa60}{close\_socket}(\textcolor{keywordtype}{void}); 
+00068 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* \_\_UDP\_H\_\_ */}\textcolor{preprocessor}{}
+00069 
+\end{DoxyCode}

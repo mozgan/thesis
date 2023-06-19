@@ -1,0 +1,11 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="node7" href="$common_8h.html" title="some useful definitions " alt="" coords="107,155,228,181"/>
+<area shape="rect" id="node10" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="315,155,404,181"/>
+<area shape="rect" id="node14" href="$buffer_8h.html" title="header file for ring buffer " alt="" coords="42,80,120,107"/>
+<area shape="rect" id="node15" href="$leds_8h.html" title="specific header file for leds driver " alt="" coords="196,80,284,107"/>
+<area shape="rect" id="node16" href="$enc28j60_8h.html" title="registers of ENC28J60 device " alt="" coords="358,80,481,107"/>
+<area shape="rect" id="node18" href="$net_8h.html" title="header file for network communication " alt="" coords="841,80,924,107"/>
+<area shape="rect" id="node19" href="$icp_8h.html" title="header file for input capture pin operations " alt="" coords="528,155,610,181"/>
+<area shape="rect" id="node8" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="124,229,198,256"/>
+<area shape="rect" id="node11" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="402,229,531,256"/>
+</map>

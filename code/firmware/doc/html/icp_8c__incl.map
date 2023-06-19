@@ -1,0 +1,8 @@
+<map id="driver/icp.c" name="driver/icp.c">
+<area shape="rect" id="node2" href="$leds_8h.html" title="specific header file for leds driver " alt="" coords="176,80,264,107"/>
+<area shape="rect" id="node13" href="$icp_8h.html" title="header file for input capture pin operations " alt="" coords="289,80,370,107"/>
+<area shape="rect" id="node3" href="$freq_8h.html" title="pin locations for &quot;Frequenzmessung&#45;Board&quot; " alt="" coords="202,155,291,181"/>
+<area shape="rect" id="node9" href="$common_8h.html" title="some useful definitions " alt="" coords="57,155,178,181"/>
+<area shape="rect" id="node4" href="$atmega16_8h.html" title="specific definitions for ATMega16 device " alt="" coords="261,229,390,256"/>
+<area shape="rect" id="node10" href="$stdbool_8h.html" title="boolean definitions " alt="" coords="81,229,154,256"/>
+</map>

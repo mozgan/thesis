@@ -1,0 +1,70 @@
+\input{scheme}
+
+% reads the new commands
+\input{commands}
+
+\usepackage[resetlabels]{multibib}
+\usepackage{blindtext}
+
+%------------------------------------------------------------------------------
+%		cite
+%------------------------------------------------------------------------------
+\newcites{literatur}{Literature}
+\newcites{weblink}{Weblinks}
+
+%------------------------------------------------------------------------------
+%		BEGIN DOCUMENT
+%------------------------------------------------------------------------------
+\begin{document}
+
+\pagenumbering{Roman} % große Römische Seitenummerierung
+\pagestyle{empty}
+
+% ------------------------------ Titel ----------------------------------------
+% Titelseite 
+\include{title/titlepage} 
+\include{title/abstract}  
+%\include{title/thanks}
+\include{title/index} 
+
+\pagebreak 
+
+% ---------------------------- Chapters ---------------------------------------
+\pagenumbering{arabic} 
+\pagestyle{fancy} 
+\rmfamily
+
+\include{chapter/ch1}
+\include{chapter/ch2}
+\include{chapter/ch3}
+\include{chapter/ch4}
+\include{chapter/ch5}
+\include{chapter/ch6}
+
+\makeatletter
+\cleardoublepage
+\phantomsection
+
+%\chapter{Literaturverzeichnis}
+%\addcontentsline{toc}{chapter}{Literatureverzeichnis}
+
+% Publications
+\renewcommand\bibname{Literature}
+\addcontentsline{toc}{chapter}{Literature}
+\label{lite}
+\nociteliteratur{*}
+\bibliographystyleliteratur{alphadin}
+%\bibliographystyleliteratur{plain}
+\bibliographyliteratur{bib/literatur}
+
+% Weblinks
+\addcontentsline{toc}{chapter}{Weblinks}
+\label{web}
+\nociteweblink{*}
+\bibliographystyleweblink{abbrv}
+\bibliographyweblink{bib/weblink}
+
+% Appendix
+\include{chapter/appendix}
+
+\end{document}
